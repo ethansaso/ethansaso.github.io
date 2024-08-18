@@ -15,10 +15,10 @@ function App() {
       <Sidebar />
       <div className="content">
         <Routes>
-          <Route exact path="/personal-site" element={<Home />} />
-          <Route path="/personal-site/projects" element={<Projects />} />
-          <Route path="/personal-site/photos" element={<Photos />} />
-          <Route path="/personal-site/contact" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

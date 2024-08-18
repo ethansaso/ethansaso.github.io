@@ -4,13 +4,13 @@ import '../css/Navbar.scss';
 
 const Navigation = () => (
   <Navbar fixed='top' color="dark" dark expand="md" className="navbar-custom">
-    <NavbarBrand href="/personal-site">Ethan Saso</NavbarBrand>
+    <NavbarBrand href="/">Ethan Saso</NavbarBrand>
     <Nav className="me-auto" navbar>
       <NavItem>
-        <NavLink href="/personal-site/projects">Projects</NavLink>
+        <NavLink href="/projects">Projects</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/personal-site/photos">Photography</NavLink>
+        <NavLink href="/photos">Photography</NavLink>
       </NavItem>
     </Nav>
   </Navbar>
