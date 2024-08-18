@@ -10,7 +10,7 @@ import './css/Main.scss';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Navigation />
       <Sidebar />
       <div className="content">
