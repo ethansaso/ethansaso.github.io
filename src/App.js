@@ -16,16 +16,14 @@ function App() {
       <div className="content">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/*">
-            <Route path="projects" element={<Projects />} />
-            <Route path="photos" element={<Photos />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<Navigate replace to="/" />} />
-          </Route>
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
 export default App;
