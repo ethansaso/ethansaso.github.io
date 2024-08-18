@@ -1,6 +1,6 @@
-# mycomap
+# Personal site
 
-Lightweight web application to view trends of fungal ecology in a region from iNaturalist data.
+Personal site for Ethan Saso, developer and naturalist.
 
 ## Available Scripts
 
