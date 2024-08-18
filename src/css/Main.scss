@@ -1,0 +1,8 @@
+.content {
+    margin-left: 250px; /* Same as the width of your sidebar */
+    margin-top: 57px; /* Add a bit more than the navbar height for spacing */
+    padding: 30px;
+    height: calc(100vh - 57px); /* Full height minus navbar */
+    overflow-y: auto; /* Allows scrolling if the content overflows */
+    background-color: #ffffff; /* Optional: set a background color */
+  }
