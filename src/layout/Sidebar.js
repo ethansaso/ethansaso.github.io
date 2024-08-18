@@ -18,13 +18,13 @@ const Sidebar = () => {
           </NavLink>
         </NavItem>
         <NavItem className="sidebar-item">
-          <NavLink className="github" href="https://github.com/ethansaso/personal-site">
+          <NavLink className="github" href="https://github.com/ethansaso">
             <FontAwesomeIcon icon="fa-brands fa-github" fixedWidth />
             <span>Github</span>
           </NavLink>
         </NavItem>
         <NavItem className="sidebar-item">
-          <NavLink className="inaturalist" href="https://www.inaturalist.org/people/4092748">
+          <NavLink className="inaturalist" href="https://www.inaturalist.org/people/ethansaso">
             <FontAwesomeIcon icon="fa-solid fa-dove" fixedWidth />
             <span>iNaturalist</span>
           </NavLink>
