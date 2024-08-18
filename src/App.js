@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navigation from './layout/Navigation.js';
 import Sidebar from './layout/Sidebar.js';
 import Home from './pages/Home.js';
@@ -9,8 +10,18 @@ import './App.css';
 import './css/Main.scss';
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const path = window.location.hash.substring(1); // Extract the path from the hash
+
+    if (path && path !== '/') {
+      navigate(path);
+    }
+  }, [navigate]);
+
   return (
-    <Router>
+    <div>
       <Navigation />
       <Sidebar />
       <div className="content">
@@ -22,8 +33,16 @@ function App() {
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </div>
+    </div>
+  );
+}
+
+function AppWrapper() {
+  return (
+    <Router basename={process.env.PUBLIC_URL}>
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;
