@@ -1,16 +1,17 @@
 import React from 'react';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import '../css/Navbar.scss';
 
 const Navigation = () => (
   <Navbar fixed='top' color="dark" dark expand="md" className="navbar-custom">
-    <NavbarBrand href="/">Ethan Saso</NavbarBrand>
+    <NavbarBrand tag={NavLink} to="/">Ethan Saso</NavbarBrand>
     <Nav className="me-auto" navbar>
       <NavItem>
-        <NavLink href="/projects">Projects</NavLink>
+        <NavLink className="nav-link" to="/projects">Projects</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/photos">Photography</NavLink>
+        <NavLink className="nav-link" to="/photos">Photography</NavLink>
       </NavItem>
     </Nav>
   </Navbar>
