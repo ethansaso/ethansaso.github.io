@@ -2,9 +2,9 @@
 <html>
 <head>
   <script type="text/javascript">
-    // Get the current path and redirect to it on the main page with a query parameter
+    // Get the current path and redirect to it on the main page with a hash
     var path = window.location.pathname + window.location.search;
-    window.location.replace('/?' + path.substring(1));
+    window.location.replace('/#' + path);
   </script>
 </head>
 <body>
