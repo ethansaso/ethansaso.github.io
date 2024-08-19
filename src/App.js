@@ -20,16 +20,16 @@ function App() {
   }, [navigate]);
 
   return (
-    <div>
+    <div className="layout">
       <Navigation />
       <Sidebar />
       <div className="content">
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate replace to="/home" />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </div>
     </div>

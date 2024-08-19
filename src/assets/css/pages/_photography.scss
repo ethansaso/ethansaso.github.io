@@ -3,6 +3,11 @@
     to { opacity: 1; }
 }
 
+@keyframes flowUp {
+    from { margin-bottom: 100px; }
+    to { margin-bottom: 40px; }
+}
+
 .masonry {
 
     .masonry-card {
@@ -26,7 +31,6 @@
     }
 
     .masonry-caption {
-        z-index: 1;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -39,7 +43,6 @@
         overflow: hidden;
 
         ::after {
-            z-index: 2;
             background-image: linear-gradient(
                 transparent 0%,
                 rgba(0, 0, 0, 0.2) 60%, 
