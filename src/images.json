@@ -1,118 +1,233 @@
 {
     "aferruginea1.jpg": {
         "title": "Arcyria ferruginea",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Mar 2023",
+        "location": "Reinhardt Redwood Regional Park"
     },
     "arcyria1.jpg": {
         "title": "Arcyria sp.",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Jan 2023",
+        "location": "UC Berkeley Campus"
     },
     "avivida1.jpg": {
         "title": "Argia vivida",
-        "type": "Insect"
+        "type": "Insect",
+        "device": "tg6",
+        "date": "Sep 2023",
+        "location": "UC Berkeley Campus"
     },
     "avulgare1.jpg": {
         "title": "Auriscalpium vulgare",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "Aug 2023",
+        "location": "Point Reyes"
     },
     "cargillacea1.jpg": {
-        "title": "Cribrarium argillacea",
-        "type": "Slime mold"
+        "title": "Cribraria argillacea",
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Oct 2023",
+        "location": "UC Berkeley Campus"
     },
     "cargillacea2.jpg": {
-        "title": "Cribrarium argillacea",
-        "type": "Slime mold"
+        "title": "Cribraria argillacea",
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Oct 2023",
+        "location": "UC Berkeley Campus"
+    },
+    "ccornea1.jpg": {
+        "title": "Calocera cornea",
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "Dec 2023",
+        "location": "Portola Redwoods"
     },
     "cminutum1.jpeg": {
         "title": "Craterium minutum",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "a52",
+        "date": "Dec 2022",
+        "location": "Golden Gate Park"
     },
     "cnigra1.jpg": {
         "title": "Comatricha nigra",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Jan 2024",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "cnigra2.jpg": {
         "title": "Comatricha nigra",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Jun 2023",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "cnigra3.jpg": {
         "title": "Comatricha nigra",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "a52",
+        "date": "Dec 2022",
+        "location": "Tilden Regional Park"
+    },
+    "cquercophila1.jpg": {
+        "title": "Collybiopsis quercophila",
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Aug 2023",
+        "location": "UC Berkeley Campus"
     },
     "ddictyosporum1.jpg": {
         "title": "Diachea dictyosporum",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Jan 2024",
+        "location": "Tamalpais Valley"
     },
     "entiminae1.jpg": {
         "title": "Entiminae",
-        "type": "Insect"
+        "type": "Insect",
+        "device": "tg6",
+        "date": "May 2023",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "fungi1.jpg": {
         "title": "Unknown fungus",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "a52",
+        "date": "Jan 2023",
+        "location": "UC Berkeley Campus"
     },
     "galpina1.jpg": {
         "title": "Guepiniopsis alpina",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "May 2023",
+        "location": "Mt. Shasta"
     },
     "lamproderma1.jpg": {
         "title": "Lamproderma sp.",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "May 2023",
+        "location": "Mt. Shasta"
     },
     "lamproderma2.jpg": {
         "title": "Lamproderma sp.",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "May 2023",
+        "location": "Mt. Shasta"
     },
     "lpubescens1.jpeg": {
         "title": "Lactarius pubescens",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "Nov 2022",
+        "location": "UC Berkeley Campus"
     },
     "mnivicola1.jpg": {
         "title": "Mycena nivicola",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "May 2024",
+        "location": "Mt. Shasta"
     },
     "mtenerrima1.jpg": {
         "title": "Mycena tenerrima",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "Apr 2023",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "nleucopus1.jpg": {
         "title": "Nannengaella leucopus",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Mar 2023",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "patropurpurascens1.jpeg": {
         "title": "Punctularia atropurpurascens",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "a52",
+        "date": "Nov 2021",
+        "location": "Fall Creek"
+    },
+    "pnidulans1.jpg": {
+        "title": "Phyllotopsis nidulans",
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "Mar 2023",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "physarum1.jpg": {
         "title": "Physarum sp.",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Dec 2023",
+        "location": "Portola Redwoods"
     },
     "physarum2.jpg": {
         "title": "Physarum sp.",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Mar 2023",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "ptenothrix1.jpg": {
         "title": "Pterothrix sp.",
-        "type": "Springtail"
+        "type": "Springtail",
+        "device": "tg6",
+        "date": "Mar 2023",
+        "location": "Sanborn County Park"
     },
     "ptychostomum1.jpg": {
         "title": "Ptychostomum",
-        "type": "Moss"
+        "type": "Moss",
+        "device": "tg6",
+        "date": "Mar 2024",
+        "location": "Strawberry Canyon, Berkeley"
+    },
+    "sarcoscypha1.jpg": {
+        "title": "Sarcoscypha sp.",
+        "type": "Fungus",
+        "device": "tg6",
+        "date": "Nov 2023",
+        "location": "Point Reyes"
     },
     "styphina1.jpg": {
         "title": "Stemonitopsis typhina",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Mar 2024",
+        "location": "Strawberry Canyon, Berkeley"
     },
     "tbotrytis1.jpg": {
         "title": "Trichia botrytis",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "Jan 2023",
+        "location": "Point Reyes"
     },
     "tfurfuracea1.jpg": {
         "title": "Tubaria furfuracea",
-        "type": "Fungus"
+        "type": "Fungus",
+        "device": "a52",
+        "date": "Dec 2022",
+        "location": "Tilden Regional Park"
     },
     "trichia1.jpg": {
         "title": "Trichia sp.",
-        "type": "Slime mold"
+        "type": "Slime mold",
+        "device": "tg6",
+        "date": "May 2023",
+        "location": "Mt. Shasta"
     }
 }
