@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bad0224d.css",
-    "main.js": "/static/js/main.6a624426.js",
+    "main.js": "/static/js/main.26cf512d.js",
     "static/js/453.fe059482.chunk.js": "/static/js/453.fe059482.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -40,11 +40,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.bad0224d.css.map": "/static/css/main.bad0224d.css.map",
-    "main.6a624426.js.map": "/static/js/main.6a624426.js.map",
+    "main.26cf512d.js.map": "/static/js/main.26cf512d.js.map",
     "453.fe059482.chunk.js.map": "/static/js/453.fe059482.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bad0224d.css",
-    "static/js/main.6a624426.js"
+    "static/js/main.26cf512d.js"
   ]
 }
