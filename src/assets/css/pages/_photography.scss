@@ -1,15 +1,20 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .masonry {
 
     .masonry-card {
         overflow: hidden;
         border: 0;
-        margin-bottom: 40px;
     }
 
     .masonry-img {
         width: 100%;
         height: auto;
         position: relative;
+        animation: fadeIn 2s;
     }
 
     .masonry-title {

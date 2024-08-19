@@ -25,11 +25,11 @@ function App() {
       <Sidebar />
       <div className="content">
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate replace to="/" />} />
+          <Route path="*" element={<Navigate replace to="/home" />} />
         </Routes>
       </div>
     </div>

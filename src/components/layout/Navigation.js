@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => (
   <Navbar fixed='top' color="dark" dark expand="md" className="navbar-custom">
-    <NavbarBrand tag={NavLink} to="/">Ethan Saso</NavbarBrand>
+    <NavbarBrand tag={NavLink} to="/home">Ethan Saso</NavbarBrand>
     <Nav className="me-auto" navbar>
       <NavItem>
         <NavLink className="nav-link" to="/projects">Projects</NavLink>
