@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import '../css/Navbar.scss';
 
 const Navigation = () => (
   <Navbar fixed='top' color="dark" dark expand="md" className="navbar-custom">

@@ -1,0 +1,67 @@
+.masonry {
+
+    .masonry-card {
+        overflow: hidden;
+        border: 0;
+        margin-bottom: 40px;
+    }
+
+    .masonry-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .masonry-title {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .masonry-caption {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 15px;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        border-radius: 5px;
+        transition: opacity 0.2s ease-in-out;
+        overflow: hidden;
+
+        ::after {
+            z-index: 2;
+            background-image: linear-gradient(
+                transparent 0%,
+                rgba(0, 0, 0, 0.2) 60%, 
+                rgba(0, 0, 0, 0.4) 90%               /* Fully black at the bottom */
+            );
+            border-radius: 6px;
+            height: 54px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            content: ''
+        }
+    }
+
+    .masonry-card:hover .masonry-caption {
+        opacity: 1;
+    }
+
+    .masonry-caption-type {
+        color: #aaa;
+        font-size: .75rem;
+    }
+    
+    .masonry-caption-text {
+        margin-bottom: 10px;
+    }
+    
+}
+

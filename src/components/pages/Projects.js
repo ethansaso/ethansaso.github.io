@@ -1,5 +1,4 @@
 import { Card, CardBody, CardHeader, CardTitle, Col, Row } from 'reactstrap';
-import logo from '../logo.svg';
 
 function Projects() {
   return (

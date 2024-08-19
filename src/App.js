@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import Navigation from './layout/Navigation.js';
-import Sidebar from './layout/Sidebar.js';
-import Home from './pages/Home.js';
-import Photos from './pages/Photos.js';
-import Projects from './pages/Projects.js';
-import Contact from './pages/Contact.js';
+import Navigation from './components/layout/Navigation.js';
+import Sidebar from './components/layout/Sidebar.js';
+import Home from './components/pages/Home.js';
+import Photos from './components/pages/Photos.js';
+import Projects from './components/pages/Projects.js';
+import Contact from './components/pages/Contact.js';
 import './App.css';
-import './css/Main.scss';
 
 function App() {
   const navigate = useNavigate();

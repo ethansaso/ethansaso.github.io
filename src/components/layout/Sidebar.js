@@ -1,12 +1,11 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import '../css/Sidebar.scss';
-import Ethan from '../img/ethansaso.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Ethan from '../../assets/img/ethansaso.jpeg';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <aside className="sidebar">
       <div className="sidebar-logo">
         <img className="sidebar-image" src={Ethan} alt="Logo" />
       </div>
@@ -42,7 +41,7 @@ const Sidebar = () => {
           </NavLink>
         </NavItem>
       </Nav>
-    </div>
+    </aside>
   );
 };
 
