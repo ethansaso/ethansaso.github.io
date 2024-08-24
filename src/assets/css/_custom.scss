@@ -1,0 +1,12 @@
+@tailwind utilities;
+
+@layer utilities {
+    /* Custom utility class for responsive FontAwesome size */
+    .responsive-fa-size {
+      font-size: 1.25em; /* Equivalent to fa-lg */
+  
+      @screen lg {
+        font-size: 0.75em; /* Equivalent to fa-xs */
+      }
+    }
+}

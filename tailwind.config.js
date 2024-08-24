@@ -8,10 +8,16 @@ module.exports = {
   },
   plugins: [
     require('daisyui'),
+    require('flowbite/plugin')({
+      charts: true,
+      forms: false,
+      tooltips: false
+    }),
     require('tailwind-scrollbar')({ nocompatible: true, preferredStrategy: 'pseudoelements' }),
+    require('tailwind-fontawesome')({version: 6}),
   ],
   daisyui: {
     themes: ["dracula", "lemonade"],
   },
-  darkMode: ['class', '[data-theme="dracula"]']
+  darkMode: ['class', '[data-theme="dracula"]'],
 }
