@@ -25,11 +25,7 @@ const Home = () => {
                         <Skills />
                     </>
                 ) : (
-                    <div id="photos" className="w-full p-20 flex justify-center items-center">
-                        <div className="w-full max-w-7xl">
-                            <Photos />
-                        </div>
-                    </div>
+                    <Photos />
                 )}
             </main>
             <Footer />

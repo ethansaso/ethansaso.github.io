@@ -137,7 +137,7 @@ const Skills = () => {
 
     return (
         <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-16">
-            <div className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16">
+            <div className="container flex flex-col max-w-7xl mx-auto items-center justify-center">
                 <h1 className="text-primary text-5xl text-left mb-16 w-full border-b border-neutral font-semibold">Skills</h1>
             </div>
             <div id="bar-chart">

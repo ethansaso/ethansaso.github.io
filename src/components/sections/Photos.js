@@ -46,7 +46,11 @@ function Photos() {
   }));
 
   return (
-    <Masonry className="masonry" columnGutter={25} columnWidth={300} overscanBy={Infinity} items={items} render={MasonryCard}/>
+    <div id="photos" className="w-full px-8 py-12 lg:px-20 flex justify-center items-center">
+      <div className="w-full max-w-7xl">
+        <Masonry className="masonry" columnGutter={25} columnWidth={300} overscanBy={Infinity} items={items} render={MasonryCard}/>
+      </div>
+    </div>
   );
 }
 
