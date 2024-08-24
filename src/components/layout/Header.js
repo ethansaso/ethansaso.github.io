@@ -8,7 +8,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
   return (
     <>
-      <div className="z-10 px-2 py-2 w-full sticky top-0 border-b-neutral border-b bg-base-100">
+      <header className="z-10 px-2 py-2 w-full sticky top-0 border-b-neutral border-b bg-base-100">
         <nav className="flex items-center justify-center mx-1 lg:mx-4">
           <div className="flex items-center gap-2 font-bold text-lg flex-grow basis-0">
             <svg
@@ -139,7 +139,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             </label>
           </div>
         </nav>
-      </div>
+      </header>
     </>
   );
 };

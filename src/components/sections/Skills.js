@@ -136,7 +136,7 @@ const Skills = () => {
       };
 
     return (
-        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16">
+        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-16">
             <div className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16">
                 <h1 className="text-primary text-5xl text-left mb-16 w-full border-b border-neutral font-semibold">Skills</h1>
             </div>
@@ -169,7 +169,7 @@ const Skills = () => {
             
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn m-1">Click</div>
-                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow h-full">
                     <li><a>Item 1</a></li>
                     <li><a>Item 2</a></li>
                 </ul>
