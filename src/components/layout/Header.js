@@ -41,7 +41,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 />
               </g>
             </svg>
-            <h1>Ethan Saso</h1>
+            <h1>Ethan Saso <span className="text-error">(WIP)</span></h1>
           </div>
           <div className="border rounded-3xl p-3 border-bline border-neutral hidden md:block">
             <ul className="gap-5 flex px-1 transition-all">

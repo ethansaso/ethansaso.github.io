@@ -12,7 +12,7 @@ const Projects = () => {
                     <div className="w-full px-8 p-4">
                         <div className="w-full border-b border-neutral mb-1">
                             <h1 className="text-4xl font-semibold text-secondary">TaxoKeys</h1>
-                            <h2 className="text-lg text-neutral-content">MERN stack, Python, Digital Ocean</h2>
+                            <h2 className="text-lg text-warning">MERN stack, Python, Digital Ocean</h2>
                         </div>
                         <p className="text-lg">Using dynamic algorithms, TaxoKeys generates elegant, flowchart-style guides to identification in real time,
                         resolving complex relationships between species with minimal error.</p>
@@ -23,7 +23,7 @@ const Projects = () => {
                     <div className="w-full px-8 p-4">
                         <div className="w-full border-b border-neutral mb-1">
                             <h1 className="text-4xl font-semibold text-secondary">WebRecon2</h1>
-                            <h2 className="text-lg text-neutral-content">Golang, Amass, DNSGen, ...</h2>
+                            <h2 className="text-lg text-warning">Golang, Amass, DNSGen, ...</h2>
                         </div>
                         <p className="text-lg">WebRecon2 utilizes the best tools available, each great at their own job, and combines them
                         into a single script to automate a workflow that would typically be followed manually when performing subdomain enumeration.</p>
@@ -34,7 +34,7 @@ const Projects = () => {
                     <div className="w-full px-8 p-4">
                         <div className="w-full border-b border-neutral mb-1">
                             <h1 className="text-4xl font-semibold text-secondary">Cal Men's Volleyball</h1>
-                            <h2 className="text-lg text-neutral-content">React.js, Github Pages</h2>
+                            <h2 className="text-lg text-warning">React.js, Github Pages</h2>
                         </div>
                         <p className="text-lg">Official website for UC Berkeley's Division-I Men's Volleyball Team.</p>
                     </div>
