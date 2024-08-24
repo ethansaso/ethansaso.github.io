@@ -15,7 +15,7 @@ const Home = () => {
             <div id="home"></div>
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
             <main>
-                <div className="flex flex-col h-[calc(100vh-45px)] md:h-[calc(100vh-63px)] lg:h-[calc(100vh-67px)] mx-auto items-center justify-center">
+                <div className="flex flex-col h-[calc(100dvh-45px)] md:h-[calc(100dvh-63px)] lg:h-[calc(100dvh-67px)] mx-auto items-center justify-center">
                     <Hero darkMode={darkMode}/>
                     <HeroFooter />
                 </div>
