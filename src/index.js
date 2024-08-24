@@ -6,7 +6,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/site.scss'
 
 library.add(fas)

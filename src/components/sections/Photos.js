@@ -1,4 +1,3 @@
-import { Card, CardImg, CardTitle } from "reactstrap";
 import { Masonry } from "masonic";
 import images from '../../images.json';
 
@@ -10,7 +9,7 @@ const MasonryCard = ({ data }) => {
   const deviceNames = {'a52': 'Samsung Galaxy A52', 'tg6': 'Olympus TG-6'}
 
   return (
-    <Card key={filename} className='masonry-card' style={{
+    <div key={filename} className='masonry-card' style={{
     }}>
       <div className="masonry-img" style={{ position: 'relative' }}>
         <div className="masonry-caption">
@@ -21,7 +20,7 @@ const MasonryCard = ({ data }) => {
           <div className="masonry-caption-type">DEVICE</div>
           <div className="masonry-caption-text">{deviceNames[device] || 'hi'}</div>
         </div>
-        <CardImg 
+        <img 
           src={imageContext(`./${filename}`)} 
           alt={title}
         />
@@ -29,10 +28,10 @@ const MasonryCard = ({ data }) => {
       <div
         className="masonry-title"
       >
-        <CardTitle tag="h6" style={{ marginBottom: 0, color: '#888' }}>{type}</CardTitle>
-        <CardTitle tag="h5" style={{ marginTop: '0', color: '#000' }}>{title}</CardTitle>
+        <h1 style={{ marginBottom: 0, color: '#888' }}>{type}</h1>
+        <h1 tag="h5" style={{ marginTop: '0', color: '#000' }}>{title}</h1>
       </div>
-    </Card>
+    </div>
   )
 };
 
