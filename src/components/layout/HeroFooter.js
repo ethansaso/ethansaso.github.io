@@ -9,7 +9,7 @@ const HeroFooter = () => {
                         <li className="hover:scale-125 hover:text-sky-600 hover:mx-1 transition-all"><a href="https://www.linkedin.com/in/ethansaso/">
                             <FontAwesomeIcon size="lg" icon="fa-brands fa-linkedin" fixedWidth />
                         </a></li>
-                        <li className="hover:scale-125 hover:text-cyan-900 hover:mx-1 transition-all"><a href="https://ethansaso.github.io">
+                        <li className="hover:scale-125 hover:text-cyan-900 hover:mx-1 transition-all"><a href="https://github.com/ethansaso">
                             <FontAwesomeIcon size="lg" icon="fa-brands fa-github" fixedWidth />
                         </a></li>
                         <li className="hover:scale-125 hover:text-lime-600 hover:mx-1 transition-all"><a href="https://www.inaturalist.org/people/ethansaso">
