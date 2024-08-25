@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.50a36ff4.css",
-    "main.js": "/static/js/main.238334ce.js",
+    "main.css": "/static/css/main.824b52f7.css",
+    "main.js": "/static/js/main.19d3043d.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -39,14 +39,34 @@
     "static/media/nleucopus1.jpg": "/static/media/nleucopus1.9914bbe3cda5a13ea328.jpg",
     "static/media/ethansaso.jpeg": "/static/media/ethansaso.ab3e81c1df21c9297088.jpeg",
     "static/media/volleyball-screenshot.png": "/static/media/volleyball-screenshot.24e0685edad2f3a33da2.png",
+    "static/media/seaborn-icon.svg": "/static/media/seaborn-icon.f7cb19147f444e71e635.svg",
     "static/media/project_webrecon2.png": "/static/media/project_webrecon2.cbf860f193dbd10ece51.png",
+    "static/media/jupyter.svg": "/static/media/jupyter.6fecc851abfe23cf932a.svg",
+    "static/media/sass.svg": "/static/media/sass.8351205a93eafac2e392.svg",
+    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/mysql-icon.svg": "/static/media/mysql-icon.e5a509a5d3ca7443ae6c.svg",
+    "static/media/go.svg": "/static/media/go.509123c54f7556362660.svg",
+    "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.3dc364b8e9beb3561620.svg",
+    "static/media/java.svg": "/static/media/java.83165dfb2f5a7657ce4c.svg",
+    "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134.svg",
+    "static/media/html-5.svg": "/static/media/html-5.e7638e3676622c76a46e.svg",
+    "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e.svg",
+    "static/media/c.svg": "/static/media/c.2f52df384aba3fa14b53.svg",
+    "static/media/numpy.svg": "/static/media/numpy.cf45d4df86beb5d1ec70.svg",
+    "static/media/git-icon.svg": "/static/media/git-icon.fd381642a8b14fec88b8.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577.svg",
+    "static/media/r-lang.svg": "/static/media/r-lang.54a0804197b4f0990ebd.svg",
+    "static/media/digital-ocean-icon.svg": "/static/media/digital-ocean-icon.0d24e8738b0a492c928c.svg",
+    "static/media/tailwindcss-icon.svg": "/static/media/tailwindcss-icon.50fbcf516b9a3774e9a8.svg",
+    "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
+    "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.50a36ff4.css.map": "/static/css/main.50a36ff4.css.map",
-    "main.238334ce.js.map": "/static/js/main.238334ce.js.map",
+    "main.824b52f7.css.map": "/static/css/main.824b52f7.css.map",
+    "main.19d3043d.js.map": "/static/js/main.19d3043d.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50a36ff4.css",
-    "static/js/main.238334ce.js"
+    "static/css/main.824b52f7.css",
+    "static/js/main.19d3043d.js"
   ]
 }
