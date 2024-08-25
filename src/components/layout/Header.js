@@ -1,9 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 const Header = ({ darkMode, setDarkMode }) => {
+  const [hasClickedSwitch, setHasClickedSwitch] = useState(false)
+
   const toggleTheme = () => {
     console.log(darkMode);
     setDarkMode(!darkMode);
+    setHasClickedSwitch(true);
   };
 
   return (
@@ -41,7 +45,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                 />
               </g>
             </svg>
-            <h1>Ethan Saso <span className="text-error">(WIP)</span></h1>
+            <h1>Ethan Saso</h1>
           </div>
           <div className="border rounded-3xl p-3 border-bline border-neutral hidden md:block">
             <ul className="gap-5 flex px-1 transition-all">
@@ -132,10 +136,12 @@ const Header = ({ darkMode, setDarkMode }) => {
                 icon="fa-brands fa-pagelines"
                 fixedWidth
               />
-              <span class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 flex size-3">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-              </span>
+              {!hasClickedSwitch && (
+                <span class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 flex size-3 z-10">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                </span>
+              )}
             </label>
           </div>
         </nav>
