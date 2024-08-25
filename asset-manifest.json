@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dfd0a25.css",
-    "main.js": "/static/js/main.91465fb0.js",
+    "main.css": "/static/css/main.72a9d0c1.css",
+    "main.js": "/static/js/main.07cee0e9.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -19,6 +19,7 @@
     "static/media/tbotrytis1.jpg": "/static/media/tbotrytis1.cd5fa8c5a57ec3fd3280.jpg",
     "static/media/cminutum1.jpeg": "/static/media/cminutum1.5bfee738479404a6663e.jpeg",
     "static/media/ptychostomum1.jpg": "/static/media/ptychostomum1.bec8953840cf4d6066f4.jpg",
+    "static/media/volleygif.gif": "/static/media/volleygif.35159dfb94a18e995779.gif",
     "static/media/lpubescens1.jpeg": "/static/media/lpubescens1.c31331a7fe3d1de9a8c4.jpeg",
     "static/media/lamproderma2.jpg": "/static/media/lamproderma2.66cd74dacce0a8819d64.jpg",
     "static/media/tfurfuracea1.jpg": "/static/media/tfurfuracea1.5d59e8d5efd90bea0209.jpg",
@@ -33,12 +34,11 @@
     "static/media/ddictyosporum1.jpg": "/static/media/ddictyosporum1.22849bf6ee660d4432a6.jpg",
     "static/media/physarum2.jpg": "/static/media/physarum2.ee6c14cbcd4498da4bb6.jpg",
     "static/media/cnigra1.jpg": "/static/media/cnigra1.25c1e73f08673991f869.jpg",
-    "static/media/taxokeys-screenshot.png": "/static/media/taxokeys-screenshot.0dfb2675438fa6e2fb2f.png",
     "static/media/cnigra2.jpg": "/static/media/cnigra2.5651f22dba64eda1ee21.jpg",
     "static/media/cquercophila1.jpg": "/static/media/cquercophila1.1aa1f080d640db3ed712.jpg",
     "static/media/nleucopus1.jpg": "/static/media/nleucopus1.9914bbe3cda5a13ea328.jpg",
+    "static/media/taxogif.gif": "/static/media/taxogif.eb0a9885829accafd82e.gif",
     "static/media/ethansaso.jpeg": "/static/media/ethansaso.ab3e81c1df21c9297088.jpeg",
-    "static/media/volleyball-screenshot.png": "/static/media/volleyball-screenshot.24e0685edad2f3a33da2.png",
     "static/media/seaborn-icon.svg": "/static/media/seaborn-icon.f7cb19147f444e71e635.svg",
     "static/media/project_webrecon2.png": "/static/media/project_webrecon2.cbf860f193dbd10ece51.png",
     "static/media/jupyter.svg": "/static/media/jupyter.6fecc851abfe23cf932a.svg",
@@ -61,12 +61,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.5dfd0a25.css.map": "/static/css/main.5dfd0a25.css.map",
-    "main.91465fb0.js.map": "/static/js/main.91465fb0.js.map",
+    "main.72a9d0c1.css.map": "/static/css/main.72a9d0c1.css.map",
+    "main.07cee0e9.js.map": "/static/js/main.07cee0e9.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dfd0a25.css",
-    "static/js/main.91465fb0.js"
+    "static/css/main.72a9d0c1.css",
+    "static/js/main.07cee0e9.js"
   ]
 }
