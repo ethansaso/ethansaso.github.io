@@ -14,7 +14,7 @@ function App() {
   }, [navigate]);
 
   return (
-    <div className="w-full text-base-content h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-neutral scrollbar-track-transparent">
+    <div className="w-full text-base-content h-dvh overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-neutral scrollbar-track-transparent">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="*" element={<Navigate replace to="/" />} />
