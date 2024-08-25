@@ -28,7 +28,7 @@ const Hero = ({ darkMode }) => {
           </h1>
         )}
       </div>
-      <img src={EthanPortrait} className="rounded-full my-4 min-h-0" alt="Ethan Saso" />
+      <img src={EthanPortrait} className="rounded-full my-4 min-h-0 lg:ml-10" alt="Ethan Saso" />
       <h1 className="mb-1 text-5xl block lg:hidden">Hi! 👋</h1>
     </div>
   );

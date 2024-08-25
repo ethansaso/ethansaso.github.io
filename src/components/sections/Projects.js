@@ -1,6 +1,6 @@
-import TaxoKeys from "../../assets/img/projects/taxokeys-screenshot.png"
+import TaxoKeys from "../../assets/img/projects/taxogif.gif"
 import WebRecon2 from "../../assets/img/projects/project_webrecon2.png"
-import Volleyball from "../../assets/img/projects/volleyball-screenshot.png"
+import Volleyball from "../../assets/img/projects/volleygif.gif"
 
 const Projects = () => {
     return (
@@ -8,8 +8,8 @@ const Projects = () => {
             <h1 className="text-primary text-5xl text-left mb-8 lg:mb-12 w-full border-b border-neutral font-semibold">Projects</h1>
             <div className="project-section">
                 <div className="card border border-neutral bg-base-200 flex flex-col xl:flex-row justify-between mb-12">
-                    <img className="h-auto rounded-t-2xl lg:rounded-tr-none lg:rounded-l-2xl border-b border-neutral xl:h-80 w-auto object-contain" src={TaxoKeys} alt="TaxoKeys"/>
-                    <div className="w-full px-8 p-4 flex flex-col">
+                    <img className="h-auto rounded-t-2xl lg:rounded-tr-none lg:rounded-l-2xl border-b border-neutral xl:h-96 w-auto object-contain" src={TaxoKeys} alt="TaxoKeys"/>
+                    <div className="w-full p-4 flex flex-col">
                         <div className="w-full border-b border-neutral mb-1">
                             <h1 className="text-4xl font-semibold text-secondary">TaxoKeys</h1>
                             <h2 className="text-lg text-warning">MERN stack, Python, Digital Ocean</h2>
@@ -20,8 +20,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="card border border-neutral bg-base-200 flex flex-col xl:flex-row-reverse justify-between mb-12">
-                    <img className="h-auto rounded-t-2xl lg:rounded-tl-none lg:rounded-r-2xl border-b border-neutral xl:h-80 w-auto object-contain" src={WebRecon2} alt="Web Recon 2"/>
-                    <div className="w-full px-8 p-4 flex flex-col">
+                    <img className="h-auto rounded-t-2xl lg:rounded-tl-none lg:rounded-r-2xl border-b border-neutral xl:h-96 w-auto object-contain" src={WebRecon2} alt="Web Recon 2"/>
+                    <div className="w-full p-4 flex flex-col">
                         <div className="w-full border-b border-neutral mb-1">
                             <h1 className="text-4xl font-semibold text-secondary">WebRecon2</h1>
                             <h2 className="text-lg text-warning">Golang, Amass, DNSGen, ...</h2>
@@ -32,8 +32,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="card border border-neutral bg-base-200 flex flex-col xl:flex-row justify-between mb-12">
-                    <img className="h-auto rounded-t-2xl lg:rounded-tr-none lg:rounded-l-2xl border-b border-neutral xl:h-80 w-auto object-contain" src={Volleyball} alt="Cal Men's Volleyball"/>
-                    <div className="w-full px-8 p-4 flex flex-col">
+                    <img className="h-auto rounded-t-2xl lg:rounded-tr-none lg:rounded-l-2xl border-b border-neutral xl:h-96 w-auto object-contain" src={Volleyball} alt="Cal Men's Volleyball"/>
+                    <div className="w-full p-4 flex flex-col">
                         <div className="w-full border-b border-neutral mb-1">
                             <div>
                                 <h1 className="text-4xl font-semibold text-secondary">Cal Men's Volleyball <span className="text-error">(WIP)</span></h1>
