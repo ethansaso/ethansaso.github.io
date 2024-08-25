@@ -1,0 +1,47 @@
+.hscroller-img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.hscroller-img > img {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  object-fit: contain;
+}
+
+.hscroller-img > img:last-of-type {
+  padding-left: 0;
+}
+
+.hscroller-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  mask: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
+}
+
+.hscroller-wrapper {
+  position: absolute;
+  display: flex;
+}
+
+.hscroller-section {
+  display: flex;
+  animation: swipe var(--speed) linear infinite backwards;
+  will-change: transform;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
