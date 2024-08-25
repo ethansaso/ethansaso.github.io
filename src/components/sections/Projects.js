@@ -1,5 +1,5 @@
 import TaxoKeys from "../../assets/img/projects/taxogif.gif"
-import WebRecon2 from "../../assets/img/projects/project_webrecon2.png"
+import WebRecon2 from "../../assets/img/projects/wrgif.gif"
 import Volleyball from "../../assets/img/projects/volleygif.gif"
 
 const Projects = () => {
