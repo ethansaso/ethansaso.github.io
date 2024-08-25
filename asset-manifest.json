@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.72a9d0c1.css",
-    "main.js": "/static/js/main.07cee0e9.js",
+    "main.css": "/static/css/main.7566a604.css",
+    "main.js": "/static/js/main.f9489ec9.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -43,7 +43,7 @@
     "static/media/project_webrecon2.png": "/static/media/project_webrecon2.cbf860f193dbd10ece51.png",
     "static/media/jupyter.svg": "/static/media/jupyter.6fecc851abfe23cf932a.svg",
     "static/media/sass.svg": "/static/media/sass.8351205a93eafac2e392.svg",
-    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/react.svg": "/static/media/react.e27571eaed899c642345.svg",
     "static/media/mysql-icon.svg": "/static/media/mysql-icon.e5a509a5d3ca7443ae6c.svg",
     "static/media/go.svg": "/static/media/go.509123c54f7556362660.svg",
     "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.3dc364b8e9beb3561620.svg",
@@ -61,12 +61,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.72a9d0c1.css.map": "/static/css/main.72a9d0c1.css.map",
-    "main.07cee0e9.js.map": "/static/js/main.07cee0e9.js.map",
+    "main.7566a604.css.map": "/static/css/main.7566a604.css.map",
+    "main.f9489ec9.js.map": "/static/js/main.f9489ec9.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a9d0c1.css",
-    "static/js/main.07cee0e9.js"
+    "static/css/main.7566a604.css",
+    "static/js/main.f9489ec9.js"
   ]
 }
