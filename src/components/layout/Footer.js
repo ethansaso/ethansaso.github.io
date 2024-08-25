@@ -4,9 +4,11 @@ const Footer = () => {
     return (
         <div className="mt-16 lg:mt-24">
             <div className="h-auto footer w-full border-t border-neutral px-3 py-2">
-                <div className="flex justify-between w-full">
-                    <h1 className="text-lg">Ethan Saso ©2024</h1>
-                    <div className="border rounded-full p-3 border-bline border-neutral">
+                <div className="w-full flex items-center justify-center">
+                    <div className="flex-1 mr-auto">
+                        <h1 className="text-lg">Ethan Saso ©2024</h1>
+                    </div>
+                    <div className="hidden md:block border rounded-full p-3 border-bline border-neutral">
                         <ul className="gap-5 flex">
                             <li className="hover:scale-125 hover:text-sky-600 hover:mx-1 transition-all"><a href="https://www.linkedin.com/in/ethansaso/">
                                 <FontAwesomeIcon size="lg" icon="fa-brands fa-linkedin" fixedWidth />
@@ -22,7 +24,9 @@ const Footer = () => {
                             </a></li>
                         </ul>
                     </div>
-                    <h1 className="text-lg">Berkeley, CA</h1>
+                    <div className="flex-1 ml-auto text-right">
+                        <h1 className="text-lg ml-auto">Berkeley, CA</h1>
+                    </div>
                 </div>
             </div>
         </div>

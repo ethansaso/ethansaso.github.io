@@ -1,6 +1,4 @@
 .hscroller-img {
-  width: 100px;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -21,7 +19,6 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 100px;
   mask: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
 }
 
@@ -32,11 +29,11 @@
 
 .hscroller-section {
   display: flex;
-  animation: swipe var(--speed) linear infinite backwards;
+  animation: var(--swipe-dir) var(--speed) linear infinite backwards;
   will-change: transform;
 }
 
-@keyframes swipe {
+@keyframes swipe-right {
   0% {
     transform: translate(-100%);
   }
@@ -45,3 +42,14 @@
     transform: translate(0%);
   }
 }
+
+@keyframes swipe-left {
+    0% {
+      transform: translate(0%);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }
+  
