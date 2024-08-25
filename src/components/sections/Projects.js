@@ -14,8 +14,7 @@ const Projects = () => {
                             <h1 className="text-4xl font-semibold text-secondary">TaxoKeys</h1>
                             <h2 className="text-lg text-warning">MERN stack, Python, Digital Ocean</h2>
                         </div>
-                        <p className="text-lg flex-grow">Using dynamic algorithms, TaxoKeys generates elegant, flowchart-style guides to identification in real time,
-                        resolving complex relationships between species with minimal error.</p>
+                        <p className="text-lg flex-grow">Using dynamic algorithms, TaxoKeys generates elegant, flowchart-style guides to identifying wild organisms in real time, resolving complex relationships between species with minimal error.</p>
                         <a href="https://taxokeys.org" className="w-full text-center rounded-2xl border border-neutral mt-6 md:mt-2 p-3 hover:border-base-content bg-base-100 transition-all">Visit Site</a>
                     </div>
                 </div>

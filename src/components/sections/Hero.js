@@ -2,7 +2,7 @@ import EthanPortrait from "../../assets/img/ethansaso.jpeg";
 
 const Hero = ({ darkMode }) => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row w-full max-w-5xl items-center justify-center py-8 px-8 h-[calc(100vh-110px)]">
+    <div className="flex flex-col-reverse lg:flex-row w-full max-w-5xl items-center justify-center py-8 px-8 h-[calc(100dvh-110px)]">
       <div className="max-w-xl text-center lg:text-left">
         <div className="text-5xl mb-2">
           <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
