@@ -32,7 +32,7 @@ const HeroFooter = () => {
                 className="flex items-center border rounded-full p-3 border-bline border-neutral"
                 >
                     <FontAwesomeIcon size="lg" icon="fa-solid fa-envelope" fixedWidth />
-                    <div className="hidden md:block">Contact</div>
+                    <div className="hidden md:block ml-1">Contact</div>
                 </a>
             </nav>
         </div>
