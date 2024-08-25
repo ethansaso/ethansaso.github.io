@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9584bfe0.css",
-    "main.js": "/static/js/main.2344d6c5.js",
+    "main.css": "/static/css/main.10ab7036.css",
+    "main.js": "/static/js/main.2fa5019c.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -61,12 +61,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.9584bfe0.css.map": "/static/css/main.9584bfe0.css.map",
-    "main.2344d6c5.js.map": "/static/js/main.2344d6c5.js.map",
+    "main.10ab7036.css.map": "/static/css/main.10ab7036.css.map",
+    "main.2fa5019c.js.map": "/static/js/main.2fa5019c.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9584bfe0.css",
-    "static/js/main.2344d6c5.js"
+    "static/css/main.10ab7036.css",
+    "static/js/main.2fa5019c.js"
   ]
 }
