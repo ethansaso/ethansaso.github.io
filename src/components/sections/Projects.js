@@ -4,8 +4,8 @@ import Volleyball from "../../assets/img/projects/volleyball-screenshot.png"
 
 const Projects = () => {
     return (
-        <div id="projects" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-16">
-            <h1 className="text-primary text-5xl text-left mb-16 w-full border-b border-neutral font-semibold">Projects</h1>
+        <div id="projects" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-12 lg:px-16">
+            <h1 className="text-primary text-5xl text-left mb-8 lg:mb-12 w-full border-b border-neutral font-semibold">Projects</h1>
             <div className="project-section">
                 <div className="card border border-neutral flex flex-col lg:flex-row justify-between mb-12">
                     <img className="h-auto rounded-t-2xl lg:rounded-tr-none lg:rounded-l-2xl border-b border-neutral lg:h-80 w-auto object-contain" src={TaxoKeys} alt="TaxoKeys"/>

@@ -108,9 +108,9 @@ const Header = ({ darkMode, setDarkMode }) => {
           </div>
           <div className="flex gap-3 flex-grow basis-0 justify-end">
             <h1>
-              <span className="inline lg:hidden">{darkMode ? "Developer" : "Photography"}</span>
+              <span className="inline lg:hidden">{darkMode ? "Dev Portfolio" : "Photography"}</span>
               <span className="hidden lg:inline">
-                {darkMode ? "Developer Portfolio" : "Photography Portfolio"}
+                {darkMode ? "Development Portfolio" : "Photography Portfolio"}
               </span>
             </h1>
             <label class="grid cursor-pointer place-items-center relative">

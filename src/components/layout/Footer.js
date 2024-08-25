@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div>
+        <div className="mt-16 lg:mt-24">
             <div className="footer w-full">
                 <div className="footer-contact">
                     <h1>Contact section would go here</h1>
