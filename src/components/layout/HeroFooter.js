@@ -5,7 +5,7 @@ const HeroFooter = () => {
         <div className="px-2 py-2 w-full border-t border-neutral">
             <nav className="flex items-center justify-between mx-1 lg:mx-4">
                 <div className="border rounded-full p-3 border-bline border-neutral">
-                    <a href="https://www.dropbox.com/scl/fi/ki0vn7cingxhckr6bgeql/Resume-mn.pdf?rlkey=6neefmykxwbnxkbo6a45uknou&st=gw1wldfd&dl=1" className="hover:text-primary transition-all flex items-center">
+                    <a href="https://www.dropbox.com/scl/fi/t039pftpxd5qit5px164s/Resume-mn.pdf?rlkey=zccwskn3wc4175xhpkbagkvl1&st=9dotcz7d&dl=1" className="hover:text-primary transition-all flex items-center">
                         <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
                         <div className="hidden md:block">Resume</div>
                     </a>
