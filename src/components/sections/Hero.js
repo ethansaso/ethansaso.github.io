@@ -31,7 +31,9 @@ const Hero = ({ darkMode }) => {
               </h1>
             )}
           </div>
-          <img src={EthanPortrait} className="avatar hide-if-short rounded-full my-4 min-h-0 max-h-[300px] max-w-[300px] lg:ml-10" alt="Ethan Saso" />
+          <div className="ethan-portrait hide-if-short rounded-full my-4 h-[300px] min-h-0 lg:ml-10">
+            <img src={EthanPortrait} className="rounded-full h-full box-border" alt="Ethan Saso" />
+          </div>
           <h1 className="mb-1 text-5xl block lg:hidden">Hi! 👋</h1>
         </div>
       </div>
