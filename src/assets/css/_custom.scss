@@ -11,6 +11,37 @@
     }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes unblur {
+  0% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+.hero-appears {
+  animation: 0.7s fade-in, 0.7s grow ease-out, 0.7s unblur;
+}
+
 .hide-if-short {
   @media (max-height: 500px) {
     display: none
