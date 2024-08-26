@@ -52,7 +52,7 @@ const Skills = () => {
             </div>
             <div className="glass-card mt-6 md:mt-[6rem] w-full break-before-column p-8">
               <h1 className="text-4xl font-semibold text-secondary">Data/Software</h1>
-              <p className="h2 text-lg mb-4">I believe in leveraging data to solve complex problems and drive real-world impact.</p>
+              <p className="h2 text-lg mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
               {renderImageGroup(group3Images)}
             </div>
           </div>
