@@ -9,12 +9,9 @@ const MasonryCard = ({ data }) => {
   const deviceNames = {'a52': 'Samsung Galaxy A52', 'tg6': 'Olympus TG-6'}
 
   return (
-    <div key={filename} className="masonry-card">
-      {/* Hidden Checkbox for Toggling */}
-      <input type="checkbox" id={`toggle-caption-${filename}`} className="toggle-caption-checkbox" />
-      
-      {/* Label that triggers the checkbox when clicked */}
-      <label htmlFor={`toggle-caption-${filename}`} className="masonry-img" style={{ position: 'relative' }}>
+    <div key={filename} className='masonry-card' style={{
+    }}>
+      <div className="masonry-img" style={{ position: 'relative' }}>
         <div className="masonry-caption">
           <div className="masonry-caption-type">DATE</div>
           <div className="masonry-caption-text">{date || 'Unknown'}</div>
@@ -27,11 +24,12 @@ const MasonryCard = ({ data }) => {
           src={imageContext(`./${filename}`)} 
           alt={title}
         />
-      </label>
-      
-      <div className="masonry-title">
+      </div>
+      <div
+        className="masonry-title"
+      >
         <h1 style={{ marginBottom: 0, color: '#888' }}>{type}</h1>
-        <h1 style={{ marginTop: '0', color: '#000' }}>{title}</h1>
+        <h1 tag="h5" style={{ marginTop: '0', color: '#000' }}>{title}</h1>
       </div>
     </div>
   )
