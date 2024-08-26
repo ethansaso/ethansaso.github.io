@@ -17,7 +17,7 @@ const Projects = () => {
                             <h2 className="text-lg text-warning">MERN stack, Python, Digital Ocean</h2>
                         </div>
                         <p className="text-lg flex-grow">Using dynamic algorithms, TaxoKeys generates elegant, flowchart-style guides to identifying wild organisms in real time, resolving complex relationships between species with minimal error.</p>
-                        <a href="https://taxokeys.org" className="w-full text-center rounded-2xl border border-neutral lg:bg-base-200 mt-4 lg:mt-2 p-2 hover:border-accent hover:text-accent bg-base-100 transition-all">Visit Site</a>
+                        <a href="https://taxokeys.org" className="w-full text-center rounded-2xl border border-neutral mt-4 lg:mt-2 p-2 hover:border-neutral-content bg-base-100/50 transition-all">Visit Site</a>
                     </div>
                 </div>
                 <div className="bg-base-300/50 border border-neutral rounded-2xl flex flex-col lg:flex-row-reverse items-center md:w-[45%] lg:w-full w-full flex-grow lg:p-8 project-card project-card-2">
@@ -31,7 +31,7 @@ const Projects = () => {
                         </div>
                         <p className="text-lg flex-grow">WebRecon2 leverages a variety of best-in-class cybersecurity tools
                             to automate a workflow for performing subdomain enumeration.</p>
-                        <a href="https://github.com/sammooredev/WebRecon2" className="w-full text-center rounded-2xl border border-neutral lg:bg-base-200 mt-4 lg:mt-2 p-2 hover:border-accent hover:text-accent bg-base-100 transition-all">Visit Site</a>
+                        <a href="https://github.com/sammooredev/WebRecon2" className="w-full text-center rounded-2xl border border-neutral mt-4 lg:mt-2 p-2 hover:border-neutral-content bg-base-100/50 transition-all">Visit Site</a>
                     </div>
                 </div>
                 <div className="bg-base-300/50 border border-neutral rounded-2xl flex flex-col md:flex-row items-center md:w-full w-full flex-grow md:p-8 project-card project-card-3">
@@ -44,7 +44,7 @@ const Projects = () => {
                                 <h2 className="text-lg text-warning">React.js, Github Pages</h2>
                         </div>
                         <p className="text-lg flex-grow">Official website for UC Berkeley's Division-I Men's Volleyball Team.</p>
-                        <a href="https://ethansaso.github.io/cal-mens-volleyball" className="w-full text-center rounded-2xl border border-neutral lg:bg-base-200 mt-4 md:mt-2 p-2 hover:border-accent hover:text-accent bg-base-100 transition-all">Visit Site</a>
+                        <a href="https://ethansaso.github.io/cal-mens-volleyball" className="w-full text-center rounded-2xl border border-neutral mt-4 md:mt-2 p-2 hover:border-neutral-content bg-base-100/50 transition-all">Visit Site</a>
                     </div>
                 </div>
             </div>
