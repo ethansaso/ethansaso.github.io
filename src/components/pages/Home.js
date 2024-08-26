@@ -21,8 +21,10 @@ const Home = () => {
                 </div>
                 {darkMode ? (
                     <>
+                    <div className="">
                         <Projects />
-                        <Skills />
+                    </div>
+                    <Skills />
                     </>
                 ) : (
                     <Photos />

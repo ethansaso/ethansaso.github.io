@@ -27,8 +27,7 @@
   height: 100%;
   width: 100%;
   background-image: url(https://rentafounder.com/resources/gradients-original.jpg);
-  background-size: fill;
-  opacity: 0.6;
+  opacity: 0.4;
   filter: blur(75px);
   z-index: -100;
   max-width: 100dvw;
@@ -40,7 +39,87 @@
   }
 }
 
+.content-section {
+  position: relative;
+}
+
+.content-section::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('../../assets/img/mk.png');
+  opacity: 0.4;
+  filter: blur(75px);
+  z-index: -100;
+  max-width: 100dvw;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 /*
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card-1::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-image: url('../../assets/img/photography/lamproderma1.jpg');
+  background-size: cover;
+  filter: blur(75px);
+  opacity: 1;
+  z-index: -100;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 80%;
+  }
+}
+
+.project-card-2::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-image: url('../../assets/img/photography/lamproderma1.jpg');
+  background-size: cover;
+  filter: blur(75px);
+  opacity: 1;
+  z-index: -100;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 80%;
+  }
+}
+
+.project-card-3::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-image: url('../../assets/img/photography/lamproderma1.jpg');
+  background-size: cover;
+  filter: blur(75px);
+  opacity: 1;
+  z-index: -100;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 80%;
+  }
+}
+
 .custom-avatar {
   position: relative;
 }
