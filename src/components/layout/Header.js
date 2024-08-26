@@ -5,7 +5,6 @@ const Header = ({ darkMode, setDarkMode }) => {
   const [hasClickedSwitch, setHasClickedSwitch] = useState(false)
 
   const toggleTheme = () => {
-    console.log(darkMode);
     setDarkMode(!darkMode);
     setHasClickedSwitch(true);
   };
@@ -117,12 +116,12 @@ const Header = ({ darkMode, setDarkMode }) => {
                 {darkMode ? "Development Portfolio" : "Photography Portfolio"}
               </span>
             </h1>
-            <label class="grid cursor-pointer place-items-center relative">
+            <label className="grid cursor-pointer place-items-center relative">
               <input
                 type="checkbox"
                 value="lemonade"
                 onChange={toggleTheme}
-                class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
+                className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
               />
               <FontAwesomeIcon
                 className="text-base-100 col-start-1 row-start-1"
@@ -137,9 +136,9 @@ const Header = ({ darkMode, setDarkMode }) => {
                 fixedWidth
               />
               {!hasClickedSwitch && (
-                <span class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 flex size-3 z-10">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                <span className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 flex size-3 z-10">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
                 </span>
               )}
             </label>

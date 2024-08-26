@@ -17,11 +17,11 @@
   }
 }
 
-.hero-container {
+.hero-dark {
   position: relative;
 }
 
-.hero-container::before {
+.hero-dark::before {
   content: '';
   position: absolute;
   height: 100%;

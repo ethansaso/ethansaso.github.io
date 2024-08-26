@@ -3,7 +3,7 @@ import EthanPortrait from "../../assets/img/ethansaso.jpeg";
 const Hero = ({ darkMode }) => {
   return (
     <div className="w-full h-[calc(100dvh-110px)] flex items-center justify-center">
-      <div className={"items-center justify-center flex flex-col-reverse lg:flex-row max-h-full p-8 max-w-full" + (darkMode ? ' hero-container' : '')}>
+      <div className={"items-center justify-center flex flex-col-reverse lg:flex-row max-h-full p-8 max-w-full" + (darkMode ? ' hero-dark' : ' hero-light')}>
         <div className="max-w-xl text-center lg:text-left lg:pr-8 transition-all">
           <div className="text-5xl mb-2">
             <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
