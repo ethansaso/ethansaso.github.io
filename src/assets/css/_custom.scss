@@ -38,6 +38,15 @@
   }
 }
 
+@keyframes mist {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100vw 0;
+  }
+}
+
 .hero-appears {
   max-height: inherit;
   animation: 0.7s fade-in, 0.7s grow ease-out, 0.7s unblur;
@@ -57,17 +66,17 @@
     position: relative;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     .ethan-portrait::before {
       content: '';
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 100%;
-      width: 100%;
+      height: 110%;
+      width: 110%;
       background-image: url(https://rentafounder.com/resources/gradients-original.jpg);
-      opacity: 0.9;
-      filter: blur(40px);
+      opacity: 0.6;
+      filter: blur(10px);
       z-index: -100;
       transform: translate(-50%, -50%);
       max-width: 100dvw;
@@ -87,124 +96,61 @@
   width: 100%;
   background-image: url(https://rentafounder.com/resources/gradients-original.jpg);
   opacity: 0.4;
-  filter: blur(75px);
+  filter: blur(40px);
   z-index: -100;
   transform: translate(-50%, -50%);
   max-width: 100dvw;
   max-height: 100dvh;
 
   @media (max-width: 1023px) {
-    border-radius: 250px;
-  }
-
-  @media (max-width: 767px) {
     display: none;
   }
 }
 
-.content-section {
+.project-section {
   position: relative;
 }
 
-.content-section::before {
+.project-section::before {
   content: '';
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('../../assets/img/mk.png');
+  background-image: url('https://inaturalist-open-data.s3.amazonaws.com/photos/150534474/original.jpg');
+  background-size: 100% 180%;
   opacity: 0.4;
-  filter: blur(75px);
+  filter: blur(40px);
   z-index: -100;
   max-width: 100dvw;
 
   @media (max-width: 767px) {
-    opacity: 0.2;
     filter: blur(20px);
-    background-size: 400px 400px;
+    background-size: 100vw auto;
   }
 }
 
-/*
-.project-card {
-  position: relative;
-  overflow: hidden;
+.glass-card {
+  @apply bg-base-300/50 border border-neutral rounded-2xl;
 }
 
-.project-card-1::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-image: url('../../assets/img/photography/lamproderma1.jpg');
-  background-size: cover;
-  filter: blur(75px);
-  opacity: 1;
-  z-index: -100;
-
-  @media (max-width: 768px) {
-    height: 100%;
-    width: 80%;
-  }
-}
-
-.project-card-2::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-image: url('../../assets/img/photography/lamproderma1.jpg');
-  background-size: cover;
-  filter: blur(75px);
-  opacity: 1;
-  z-index: -100;
-
-  @media (max-width: 768px) {
-    height: 100%;
-    width: 80%;
-  }
-}
-
-.project-card-3::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-image: url('../../assets/img/photography/lamproderma1.jpg');
-  background-size: cover;
-  filter: blur(75px);
-  opacity: 1;
-  z-index: -100;
-
-  @media (max-width: 768px) {
-    height: 100%;
-    width: 80%;
-  }
-}
-
-.custom-avatar {
+.skills-cards {
   position: relative;
 }
 
-.custom-avatar::before {
+.skills-cards::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  border-radius: 9999px;
-  opacity: 0.1;
-  transform: scale(1.05);
-  background-image: conic-gradient(
-    var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity))),
-    var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity))),
-    var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))),
-    var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)))
-  );
-  filter: blur(30px);
-  z-index: -1; 
+  background-image: url(https://images.unsplash.com/photo-1679189789333-cf24f75b0de7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: round;
+  opacity: 0.4;
+  filter: blur(40px);
+  z-index: -100;
+
+  @media (max-width: 768px) {
+    background-size: 100% 100%;
+  }
 }
-*/

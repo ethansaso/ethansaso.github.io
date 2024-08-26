@@ -16,7 +16,7 @@ const Hero = ({ darkMode }) => {
               <h1 className="text-xl">
                 I'm a <span className="text-secondary font-semibold">software engineer </span>
                 and <span className="text-secondary font-semibold">full-stack developer </span>
-                from Berkeley, CA dedicated to the intersection of
+                from Berkeley, CA pursuing the intersection of
                 <span className="text-accent font-semibold"> digital design</span> and{" "}
                 <span className="text-accent font-semibold">environmental systems</span>.
               </h1>
