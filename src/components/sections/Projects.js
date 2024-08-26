@@ -4,7 +4,7 @@ import Volleyball from "../../assets/img/projects/volleygif.gif"
 
 const Projects = () => {
     return (
-        <div id="projects" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-8 lg:px-16 mb:24 lg:mb-32">
+        <div id="projects" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-8 lg:px-16 lg:mb-24">
             <h1 className="text-primary text-5xl text-left mb-8 w-full border-b border-neutral font-semibold">Projects</h1>
             <div className="project-section flex flex-row gap-8 flex-wrap content-section">
                 <div className="bg-base-300/50 border border-neutral rounded-2xl flex flex-col lg:flex-row items-center md:w-[45%] lg:w-full w-full flex-grow lg:p-8 project-card project-card-1">

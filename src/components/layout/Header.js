@@ -14,7 +14,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     <>
       <header className="z-10 px-2 py-2 w-full sticky top-0 border-b-neutral border-b bg-base-100">
         <nav className="flex items-center justify-center mx-1 lg:mx-4">
-          <div className="flex items-center gap-2 font-bold text-lg flex-grow basis-0">
+          <div className="flex items-center gap-2 font-bold text-lg flex-grow basis-0 transition-all">
             <svg
               className="size-5 fill-primary"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               <li>
                 <a
                   href="#home"
-                  className="flex items-center hover:text-primary transition-all"
+                  className="flex items-center hover:text-primary"
                 >
                   <FontAwesomeIcon
                     className="responsive-fa-size"
@@ -67,7 +67,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                   <li>
                     <a
                       href="#projects"
-                      className="flex items-center hover:text-primary transition-all"
+                      className="flex items-center hover:text-primary"
                     >
                       <FontAwesomeIcon
                         className="responsive-fa-size"
@@ -80,7 +80,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                   <li>
                     <a
                       href="#skills"
-                      className="flex items-center hover:text-primary transition-all"
+                      className="flex items-center hover:text-primary"
                     >
                       <FontAwesomeIcon
                         className="responsive-fa-size"
@@ -96,7 +96,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                   <li>
                     <a
                       href="#photos"
-                      className="flex items-center hover:text-primary transition-all"
+                      className="flex items-center hover:text-primary"
                     >
                       <FontAwesomeIcon
                         className="responsive-fa-size"

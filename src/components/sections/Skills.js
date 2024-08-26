@@ -24,7 +24,7 @@ const Skills = () => {
     }));
 
     return (
-        <div id="skills" className="container flex flex-col max-w-8xl mx-auto items-center justify-center mt-16 px-8 lg:px-16">
+        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-16 px-8 lg:px-16 lg:mb-4">
           <div className="mb-16 w-full">
             <div className="container flex flex-col">
                 <h1 className="text-primary text-5xl text-left mb-8 lg:mb-12  w-full border-b border-neutral font-semibold">Skills</h1>
