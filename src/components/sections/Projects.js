@@ -43,7 +43,7 @@ const Projects = () => {
                                 <h1 className="text-4xl font-semibold text-secondary">Cal Men's Volleyball <span className="text-error">(WIP)</span></h1>
                                 <h2 className="text-lg text-warning">React.js, Github Pages</h2>
                         </div>
-                        <p className="text-lg flex-grow">Official website for UC Berkeley's Division-I Men's Volleyball Team.</p>
+                        <p className="text-lg flex-grow">Official website for UC Berkeley's Division-I Men's Club Volleyball Team.</p>
                         <a href="https://ethansaso.github.io/cal-mens-volleyball" className="w-full text-center rounded-2xl border border-neutral mt-4 md:mt-2 p-2 hover:border-neutral-content bg-base-100/50 transition-all">Visit Site</a>
                     </div>
                 </div>
