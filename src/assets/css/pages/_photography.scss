@@ -12,6 +12,7 @@
     .masonry-card {
         overflow: hidden;
         border: 0;
+        position: relative; /* Ensure the label's absolute positioning works */
     }
 
     .masonry-img {
@@ -40,12 +41,13 @@
         border-radius: 5px;
         transition: opacity 0.2s ease-in-out;
         overflow: hidden;
+        pointer-events: none; /* Prevent interaction when not visible */
 
         ::after {
             background-image: linear-gradient(
                 transparent 0%,
                 rgba(0, 0, 0, 0.2) 60%, 
-                rgba(0, 0, 0, 0.4) 90%               /* Fully black at the bottom */
+                rgba(0, 0, 0, 0.4) 90%  /* Fully black at the bottom */
             );
             border-radius: 6px;
             height: 54px;
@@ -53,12 +55,8 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            content: ''
+            content: '';
         }
-    }
-
-    .masonry-card:hover .masonry-caption {
-        opacity: 1;
     }
 
     .masonry-caption-type {
@@ -69,6 +67,23 @@
     .masonry-caption-text {
         margin-bottom: 10px;
     }
-    
-}
 
+    /* Add checkbox to control caption visibility */
+    .toggle-caption-checkbox {
+        display: none; /* Hide the checkbox */
+    }
+
+    /* Use the checkbox to toggle the caption visibility */
+    .toggle-caption-checkbox:checked + .masonry-img .masonry-caption {
+        opacity: 1;
+        pointer-events: auto; /* Allow interaction when visible */
+    }
+
+    @media (hover: hover) {
+        /* Only apply hover effect on devices that support hover */
+        .masonry-card:hover .masonry-caption {
+            opacity: 1;
+            pointer-events: auto; /* Allow interaction when visible */
+        }
+    }
+}
