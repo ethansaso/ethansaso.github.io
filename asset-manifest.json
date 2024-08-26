@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.19c8ee22.css",
-    "main.js": "/static/js/main.ced3f095.js",
+    "main.css": "/static/css/main.39a20cf2.css",
+    "main.js": "/static/js/main.f57fdb74.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -41,7 +41,6 @@
     "static/media/taxogif.gif": "/static/media/taxogif.eb0a9885829accafd82e.gif",
     "static/media/ethansaso.jpeg": "/static/media/ethansaso.ab3e81c1df21c9297088.jpeg",
     "static/media/seaborn-icon.svg": "/static/media/seaborn-icon.f7cb19147f444e71e635.svg",
-    "static/media/mk.png": "/static/media/mk.73d480d3e9bf1d85d7df.png",
     "static/media/jupyter.svg": "/static/media/jupyter.6fecc851abfe23cf932a.svg",
     "static/media/sass.svg": "/static/media/sass.8351205a93eafac2e392.svg",
     "static/media/react.svg": "/static/media/react.e27571eaed899c642345.svg",
@@ -62,12 +61,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.19c8ee22.css.map": "/static/css/main.19c8ee22.css.map",
-    "main.ced3f095.js.map": "/static/js/main.ced3f095.js.map",
+    "main.39a20cf2.css.map": "/static/css/main.39a20cf2.css.map",
+    "main.f57fdb74.js.map": "/static/js/main.f57fdb74.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19c8ee22.css",
-    "static/js/main.ced3f095.js"
+    "static/css/main.39a20cf2.css",
+    "static/js/main.f57fdb74.js"
   ]
 }
