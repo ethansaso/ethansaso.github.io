@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
     return (
-        <div className="mt-16 lg:mt-24">
+        <div>
             <div className="h-auto footer w-full border-t border-neutral px-3 py-2">
                 <div className="w-full flex items-center justify-center">
                     <div className="flex-1 mr-auto">

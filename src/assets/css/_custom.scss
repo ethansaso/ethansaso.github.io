@@ -10,3 +10,58 @@
       }
     }
 }
+
+.hide-if-short {
+  @media (max-height: 500px) {
+    display: none
+  }
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://rentafounder.com/resources/gradients-original.jpg);
+  background-size: fill;
+  opacity: 0.6;
+  filter: blur(75px);
+  z-index: -100;
+  max-width: 100dvw;
+  max-height: 100dvh;
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 80%;
+  }
+}
+
+/*
+.custom-avatar {
+  position: relative;
+}
+
+.custom-avatar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+  opacity: 0.1;
+  transform: scale(1.05);
+  background-image: conic-gradient(
+    var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity))),
+    var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity))),
+    var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))),
+    var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)))
+  );
+  filter: blur(30px);
+  z-index: -1; 
+}
+*/
