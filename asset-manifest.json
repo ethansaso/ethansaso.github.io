@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cebf6b4.css",
-    "main.js": "/static/js/main.ea65dc39.js",
+    "main.css": "/static/css/main.8281201c.css",
+    "main.js": "/static/js/main.9dadd0a5.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
@@ -51,6 +51,7 @@
     "static/media/python.svg": "/static/media/python.6a8b2999db46fb931134.svg",
     "static/media/html-5.svg": "/static/media/html-5.e7638e3676622c76a46e.svg",
     "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e.svg",
+    "static/media/bootstrap.svg": "/static/media/bootstrap.4f4c52d75ff6e4fd91fa.svg",
     "static/media/c.svg": "/static/media/c.2f52df384aba3fa14b53.svg",
     "static/media/numpy.svg": "/static/media/numpy.cf45d4df86beb5d1ec70.svg",
     "static/media/git-icon.svg": "/static/media/git-icon.fd381642a8b14fec88b8.svg",
@@ -61,12 +62,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.9cebf6b4.css.map": "/static/css/main.9cebf6b4.css.map",
-    "main.ea65dc39.js.map": "/static/js/main.ea65dc39.js.map",
+    "main.8281201c.css.map": "/static/css/main.8281201c.css.map",
+    "main.9dadd0a5.js.map": "/static/js/main.9dadd0a5.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cebf6b4.css",
-    "static/js/main.ea65dc39.js"
+    "static/css/main.8281201c.css",
+    "static/js/main.9dadd0a5.js"
   ]
 }
