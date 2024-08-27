@@ -14,7 +14,7 @@ const Projects = () => {
                     <div className="h-full p-8 lg:p-0 flex-grow lg:pl-8 flex flex-col lg:w-[60%] w-full">
                         <div className="w-full border-b border-neutral mb-2">
                             <h1 className="text-4xl font-semibold text-secondary">TaxoKeys</h1>
-                            <h2 className="text-lg text-warning">MERN stack, Python, Digital Ocean</h2>
+                            <h2 className="text-lg text-accent">MERN stack, Python, Digital Ocean</h2>
                         </div>
                         <p className="text-lg flex-grow">Using dynamic algorithms, TaxoKeys generates elegant, flowchart-style guides to identifying wild organisms in real time, resolving complex relationships between species with minimal error.</p>
                         <a href="https://taxokeys.org" className="w-full text-center rounded-2xl border border-neutral mt-4 lg:mt-2 p-2 hover:border-neutral-content bg-base-100/50 transition-all">Visit Site</a>
@@ -27,7 +27,7 @@ const Projects = () => {
                     <div className="h-full p-8 lg:p-0 flex-grow lg:pr-8 flex flex-col lg:w-[60%] w-full">
                         <div className="w-full border-b border-neutral mb-2">
                             <h1 className="text-4xl font-semibold text-secondary">WebRecon2</h1>
-                            <h2 className="text-lg text-warning">Golang, Amass, DNSGen, ...</h2>
+                            <h2 className="text-lg text-accent">Golang, Amass, DNSGen, ...</h2>
                         </div>
                         <p className="text-lg flex-grow">WebRecon2 leverages a variety of best-in-class cybersecurity tools
                             to automate a workflow for performing subdomain enumeration.</p>
@@ -41,7 +41,7 @@ const Projects = () => {
                     <div className="h-full p-8 md:p-0 flex-grow md:pl-8 flex flex-col md:w-[60%] w-full">
                         <div className="w-full border-b border-neutral mb-2">
                                 <h1 className="text-4xl font-semibold text-secondary">Cal Men's Volleyball <span className="text-error">(WIP)</span></h1>
-                                <h2 className="text-lg text-warning">React.js, Github Pages</h2>
+                                <h2 className="text-lg text-accent">React.js, Github Pages</h2>
                         </div>
                         <p className="text-lg flex-grow">Official website for UC Berkeley's Division-I Men's Club Volleyball Team.</p>
                         <a href="https://ethansaso.github.io/cal-mens-volleyball" className="w-full text-center rounded-2xl border border-neutral mt-4 md:mt-2 p-2 hover:border-neutral-content bg-base-100/50 transition-all">Visit Site</a>

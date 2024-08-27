@@ -1,7 +1,7 @@
 import { Banner } from "../layout/Banner"
 
 const Skills = () => {
-    const group1Filenames = ["react", "css-3", "html-5", "sass", "tailwindcss-icon"]
+    const group1Filenames = ["react", "css-3", "html-5", "sass", "tailwindcss-icon", "bootstrap"]
     const group2Filenames = ["javascript", "mongodb-icon", "nodejs-icon", "go", "digital-ocean-icon", "mysql-icon", "git-icon"]
     const group3Filenames = ["java", "python", "seaborn-icon", "r-lang", "numpy", "pandas-icon"]
 
@@ -35,14 +35,14 @@ const Skills = () => {
     }
 
     return (
-        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-32 px-8 lg:px-16 mb-32">
+        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-32 px-8 lg:px-16 mb-16">
           <div className="container flex flex-col">
-              <h1 className="text-primary text-5xl text-center mb-16 w-full font-semibold">Skills</h1>
+              <h1 className="text-primary text-5xl text-center mb-8 w-full font-semibold">Skills</h1>
           </div>
           <div className="skills-cards h-auto md:columns-2 gap-6 w-full">
             <div className="glass-card w-full p-8">
               <h1 className="text-4xl font-semibold text-secondary">Frontend</h1>
-              <p className="h2 text-lg mb-4">I'm passionate about crafting interactive, user-friendly websites that leave a lasting impression.</p>
+              <p className="h2 text-lg mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
               {renderImageGroup(group1Images)}
             </div>
             <div className="glass-card mt-6 w-full p-8">

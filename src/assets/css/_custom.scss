@@ -143,14 +143,15 @@
 .skills-cards::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  height: 80%;
   width: 100%;
   background-image: url(https://images.unsplash.com/photo-1679189789333-cf24f75b0de7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   opacity: 0.4;
   filter: blur(40px);
+  transform: translate(-50%, -50%);
   z-index: -100;
 
   @media (max-width: 768px) {
