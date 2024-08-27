@@ -48,46 +48,18 @@
 }
 
 .hero-appears {
-  max-height: inherit;
+  height: 100%;
   animation: 0.5s fade-in, 0.5s grow ease-out, 0.5s unblur;
 }
 
 .hide-if-short {
-  @media (max-height: 500px) {
+  @media (max-height: 550px) and (max-width: 1023px) {
     display: none
   }
 }
 
 .hero-dark {
   position: relative;
-  max-height: calc(100dvh - 110px);
-  
-  /*
-  .ethan-portrait {
-    position: relative;
-  }
-
-  @media (max-width: 1023px) {
-    .ethan-portrait::before {
-      content: '';
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 110%;
-      width: 110%;
-      background-image: url(https://rentafounder.com/resources/gradients-original.jpg);
-      opacity: 0.6;
-      filter: blur(10px);
-      z-index: -100;
-      transform: translate(-50%, -50%);
-      max-width: 100dvw;
-      max-height: 100dvh;
-      border-radius: 9999px;
-      background-size: cover;
-    }
-  }
-  */
 }
 
 .hero-dark::before {

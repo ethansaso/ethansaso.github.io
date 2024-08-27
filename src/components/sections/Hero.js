@@ -2,9 +2,9 @@ import EthanPortrait from "../../assets/img/ethanportrait.png";
 
 const Hero = ({ darkMode }) => {
   return (
-    <div className="w-full h-[calc(100dvh-110px)] flex items-center justify-center">
-      <div className={"" + (darkMode ? ' hero-dark' : ' hero-light')}>
-        <div className="hero-appears items-center justify-center flex flex-col-reverse lg:flex-row max-h-full p-8 max-w-full">
+    <div className="w-full h-full flex items-center justify-center">
+      <div className={"h-full lg:h-auto" + (darkMode ? ' hero-dark' : ' hero-light')}>
+        <div className="hero-appears items-center justify-center flex flex-col-reverse lg:flex-row p-8 max-w-full max-h-full">
           <div className="max-w-xl text-center lg:text-left lg:pr-8 transition-all">
             <div className="text-5xl mb-2">
               <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
@@ -31,7 +31,7 @@ const Hero = ({ darkMode }) => {
               </h1>
             )}
           </div>
-          <img src={EthanPortrait} className="rounded-full box-border min-h-0 max-w-[300px] max-h-[300px] lg:ml-10" alt="Ethan Saso" />
+          <img src={EthanPortrait} className="hide-if-short rounded-full max-h-[300px] my-2 lg:ml-10 min-h-0 w-auto" alt="Ethan Saso" />
           <h1 className="mb-1 text-5xl block lg:hidden">Hi! 👋</h1>
         </div>
       </div>
