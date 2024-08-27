@@ -4,7 +4,7 @@ const Hero = ({ darkMode }) => {
   return (
     <div className="w-full h-[calc(100dvh-110px)] flex items-center justify-center">
       <div className={"" + (darkMode ? ' hero-dark' : ' hero-light')}>
-        <div className="hero-appears items-center justify-center flex flex-col-reverse lg:flex-row h-full p-8 max-w-full">
+        <div className="hero-appears items-center justify-center flex flex-col-reverse lg:flex-row max-h-full p-8 max-w-full">
           <div className="max-w-xl text-center lg:text-left lg:pr-8 transition-all">
             <div className="text-5xl mb-2">
               <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
@@ -31,9 +31,7 @@ const Hero = ({ darkMode }) => {
               </h1>
             )}
           </div>
-          <div className="hide-if-short rounded-full my-4 lg:ml-10">
-            <img src={EthanPortrait} className="rounded-full h-full box-border min-h-0 max-h-[300px]" alt="Ethan Saso" />
-          </div>
+          <img src={EthanPortrait} className="rounded-full box-border min-h-0 max-w-[300px] max-h-[300px] lg:ml-10" alt="Ethan Saso" />
           <h1 className="mb-1 text-5xl block lg:hidden">Hi! 👋</h1>
         </div>
       </div>
