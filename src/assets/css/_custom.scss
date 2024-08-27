@@ -69,6 +69,7 @@
   @media (max-width: 1023px) {
     .ethan-portrait::before {
       content: '';
+      display: none;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -114,18 +115,20 @@
 .project-section::before {
   content: '';
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url('https://inaturalist-open-data.s3.amazonaws.com/photos/150534474/original.jpg');
-  background-size: 100% 180%;
+  height: 90%;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  background-image: url('https://img.freepik.com/premium-photo/colorful-background-with-pattern-colors-curves_68067-3307.jpg');
+  background-size: 100% 100%;
   opacity: 0.4;
   filter: blur(40px);
   z-index: -100;
   max-width: 100dvw;
+  transform: translate(-50%, -50%);
 
   @media (max-width: 767px) {
     filter: blur(20px);
-    background-size: 100vw auto;
   }
 }
 

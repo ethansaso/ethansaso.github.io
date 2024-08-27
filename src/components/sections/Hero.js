@@ -1,4 +1,4 @@
-import EthanPortrait from "../../assets/img/ethansaso.jpeg";
+import EthanPortrait from "../../assets/img/ethanportrait.png";
 
 const Hero = ({ darkMode }) => {
   return (
