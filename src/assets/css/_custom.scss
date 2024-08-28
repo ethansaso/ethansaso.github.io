@@ -77,14 +77,15 @@
   filter: blur(40px);
   z-index: -100;
   transform: translate(-50%, -50%);
-  max-width: 100dvw;
+  max-width: 99dvw;
   max-height: 80dvh;
 
   @media (max-width: 1023px) {
     display: block;
     background-size: cover;
     background-position: center;
-    border-radius: 0%;
+    max-width: 85dvw;
+    max-height: 80dvh;
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
