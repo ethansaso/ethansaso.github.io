@@ -70,10 +70,11 @@
   left: 50%;
   height: 100%;
   width: 110%;
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230902/pngtree-an-abstract-watercolor-of-a-purple-blue-and-orange-swirl-image_13156772.jpg);
+  background-image: url('../img/blush-gen/hero-sect.png');
+  background-size: 100% 100%;
   opacity: 0.4;
   border-radius: 120px;
-  filter: blur(40px) hue-rotate(200deg) invert(1);
+  filter: blur(40px);
   z-index: -100;
   transform: translate(-50%, -50%);
   max-width: 100dvw;
@@ -123,7 +124,7 @@
   left: 50%;
   height: 80%;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1679189789333-cf24f75b0de7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url("../img/blush-gen/skills-sect.png");
   background-size: cover;
   opacity: 0.4;
   filter: blur(40px);
