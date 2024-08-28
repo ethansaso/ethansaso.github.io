@@ -107,7 +107,7 @@
   background-image: url('https://as2.ftcdn.net/v2/jpg/05/39/81/93/1000_F_539819391_WO1NjrsL0p3pCd4eFHlOo1B8LaLJOJMC.jpg');
   background-size: 100% 100%;
   opacity: 0.4;
-  filter: blur(40px);
+  filter: blur(10px);
   z-index: -100;
   max-width: 100dvw;
   transform: translate(-50%, -50%);
@@ -118,7 +118,9 @@
 }
 
 .glass-card {
-  @apply bg-base-300/50 border border-neutral rounded-2xl;
+  @apply border border-neutral rounded-2xl;
+  background: linear-gradient(0, oklch(0.16 0.01 0 / 0.5), var(--fallback-b3, oklch(var(--b3) / 0.5)));
+  backdrop-filter: blur(20px);
 }
 
 .skills-cards {
@@ -133,9 +135,9 @@
   height: 80%;
   width: 100%;
   background-image: url("../img/blush-gen/skills-sect.png");
-  background-size: cover;
+  background-size: 100% 200%;
   opacity: 0.4;
-  filter: blur(40px);
+  filter: blur(30px);
   transform: translate(-50%, -50%);
   z-index: -100;
 
