@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b33f9f7.css",
+    "main.css": "/static/css/main.beb8a4df.css",
     "main.js": "/static/js/main.b6fa5ed1.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
@@ -64,12 +64,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.5b33f9f7.css.map": "/static/css/main.5b33f9f7.css.map",
+    "main.beb8a4df.css.map": "/static/css/main.beb8a4df.css.map",
     "main.b6fa5ed1.js.map": "/static/js/main.b6fa5ed1.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b33f9f7.css",
+    "static/css/main.beb8a4df.css",
     "static/js/main.b6fa5ed1.js"
   ]
 }
