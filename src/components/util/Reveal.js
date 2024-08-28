@@ -27,6 +27,7 @@ const Reveal = ({ children, width = "w-full", from='bottom' }) => {
                 initial={from}
                 animate={mainControls}
                 transition={{duration: 0.3, delay: 0.1}}
+                className="h-full"
             >
                 {children}
             </motion.div>
