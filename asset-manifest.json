@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2bc6856.css",
+    "main.css": "/static/css/main.fd7a4049.css",
     "main.js": "/static/js/main.3ddd524e.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
@@ -31,8 +31,10 @@
     "static/media/cargillacea2.jpg": "/static/media/cargillacea2.ee66a638d9fb8fb2f37d.jpg",
     "static/media/fungi1.jpg": "/static/media/fungi1.997e5abdca90b64ccfa6.jpg",
     "static/media/avulgare1.jpg": "/static/media/avulgare1.b9c472ec44be16f67453.jpg",
+    "static/media/skills-sect.png": "/static/media/skills-sect.46bd2a8462ca4a97f871.png",
     "static/media/cnigra3.jpg": "/static/media/cnigra3.0d06dd814ae6f9bc2ead.jpg",
     "static/media/ddictyosporum1.jpg": "/static/media/ddictyosporum1.22849bf6ee660d4432a6.jpg",
+    "static/media/hero-sect.png": "/static/media/hero-sect.b7dd235328f26b0a1fd0.png",
     "static/media/physarum2.jpg": "/static/media/physarum2.ee6c14cbcd4498da4bb6.jpg",
     "static/media/cnigra1.jpg": "/static/media/cnigra1.25c1e73f08673991f869.jpg",
     "static/media/cnigra2.jpg": "/static/media/cnigra2.5651f22dba64eda1ee21.jpg",
@@ -62,12 +64,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.c2bc6856.css.map": "/static/css/main.c2bc6856.css.map",
+    "main.fd7a4049.css.map": "/static/css/main.fd7a4049.css.map",
     "main.3ddd524e.js.map": "/static/js/main.3ddd524e.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2bc6856.css",
+    "static/css/main.fd7a4049.css",
     "static/js/main.3ddd524e.js"
   ]
 }
