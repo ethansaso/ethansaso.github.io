@@ -22,7 +22,6 @@ const Projects = () => {
                             <div class="layered-button-frame">
                                 <a href="https://taxokeys.org" className="layered-button-a">
                                     <div class="layered-button">Visit Site</div>
-                                    <div class="layered-button-bg-grad"></div>
                                 </a>
                             </div>
                         </div>
@@ -43,7 +42,6 @@ const Projects = () => {
                             <div class="layered-button-frame">
                                 <a href="https://github.com/sammooredev/WebRecon2" className="layered-button-a">
                                     <div class="layered-button">Visit Site</div>
-                                    <div class="layered-button-bg-grad"></div>
                                 </a>
                             </div>
                         </div>
@@ -63,7 +61,6 @@ const Projects = () => {
                             <div class="layered-button-frame">
                                 <a href="https://ethansaso.github.io/cal-mens-volleyball" className="layered-button-a">
                                     <div class="layered-button">Visit Site</div>
-                                    <div class="layered-button-bg-grad"></div>
                                 </a>
                             </div>
                         </div>
