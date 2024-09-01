@@ -11,7 +11,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
   return (
     <div className="sticky top-0 z-10 p-2">
-      <nav className="flex items-center justify-center py-1 px-4 glass-low rounded-full w-full border-neutral border">
+      <nav className={"flex items-center justify-center py-1 px-4 rounded-full w-full border-neutral border" + (darkMode ? " glass-low" : " bg-base-100")}>
         <div className="flex items-center gap-2 font-bold text-lg flex-grow basis-0 transition-all">
           <svg
             className="size-5 fill-primary"
@@ -45,7 +45,7 @@ const Header = ({ darkMode, setDarkMode }) => {
           </svg>
           <h1>Ethan Saso</h1>
         </div>
-        <div className="border rounded-3xl py-2 px-3 border-bline border-neutral hidden md:block glass-mid">
+        <div className={"border rounded-3xl py-2 px-3 border-bline border-neutral hidden md:block" + (darkMode ? " glass-mid" : " bg-base-100")}>
           <ul className="gap-5 flex px-1 transition-all">
             <li>
               <a
