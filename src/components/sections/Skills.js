@@ -43,17 +43,17 @@ const Skills = () => {
             <div className="skills-cards h-auto w-full">
               <Reveal width='100%' from='bottom'>
                 <div className="md:columns-2 gap-6">
-                  <div className="glass-card w-full p-8">
+                  <div className="glass-low rounded-2xl w-full p-8">
                     <h1 className="text-4xl font-semibold text-secondary">Frontend</h1>
                     <p className="h2 text-lg mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
                     {renderImageGroup(group1Images)}
                   </div>
-                  <div className="glass-card mt-6 w-full p-8">
+                  <div className="glass-low rounded-2xl mt-6 w-full p-8">
                     <h1 className="text-4xl font-semibold text-secondary">Backend</h1>
                     <p className="h2 text-lg mb-4">I love designing complex systems and take pride in engineering reliable, scalable solutions.</p>
                     {renderImageGroup(group2Images)}
                   </div>
-                  <div className="glass-card mt-6 md:mt-[6rem] w-full break-before-column p-8">
+                  <div className="glass-low rounded-2xl mt-6 md:mt-[6rem] w-full break-before-column p-8">
                     <h1 className="text-4xl font-semibold text-secondary">Data/Software</h1>
                     <p className="h2 text-lg mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
                     {renderImageGroup(group3Images)}
