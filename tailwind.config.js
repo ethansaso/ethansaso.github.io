@@ -27,7 +27,7 @@ module.exports = {
           "accent": "oklch(0.833927 0.124132 66.5585)",
           "neutral": "#414558",
           "neutral-content": "#d6d7db",
-          "base-100": "#200035",
+          "base-100": "#1a0826",
           "base-content": "#f8f8f2",
         }
       }

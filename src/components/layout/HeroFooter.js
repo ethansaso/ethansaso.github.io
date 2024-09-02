@@ -21,9 +21,6 @@ const HeroFooter = () => {
                         <li className="hover:scale-125 hover:text-lime-600 hover:mx-1 transition-all"><a href="https://www.inaturalist.org/people/ethansaso">
                             <FontAwesomeIcon size="lg" icon="fa-solid fa-dove" fixedWidth />
                         </a></li>
-                        <li className="hover:scale-125 hover:text-red-500 hover:mx-1 transition-all"><a href="https://www.youtube.com/@ethansaso">
-                            <FontAwesomeIcon size="lg" icon="fa-brands fa-youtube" fixedWidth />
-                        </a></li>
                     </ul>
                 </div>
                 <div
