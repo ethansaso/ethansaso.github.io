@@ -4,7 +4,7 @@ const Hero = ({ darkMode }) => {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className={"h-full lg:h-auto" + (darkMode ? ' hero-dark' : ' hero-light')}>
-        <div className="hero-appears items-center justify-center flex flex-col-reverse lg:flex-row p-8 max-w-full max-h-full transition-all">
+        <div className="hero-appears items-center justify-center flex flex-col-reverse lg:flex-row py-4 px-8 max-w-full max-h-full transition-all">
           <div className="max-w-xl text-center lg:text-left lg:pr-8">
             <div className="text-5xl mb-2">
               <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
