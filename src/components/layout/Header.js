@@ -10,8 +10,8 @@ const Header = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <div className="sticky top-0 z-10">
-      <nav className={"flex items-center justify-center py-2 px-6 w-full border-neutral border-b bg-base-100"}>
+    <div className={"fixed overflow-hidden w-[calc(100%-8px)] top-0 z-10" + (darkMode ? "  py-4 px-48" : "")}>
+      <nav className={"flex items-center justify-center px-6 w-full" + (darkMode ? " glass-mid py-3 rounded-2xl" : " py-2 bg-base-100 border-b border-neutral")}>
         <div className="flex items-center gap-2 font-bold text-lg flex-grow basis-0 transition-all">
           <svg
             className="size-5 fill-primary"

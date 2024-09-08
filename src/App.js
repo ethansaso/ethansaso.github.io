@@ -15,10 +15,12 @@ function App() {
 
   return (
     <div className="w-full text-base-content h-dvh overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-neutral scrollbar-track-transparent scroll-pt-[67px]">
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
+        </Routes>
+      </div>
     </div>
   );
 }

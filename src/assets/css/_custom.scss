@@ -47,6 +47,16 @@
   }
 }
 
+.hero-container {
+
+}
+
+.splash-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .hero-appears {
   height: 100%;
   animation: 0.3s fade-in, 0.3s grow ease-out, 0.5s unblur;
@@ -74,7 +84,6 @@
   left: 50%;
   height: 100%;
   width: 110%;
-  background-image: url('../img/blush-gen/hero-sect.png');
   background-size: 100% 100%;
   opacity: 0.4;
   border-radius: 9999px;
@@ -119,13 +128,13 @@
 
 .glass-low {
   @apply border border-neutral;
-  background: linear-gradient(0, oklch(0.16 0.01 0 / 0.5), var(--fallback-b3, oklch(var(--b3) / 0.5)));
-  backdrop-filter: blur(20px);
+  background-color: #1a082633;
+  backdrop-filter: blur(10px);
 }
 
 .glass-mid {
   @apply border border-neutral;
-  background: linear-gradient(0, oklch(0.16 0.01 0 / 0.5), var(--fallback-b3, oklch(var(--b3) / 0.5)));
+  background: #1a082666;
   backdrop-filter: blur(30px);
 }
 
@@ -140,7 +149,7 @@
   left: 50%;
   height: 80%;
   width: 100%;
-  background-image: url("../img/blush-gen/skills-sect.png");
+  background-image: url("../img/background/skills-sect.png");
   background-size: 100% 200%;
   opacity: 0.4;
   filter: blur(30px);
@@ -189,4 +198,35 @@
 .layered-button:hover {
   text-decoration: none;
   background-color: rgba(255,255,255,.3);
+}
+
+.hero-curve-1 {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(0deg, theme('colors.accent'), theme('colors.primary'));
+}
+
+.hero-curve-2 {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 96px;
+  height: 96px;
+  background-color: theme('colors.primary');
+}
+
+.site-bg-gradient {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvw;
+  background: linear-gradient(135deg, #2c0049, #1a0826);
+  z-index: -9999;
 }

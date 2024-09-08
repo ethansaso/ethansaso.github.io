@@ -1,4 +1,3 @@
-import { Banner } from "../layout/Banner"
 import Reveal from "../util/Reveal"
 
 const Skills = () => {
@@ -20,8 +19,6 @@ const Skills = () => {
       id: iconName,
       image: require(`../../assets/img/stack-svg/${iconName}.svg`)
     }));
-
-    const imageGroupArray = [group1Images, group2Images, group3Images];
 
     const renderImageGroup = (imageGroup) => {
       return (

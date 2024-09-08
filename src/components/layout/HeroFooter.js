@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const HeroFooter = () => {
+const HeroFooter = ({darkMode}) => {
     return (
-        <div className="px-2 py-2 w-full border-t border-neutral">
-            <nav className="flex items-center justify-between mx-1 lg:mx-4">
+        <div className={"w-full absolute bottom-0" + (darkMode ? " py-4 px-48" : "")}>
+            <nav className={"flex items-center justify-between px-6 w-full" + (darkMode ? " glass-mid py-3 rounded-2xl" : " py-2 bg-base-100 border-t border-neutral")}>
                 <div className="border rounded-full p-3 border-bline border-neutral">
                     <a href="https://www.dropbox.com/scl/fi/fo7evq74nobeje19lmufn/Resume-mn.pdf?rlkey=m89try7965luyj0gb1d5s4vxl&st=cqtctx2q&dl=1" className="hover:text-primary transition-all flex items-center">
                         <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
