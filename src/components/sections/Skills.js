@@ -24,7 +24,7 @@ const Skills = () => {
       return (
         <div className="flex justify-start gap-4 flex-wrap">
           {imageGroup.map((image) => (
-          <div className="size-12">
+          <div key={image.id} className="size-12">
             <img className="object-contain h-full w-full" alt={image.id} id={image.id} src={image.image}/>
           </div>
           ))}
@@ -33,26 +33,35 @@ const Skills = () => {
     }
 
     return (
-        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-24 mb-16 lg:mb-32">
-          <div className="container flex flex-col">
-              <h1 className="text-primary text-3xl text-left mb-8 w-full font-semibold">Skills</h1>
+        <div id="skills" className="container flex flex-col mx-auto items-center justify-center mt-24 mb-16 lg:mb-32 px-8 2xl:px-32">
+          <div className="mb-8 w-full">
+              <h1 className="text-3xl text-left font-bold mb-4">Skills</h1>
+              <div className="flex items-end flex-col md:flex-row">
+                  <p className="text-lg text-neutral-content max-w-3xl">I'm always exploring new skills and technologies to enhance my work. As I learn, I discover more innovative and effective solutions in every project.</p>
+              </div>
           </div>
-          <div className="skills-cards h-auto max-w-6xl">
+          <div className="skills-cards h-auto">
             <Reveal width='100%' from='bottom'>
-              <div className="md:columns-2 gap-6">
-                <div className="glass-low rounded-2xl w-full p-8">
-                  <h1 className="text-4xl font-semibold text-secondary mb-2">Frontend</h1>
-                  <p className="h2 text-lg mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="flex flex-col justify-between border border-neutral bg-base-100 rounded-2xl w-full p-8">
+                  <div>
+                    <h1 className="text-4xl font-semibold text-secondary mb-2">Frontend</h1>
+                    <p className="h2 mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
+                  </div>
                   {renderImageGroup(group1Images)}
                 </div>
-                <div className="glass-low rounded-2xl mt-6 w-full p-8">
-                  <h1 className="text-4xl font-semibold text-secondary mb-2">Backend</h1>
-                  <p className="h2 text-lg mb-4">I love designing complex systems and take pride in engineering reliable, scalable solutions.</p>
+                <div className="flex flex-col justify-between border border-neutral bg-base-100 rounded-2xl w-full p-8">
+                  <div>
+                    <h1 className="text-4xl font-semibold text-secondary mb-2">Backend</h1>
+                    <p className="h2 mb-4">I love designing complex systems and take pride in engineering reliable, scalable solutions.</p>
+                  </div>
                   {renderImageGroup(group2Images)}
                 </div>
-                <div className="glass-low rounded-2xl mt-6 md:mt-[6rem] w-full break-before-column p-8">
-                  <h1 className="text-4xl font-semibold text-secondary mb-2">Data/Software</h1>
-                  <p className="h2 text-lg mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
+                <div className="flex flex-col justify-between border border-neutral bg-base-100 rounded-2xl w-full p-8">
+                  <div>
+                    <h1 className="text-4xl font-semibold text-secondary mb-2">Data/Software</h1>
+                    <p className="h2 mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
+                  </div>
                   {renderImageGroup(group3Images)}
                 </div>
               </div>

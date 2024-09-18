@@ -69,21 +69,26 @@
   position: relative;
 }
 
+.project-card {
+  @apply border border-neutral bg-base-100/40;
+  backdrop-filter: blur(2px);
+}
+
 .glass-low {
   @apply border border-neutral;
-  background-color: #1a082633;
+  background-color: #1e233733;
   backdrop-filter: blur(2px);
 }
 
 .glass-mid {
   @apply border border-neutral;
-  background: #1a082666;
+  background: #1e233766;
   backdrop-filter: blur(4px);
 }
 
 .glass-high {
   @apply border border-neutral;
-  background: #1a0826bb;
+  background: #1e2337bb;
   backdrop-filter: blur(4px);
 }
 
@@ -93,7 +98,8 @@
 
 .layered-button-frame {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .layered-button-a {
@@ -162,4 +168,9 @@
 
 .bg-gradient-c {
   background-image: radial-gradient(var(--tw-gradient-stops))
+}
+
+.img-fade-top {
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
 }

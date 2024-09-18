@@ -14,13 +14,15 @@ const Home = () => {
         <>
             <div id="home"></div>
                 <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-            <main>
-                <div className="splash-wrapper h-dvh max-h-[750px]">
+            <main className={"overflow-hidden" + (darkMode ? " bg-base-200" : " bg-base-100")}>
+                <div className="splash-wrapper h-dvh max-h-[800px]">
+                    {/*
                     <div className={darkMode ? "" : "hidden"}>
                         <div className="site-bg-gradient" />
                         <div className="absolute -top-16 -left-32 w-[20vw] h-[20vw] content-[''] rounded-full bg-gradient-to-br from-accent from-20% to-primary" style={{filter: 'blur(300px)'}} />
-                        <div className="absolute -right-8 -bottom-16 w-72 h-72 content-[''] rounded-full bg-gradient-to-br from-secondary from-20% to-accent" style={{filter: 'blur(250px)'}}/>
+                        <div className="absolute -right-8 -bottom-16 w-72 h-72 content-[''] rounded-full bg-secondary" style={{filter: 'blur(250px)'}}/>
                     </div>
+                    */}
                     <Hero darkMode={darkMode}/>
                 </div>
                 {darkMode ? (
@@ -32,7 +34,7 @@ const Home = () => {
                     <Photos />
                 )}
             </main>
-            <Footer />
+            <Footer darkMode={darkMode}/>
         </>
     );
 }

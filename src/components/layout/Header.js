@@ -10,9 +10,9 @@ const Header = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <div className={"fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
-      <nav className="flex items-center justify-center w-full max-w-7xl gap-3">
-        <div className={"flex items-center gap-2 font-bold text-lg transition-all py-2 px-4 rounded-full mr-auto " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+    <div className={"pointer-events-none fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
+      <nav className="flex container items-center justify-center w-full gap-3 px-8 2xl:px-32 mx-auto text-sm font-semibold">
+        <div className={"flex items-center gap-2 font-bold transition-all py-2.5 px-5 rounded-full mr-auto " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <svg
             className="size-5 fill-primary"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,8 @@ const Header = ({ darkMode, setDarkMode }) => {
           </svg>
           <h1>Ethan Saso</h1>
         </div>
-        <div className={"rounded-full py-2 px-4 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
-          <ul className="gap-5 flex px-1 transition-all">
+        <div className={"rounded-full py-2.5 px-5 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+          <ul className="gap-5 flex px-1 transition-all pointer-events-auto">
             <li>
               <a
                 href="#home"
@@ -108,7 +108,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             )}
           </ul>
         </div>
-        <div className={"flex gap-3 justify-end py-2 px-4 rounded-full " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+        <div className={"flex gap-3 items-center py-2.5 px-5 rounded-full " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <h1>
             <span className="inline lg:hidden">{darkMode ? "Dev Portfolio" : "Photography"}</span>
             <span className="hidden lg:inline">
@@ -120,7 +120,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               type="checkbox"
               value="lemonade"
               onChange={toggleTheme}
-              className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
+              className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1 pointer-events-auto"
             />
             <FontAwesomeIcon
               className="text-base-100 col-start-1 row-start-1"
