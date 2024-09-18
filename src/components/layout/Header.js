@@ -43,7 +43,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               />
             </g>
           </svg>
-          <h1>Ethan Saso</h1>
+          <h1 className="hidden sm:block">Ethan Saso</h1>
         </div>
         <div className={"rounded-full py-2.5 px-5 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <ul className="gap-5 flex px-1 transition-all pointer-events-auto">

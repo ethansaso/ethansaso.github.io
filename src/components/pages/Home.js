@@ -15,7 +15,7 @@ const Home = () => {
             <div id="home"></div>
                 <Header darkMode={darkMode} setDarkMode={setDarkMode} />
             <main className={"overflow-hidden" + (darkMode ? " bg-base-200" : " bg-base-100")}>
-                <div className="splash-wrapper h-dvh max-h-[800px]">
+                <div className="splash-wrapper h-dvh max-h-[800px] pt-20">
                     {/*
                     <div className={darkMode ? "" : "hidden"}>
                         <div className="site-bg-gradient" />
