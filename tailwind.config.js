@@ -33,5 +33,5 @@ module.exports = {
       }
     ],
   },
-  darkMode: ['class', '[data-theme="dracula-modified"]'],
+  darkMode: ['class', '[data-theme="dracula"]'],
 }

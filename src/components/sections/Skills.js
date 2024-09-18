@@ -33,31 +33,31 @@ const Skills = () => {
     }
 
     return (
-        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-24 px-8 lg:px-16 mb-16 lg:mb-32">
+        <div id="skills" className="container flex flex-col max-w-7xl mx-auto items-center justify-center mt-24 mb-16 lg:mb-32">
           <div className="container flex flex-col">
-              <h1 className="text-primary text-5xl text-center mb-8 w-full font-semibold">Skills</h1>
+              <h1 className="text-primary text-3xl text-left mb-8 w-full font-semibold">Skills</h1>
           </div>
-            <div className="skills-cards h-auto w-full">
-              <Reveal width='100%' from='bottom'>
-                <div className="md:columns-2 gap-6">
-                  <div className="glass-low rounded-2xl w-full p-8">
-                    <h1 className="text-4xl font-semibold text-secondary">Frontend</h1>
-                    <p className="h2 text-lg mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
-                    {renderImageGroup(group1Images)}
-                  </div>
-                  <div className="glass-low rounded-2xl mt-6 w-full p-8">
-                    <h1 className="text-4xl font-semibold text-secondary">Backend</h1>
-                    <p className="h2 text-lg mb-4">I love designing complex systems and take pride in engineering reliable, scalable solutions.</p>
-                    {renderImageGroup(group2Images)}
-                  </div>
-                  <div className="glass-low rounded-2xl mt-6 md:mt-[6rem] w-full break-before-column p-8">
-                    <h1 className="text-4xl font-semibold text-secondary">Data/Software</h1>
-                    <p className="h2 text-lg mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
-                    {renderImageGroup(group3Images)}
-                  </div>
+          <div className="skills-cards h-auto max-w-6xl">
+            <Reveal width='100%' from='bottom'>
+              <div className="md:columns-2 gap-6">
+                <div className="glass-low rounded-2xl w-full p-8">
+                  <h1 className="text-4xl font-semibold text-secondary mb-2">Frontend</h1>
+                  <p className="h2 text-lg mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
+                  {renderImageGroup(group1Images)}
                 </div>
-              </Reveal>
-            </div>
+                <div className="glass-low rounded-2xl mt-6 w-full p-8">
+                  <h1 className="text-4xl font-semibold text-secondary mb-2">Backend</h1>
+                  <p className="h2 text-lg mb-4">I love designing complex systems and take pride in engineering reliable, scalable solutions.</p>
+                  {renderImageGroup(group2Images)}
+                </div>
+                <div className="glass-low rounded-2xl mt-6 md:mt-[6rem] w-full break-before-column p-8">
+                  <h1 className="text-4xl font-semibold text-secondary mb-2">Data/Software</h1>
+                  <p className="h2 text-lg mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
+                  {renderImageGroup(group3Images)}
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
     )
 }

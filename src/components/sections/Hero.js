@@ -1,41 +1,69 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EthanPortrait from "../../assets/img/ethanportrait.png";
 
 const Hero = ({ darkMode }) => {
   return (
-    <div className="flex flex-col mx-auto items-center justify-center flex-grow w-full py-12 px-36">
-      <div className={"w-full h-full flex items-center justify-center hero-container rounded-2xl" + (darkMode ? " glass-low" : "")}>
-        <div className={"h-full lg:h-auto" + (darkMode ? ' hero-dark' : ' hero-light')}>
-          <div className={"hero-appears rounded-2xl py-4 px-8 max-w-full max-h-full transition-all" + (darkMode ? " glass-mid" : " border-neutral border-none")}>
-            <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full h-full py-4 px-8">
-              <div className="max-w-xl text-center lg:text-left">
-                <div className="text-5xl mb-2">
-                  <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
-                  <h1>
-                    My name is <span className="text-primary font-semibold">Ethan Saso</span>.
-                  </h1>
-                </div>
-                {darkMode ? (
-                  <h1 className="text-xl">
-                    I'm a <span className="text-secondary font-semibold">software engineer </span>
-                    and <span className="text-secondary font-semibold">full-stack developer </span>
-                    from Berkeley, CA dedicated to crafting
-                    <span className="text-accent font-semibold"> interactive applications</span> with
-                    <span className="text-accent font-semibold"> user-friendly design</span>.
-                  </h1>
-                ) : (
-                  <h1 className="text-xl">
-                    I'm a <span className="text-secondary font-semibold">naturalist </span> and
-                    <span className="text-secondary font-semibold"> macro photographer </span>
-                    from Berkeley, CA fascinated by the unseen worlds of
-                    nearly-microscopic creatures like
-                    <span className="text-accent font-semibold"> slime molds</span> and
-                    <span className="text-accent font-semibold"> fungi</span>.
-                  </h1>
-                )}
+    <div className="flex flex-col max-w-7xl items-center justify-center flex-grow w-full">
+      <div className={"w-full h-full flex items-center justify-center rounded-2xl"}>
+        <div className={"hero-appears w-full h-full lg:h-auto transition-all z-999 relative" + (darkMode ? ' hero-dark' : ' hero-light')}>
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full h-full">
+            <div className="max-w-xl text-center lg:text-left">
+              <div className="text-5xl mb-6 font-bold">
+                <h1 className="mb-1 hidden lg:block">Hi! 👋</h1>
+                <h1>
+                  My name is <span className="text-primary">Ethan Saso</span>.
+                </h1>
               </div>
-              <img src={EthanPortrait} className="hide-if-short rounded-full max-h-[300px] my-2 lg:ml-10 min-h-0 w-auto" alt="Ethan Saso" />
-              <h1 className="mb-1 text-5xl block lg:hidden">Hi! 👋</h1>
+              {darkMode ? (
+                <h1 className="text-xl mb-6">
+                  I'm a <span className="text-secondary font-semibold">full-stack developer </span>
+                  from Berkeley, CA dedicated to crafting
+                  <span className="text-accent font-semibold"> interactive applications</span> with
+                  <span className="text-accent font-semibold"> user-friendly design</span>.
+                </h1>
+              ) : (
+                <h1 className="text-xl mb-6">
+                  I'm a <span className="text-secondary font-semibold">naturalist </span> and
+                  <span className="text-secondary font-semibold"> macro photographer </span>
+                  from Berkeley, CA fascinated by the unseen worlds of
+                  nearly-microscopic creatures like
+                  <span className="text-accent font-semibold"> slime molds</span> and
+                  <span className="text-accent font-semibold"> fungi</span>.
+                </h1>
+              )}
+              <div className={"flex mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
+                <div className="border rounded-full border-bline border-neutral bg-white text-black">
+                    <button href="https://www.dropbox.com/scl/fi/fo7evq74nobeje19lmufn/Resume-mn.pdf?rlkey=m89try7965luyj0gb1d5s4vxl&st=cqtctx2q&dl=1" className="hover:text-primary transition-all flex items-center py-2.5 px-4 ">
+                        <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
+                        <div className="hidden md:block">Resume</div>
+                    </button>
+                </div>
+                <div className="border rounded-full border-bline border-neutral bg-neutral text-white">
+                    <button href="mailto:ethansaso@berkeley.edu" className="flex items-center hover:text-primary transition-all py-2.5 px-4">
+                        <FontAwesomeIcon size="lg" icon="fa-solid fa-envelope" fixedWidth />
+                        <div className="hidden md:block ml-1">Contact</div>
+                    </button>
+                </div>
+              </div>
             </div>
+            <div className="flex flex-col">
+              <img src={EthanPortrait} className="hide-if-short rounded-full max-h-[275px] my-2 aspect-square align-center justify-center" alt="Ethan Saso" />
+              <div className="w-full flex justify-center align-center">
+                  <ul className="gap-3 flex">
+                    <li className="hover:scale-125 hover:text-sky-600 hover:mx-1 transition-all border rounded-full p-3 border-bline border-neutral"><a href="https://www.linkedin.com/in/ethansaso/">
+                        <FontAwesomeIcon size="lg" icon="fa-brands fa-linkedin" fixedWidth />
+                    </a></li>
+                    <li className="hover:scale-125 hover:text-cyan-900 hover:mx-1 transition-all border rounded-full p-3 border-bline border-neutral"><a href="https://github.com/ethansaso">
+                        <FontAwesomeIcon size="lg" icon="fa-brands fa-github" fixedWidth />
+                    </a></li>
+                    <li className="hover:scale-125 hover:text-lime-600 hover:mx-1 transition-all border rounded-full p-3 border-bline border-neutral"><a href="https://www.inaturalist.org/people/ethansaso">
+                        <FontAwesomeIcon size="lg" icon="fa-solid fa-dove" fixedWidth />
+                    </a></li>
+                  </ul>
+              </div>
+              
+            </div>
+            <h1 className="mb-1 text-5xl block lg:hidden">Hi! 👋</h1>
           </div>
         </div>
       </div>

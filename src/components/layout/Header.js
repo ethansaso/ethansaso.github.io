@@ -10,9 +10,9 @@ const Header = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <div className={"fixed overflow-hidden w-[calc(100%-8px)] top-0 z-10" + (darkMode ? "  py-4 px-48" : "")}>
-      <nav className={"flex items-center justify-center px-6 w-full" + (darkMode ? " glass-mid py-3 rounded-2xl" : " py-2 bg-base-100 border-b border-neutral")}>
-        <div className="flex items-center gap-2 font-bold text-lg flex-grow basis-0 transition-all">
+    <div className={"fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
+      <nav className="flex items-center justify-center w-full max-w-7xl gap-3">
+        <div className={"flex items-center gap-2 font-bold text-lg transition-all py-2 px-4 rounded-full mr-auto " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <svg
             className="size-5 fill-primary"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const Header = ({ darkMode, setDarkMode }) => {
           </svg>
           <h1>Ethan Saso</h1>
         </div>
-        <div className={"border rounded-full p-3 border-bline border-neutral hidden md:block"}>
+        <div className={"rounded-full py-2 px-4 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <ul className="gap-5 flex px-1 transition-all">
             <li>
               <a
@@ -108,7 +108,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             )}
           </ul>
         </div>
-        <div className="flex gap-3 flex-grow basis-0 justify-end">
+        <div className={"flex gap-3 justify-end py-2 px-4 rounded-full " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <h1>
             <span className="inline lg:hidden">{darkMode ? "Dev Portfolio" : "Photography"}</span>
             <span className="hidden lg:inline">
