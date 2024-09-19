@@ -33,33 +33,34 @@ const Skills = () => {
     }
 
     return (
-        <div id="skills" className="container flex flex-col mx-auto items-center justify-center mt-24 mb-16 lg:mb-32 px-8 2xl:px-32">
+      <div className="w-full py-32 bg-base-300 my-24 lg:mb-32 border-y-base-100 border border-x-0">
+        <div id="skills" className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32">
           <div className="mb-8 w-full">
               <h1 className="text-3xl text-left font-bold mb-4">Skills</h1>
               <div className="flex items-end flex-col md:flex-row">
-                  <p className="text-lg text-neutral-content max-w-3xl">I'm always exploring new skills and technologies to enhance my work. As I learn, I discover more innovative and effective solutions in every project.</p>
+                  <p className="text-lg text-neutral-content max-w-3xl">I'm always exploring new skills and technologies to enhance my work. As I learn, I discover more innovative and effective solutions for every project.</p>
               </div>
           </div>
           <div className="skills-cards h-auto">
             <Reveal width='100%' from='bottom'>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="flex flex-col justify-between border border-neutral bg-base-100 rounded-2xl w-full p-8">
+                <div className="flex flex-col justify-between border border-neutral bg-base-200 rounded-2xl w-full p-8">
                   <div>
-                    <h1 className="text-4xl font-semibold text-secondary mb-2">Frontend</h1>
+                    <h1 className="text-4xl font-semibold text-primary mb-2">Frontend</h1>
                     <p className="h2 mb-4">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
                   </div>
                   {renderImageGroup(group1Images)}
                 </div>
-                <div className="flex flex-col justify-between border border-neutral bg-base-100 rounded-2xl w-full p-8">
+                <div className="flex flex-col justify-between border border-neutral bg-base-200 rounded-2xl w-full p-8">
                   <div>
-                    <h1 className="text-4xl font-semibold text-secondary mb-2">Backend</h1>
+                    <h1 className="text-4xl font-semibold text-primary mb-2">Backend</h1>
                     <p className="h2 mb-4">I love designing complex systems and take pride in engineering reliable, scalable solutions.</p>
                   </div>
                   {renderImageGroup(group2Images)}
                 </div>
-                <div className="flex flex-col justify-between border border-neutral bg-base-100 rounded-2xl w-full p-8">
+                <div className="flex flex-col justify-between border border-neutral bg-base-200 rounded-2xl w-full p-8">
                   <div>
-                    <h1 className="text-4xl font-semibold text-secondary mb-2">Data/Software</h1>
+                    <h1 className="text-4xl font-semibold text-primary mb-2">Data/Software</h1>
                     <p className="h2 mb-4">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
                   </div>
                   {renderImageGroup(group3Images)}
@@ -68,6 +69,7 @@ const Skills = () => {
             </Reveal>
           </div>
         </div>
+      </div>
     )
 }
 

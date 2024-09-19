@@ -3,7 +3,7 @@ import EthanPortrait from "../../assets/img/ethanportrait.png";
 
 const Hero = ({ darkMode }) => {
   return (
-    <div className="container flex flex-col flex-grow px-8 xl:px-32">
+    <div className="container flex flex-col flex-grow px-8 xl:px-32 h-full">
       <div className={"w-full h-full flex items-center justify-center rounded-2xl"}>
         <div className={"hero-appears w-full h-full lg:h-auto transition-all z-999 relative" + (darkMode ? ' hero-dark' : ' hero-light')}>
           <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-center lg:justify-between w-full h-full">
@@ -17,7 +17,7 @@ const Hero = ({ darkMode }) => {
               {darkMode ? (
                 <h1 className="text-xl mb-8 text-neutral-content">
                   I'm a <span className="text-secondary font-semibold">full-stack developer </span>
-                  from Berkeley, CA dedicated to crafting
+                  from <span className="text-secondary font-semibold">Berkeley, CA</span> dedicated to crafting
                   interactive, user-friendly applications and
                   tackling intersectoral challenges with technology.
                 </h1>
@@ -32,13 +32,13 @@ const Hero = ({ darkMode }) => {
                 </h1>
               )}
               <div className={"flex flex-col sm:flex-row mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
-                <button href="https://www.dropbox.com/scl/fi/fo7evq74nobeje19lmufn/Resume-mn.pdf?rlkey=m89try7965luyj0gb1d5s4vxl&st=cqtctx2q&dl=1" className="hover:text-primary transition-all flex items-center justify-center py-2.5 px-4 border rounded-full border-bline border-neutral bg-white text-black">
+                <button href="https://www.dropbox.com/scl/fi/fo7evq74nobeje19lmufn/Resume-mn.pdf?rlkey=m89try7965luyj0gb1d5s4vxl&st=cqtctx2q&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
                     <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
                     <div className="block">Resume</div>
                 </button>
-                <button href="mailto:ethansaso@berkeley.edu" className="flex items-center hover:text-primary transition-all py-2.5 px-4 glass-high rounded-full justify-center">
+                <button href="mailto:ethansaso@berkeley.edu" className="flex items-center transition-all py-2.5 px-4 glass-high rounded-full justify-center shadow-black/70 shadow-lg hover:scale-110">
                     <FontAwesomeIcon size="lg" icon="fa-solid fa-envelope" fixedWidth />
-                    <div className="block">Contact</div>
+                    <div className="block ml-1">Contact</div>
                 </button>
               </div>
             </div>
@@ -46,15 +46,21 @@ const Hero = ({ darkMode }) => {
               <img src={EthanPortrait} className="rounded-full w-24 h-24 lg:h-[17rem] lg:w-[17rem] mb-12 lg:mb-4" alt="Ethan Saso" />
               <div className="w-full hidden lg:flex justify-center align-center">
                 <ul className="gap-2.5 flex">
-                  <li className="hover:scale-125 hover:text-sky-600 hover:mx-1 transition-all border rounded-full p-3 border-bline border-neutral bg-base-100"><a href="https://www.linkedin.com/in/ethansaso/">
+                  <a href="https://www.linkedin.com/in/ethansaso/">
+                    <li className={"hover:scale-110 hover:text-sky-600 hover:mx-1 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon="fa-brands fa-linkedin" fixedWidth />
-                  </a></li>
-                  <li className="hover:scale-125 hover:text-cyan-900 hover:mx-1 transition-all border rounded-full p-3 border-bline border-neutral bg-base-100"><a href="https://github.com/ethansaso">
+                    </li>
+                  </a>
+                  <a href="https://github.com/ethansaso">
+                    <li className={"hover:scale-110 hover:text-cyan-900 hover:mx-1 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon="fa-brands fa-github" fixedWidth />
-                  </a></li>
-                  <li className="hover:scale-125 hover:text-lime-600 hover:mx-1 transition-all border rounded-full p-3 border-bline border-neutral bg-base-100"><a href="https://www.inaturalist.org/people/ethansaso">
+                    </li>
+                  </a>
+                  <a href="https://www.inaturalist.org/people/ethansaso">
+                    <li className={"hover:scale-110 hover:text-lime-600 hover:mx-1 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon="fa-solid fa-dove" fixedWidth />
-                  </a></li>
+                    </li>
+                  </a>
                 </ul>
               </div>
             </div>

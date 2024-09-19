@@ -82,13 +82,13 @@
 
 .glass-mid {
   @apply border border-neutral;
-  background: #1e233766;
+  background: #5555;
   backdrop-filter: blur(4px);
 }
 
 .glass-high {
   @apply border border-neutral;
-  background: #1e2337bb;
+  background: rgb(34 38 53 / 73%);
   backdrop-filter: blur(4px);
 }
 

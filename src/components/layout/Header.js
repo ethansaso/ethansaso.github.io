@@ -12,9 +12,9 @@ const Header = ({ darkMode, setDarkMode }) => {
   return (
     <div className={"pointer-events-none fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
       <nav className="flex container items-center justify-center w-full gap-3 px-8 2xl:px-32 mx-auto text-sm font-semibold">
-        <div className={"flex items-center gap-2 font-bold transition-all py-2.5 px-5 rounded-full mr-auto " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+        <a href="#home" className={"pointer-events-auto flex items-center gap-2 font-bold transition-all py-2.5 px-2.5 md:px-5 rounded-full mr-auto group " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <svg
-            className="size-5 fill-primary"
+            className="size-5 fill-primary group-hover:fill-secondary transition-color duration-300"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 735.000000 735.000000"
             preserveAspectRatio="xMidYMid meet"
@@ -44,22 +44,9 @@ const Header = ({ darkMode, setDarkMode }) => {
             </g>
           </svg>
           <h1 className="hidden sm:block">Ethan Saso</h1>
-        </div>
+        </a>
         <div className={"rounded-full py-2.5 px-5 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <ul className="gap-5 flex px-1 transition-all pointer-events-auto">
-            <li>
-              <a
-                href="#home"
-                className="flex items-center hover:text-primary"
-              >
-                <FontAwesomeIcon
-                  className="responsive-fa-size"
-                  icon="fa-solid fa-house"
-                  fixedWidth
-                />
-                <h1 className="ml-0.5 hidden lg:block">Home</h1>
-              </a>
-            </li>
             {darkMode ? (
               <>
                 <li>
@@ -108,7 +95,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             )}
           </ul>
         </div>
-        <div className={"flex gap-3 items-center py-2.5 px-5 rounded-full " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+        <div className={"flex gap-3 items-center py-2 px-5 rounded-full " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
           <h1>
             <span className="inline lg:hidden">{darkMode ? "Dev Portfolio" : "Photography"}</span>
             <span className="hidden lg:inline">
@@ -136,8 +123,8 @@ const Header = ({ darkMode, setDarkMode }) => {
             />
             {!hasClickedSwitch && (
               <span className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 flex size-3 z-10">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
               </span>
             )}
           </label>

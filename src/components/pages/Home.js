@@ -5,7 +5,7 @@ import Hero from "../sections/Hero.js";
 import Projects from "../sections/Projects.js";
 import Skills from "../sections/Skills.js";
 import Footer from "../layout/Footer.js";
-import whiteCircles from "../../assets/img/background/circle-scatter-haikei (1).svg"
+import BottomCTA from "../sections/BottomCTA.js";
 
 const Home = () => {
     const [darkMode, setDarkMode] = useState(true);
@@ -13,9 +13,9 @@ const Home = () => {
     return (
         <>
             <div id="home"></div>
-                <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Header darkMode={darkMode} setDarkMode={setDarkMode} />
             <main className={"overflow-hidden" + (darkMode ? " bg-base-200" : " bg-base-100")}>
-                <div className="splash-wrapper h-dvh max-h-[800px] pt-20">
+                <div className="splash-wrapper h-dvh max-h-[800px] pt-20 lg:pt-0">
                     {/*
                     <div className={darkMode ? "" : "hidden"}>
                         <div className="site-bg-gradient" />
@@ -29,6 +29,7 @@ const Home = () => {
                     <>
                         <Projects />
                         <Skills />
+                        <BottomCTA />
                     </>
                 ) : (
                     <Photos />
