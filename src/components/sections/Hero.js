@@ -32,14 +32,18 @@ const Hero = ({ darkMode }) => {
                 </h1>
               )}
               <div className={"flex flex-col sm:flex-row mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
-                <button href="https://www.dropbox.com/scl/fi/lradqeh7fgkijg5agwpc9/Resume-exp.pdf?rlkey=9m0oa83jx7mz91z0e45neqj4v&st=finqqpuk&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
-                    <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
-                    <div className="block">Resume</div>
-                </button>
-                <button href="mailto:ethansaso@berkeley.edu" className="flex items-center transition-all py-2.5 px-4 glass-high rounded-full justify-center shadow-black/70 shadow-lg hover:scale-110">
-                    <FontAwesomeIcon size="lg" icon="fa-solid fa-envelope" fixedWidth />
-                    <div className="block ml-1">Contact</div>
-                </button>
+                <a href="https://www.dropbox.com/scl/fi/lradqeh7fgkijg5agwpc9/Resume-exp.pdf?rlkey=9m0oa83jx7mz91z0e45neqj4v&st=finqqpuk&dl=1">
+                  <button className="transition-all flex items-center justify-center py-2.5 px-4 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
+                      <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
+                      <div className="block">Resume</div>
+                  </button>
+                </a>
+                <a href="mailto:ethansaso@berkeley.edu">
+                  <button className="flex items-center transition-all py-2.5 px-4 glass-high rounded-full justify-center shadow-black/70 shadow-lg hover:scale-110">
+                      <FontAwesomeIcon size="lg" icon="fa-solid fa-envelope" fixedWidth />
+                      <div className="block ml-1">Contact</div>
+                  </button>
+                </a>
               </div>
             </div>
             <div className="flex flex-col">
