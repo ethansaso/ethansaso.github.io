@@ -32,7 +32,7 @@ const Hero = ({ darkMode }) => {
                 </h1>
               )}
               <div className={"flex flex-col sm:flex-row mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
-                <button href="https://www.dropbox.com/scl/fi/fo7evq74nobeje19lmufn/Resume-mn.pdf?rlkey=m89try7965luyj0gb1d5s4vxl&st=cqtctx2q&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
+                <button href="https://www.dropbox.com/scl/fi/lradqeh7fgkijg5agwpc9/Resume-exp.pdf?rlkey=9m0oa83jx7mz91z0e45neqj4v&st=finqqpuk&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
                     <FontAwesomeIcon size="lg" icon="fa-solid fa-clipboard-list" fixedWidth />
                     <div className="block">Resume</div>
                 </button>
