@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Projects = () => {
     return (
-        <div id="projects" className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32">
+        <div id="projects" className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32 mt-32 md:mt-0">
             <div className="mb-12 w-full">
                 <h1 className="text-3xl text-left font-bold mb-4">Projects</h1>
                 <div className="flex items-start md:items-end flex-col md:flex-row gap-3">
@@ -17,15 +17,15 @@ const Projects = () => {
             <div className="project-section grid lg:grid-cols-2 gap-8 max-w-6xl">
                 <Reveal width='w-full' from='bottom'>
                     <div className="project-card rounded-2xl flex flex-col lg:flex-col items-center flex-grow group overflow-hidden">
-                        <div className="absolute w-[170%] h-[100%] -top-1/3 md:-top-[10%] -right-0 md:-right-2/3 group-hover:scale-120 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#159e6b] to-transparent to-[90%] group-hover:to-[100%] opacity-30 -z-20"/>
+                        <div className="absolute w-[170%] h-[100%] -top-[10%] -right-1/3 md:-right-2/3 group-hover:scale-120 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#128a5d] to-transparent to-[90%] opacity-30 -z-20"/>
                         <div className="h-full p-8 flex-grow flex flex-col w-full">
                             <div className="w-full mb-8 mt-2">
                                 <h1 className="text-4xl font-bold">TaxoKeys</h1>
                                 <h2 className="text-md text-accent">MERN stack, Python, Digital Ocean</h2>
                             </div>
-                            <div className="flex-grow text-neutral-content mb-8 leading-[1.6]">
-                                <p className="text mb-4">Using classification algorithms, TaxoKeys generates elegant, flowchart-style guides to identifying wild organisms on demand, resolving complex relationships between species with minimal error.</p>
-                                <p>TaxoKeys was created to combat a lack of educational resources for a wide variety of fields in organismal biology. It aims to make identification accessible to all audiences, from researchers to citizen scientists.</p>
+                            <div className="flex-grow text-neutral-content mb-8 leading-[1.6] font-semibold">
+                                <p className="text mb-4">TaxoKeys is a dynamic web application that streamlines the identification of wild organisms. Powered by classification algorithms, it generates interactive, flowchart-style guides to help users identify species on demand.</p>
+                                <p>I created TaxoKeys to address the scarcity of freely available educational resources in organismal biology. I believe this knowledge should be accessible to all audiences, from researchers to citizen scientists.</p>
                             </div>
                             <div className="layered-button-frame mb-2">
                                 <a href="https://taxokeys.org">
@@ -42,15 +42,15 @@ const Projects = () => {
                 </Reveal>
                 <Reveal width='w-full' from='bottom'>
                     <div className="project-card rounded-2xl flex flex-col lg:flex-col items-center flex-grow h-full group overflow-hidden">
-                        <div className="absolute w-[170%] h-[100%] -top-1/3 md:-top-[10%] -right-0 md:-right-2/3 group-hover:scale-120 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#b70] to-transparent to-[90%] group-hover:to-[100%] opacity-30 -z-20"/>
+                        <div className="absolute w-[170%] h-[100%] -top-1/3 md:-top-[10%] -right-0 md:-right-2/3 group-hover:scale-120 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#b70] to-transparent to-[90%] opacity-30 -z-20"/>
                         <div className="h-full p-8 flex-grow flex flex-col w-full mt-2">
                             <div className="w-full mb-8">
                                 <h1 className="text-4xl font-bold">Cal Men's Volleyball</h1>
                                 <h2 className="text-md text-accent">React.js, Github Pages</h2>
                             </div>
                             <div className="flex-grow text-neutral-content mb-8 leading-[1.6]">
-                                <p className="mb-4">Official website for UC Berkeley's Men's Club Volleyball Team, Division I competitors and six-time national club champions. </p>
-                                <p>Why site was made, accessible design for team w/ collaboration, ?.</p>
+                                <p className="mb-4">Official website for UC Berkeley's Men's Club Volleyball Team, Division I competitors and six-time national club champions.</p>
+                                <p>This site was the product of close collaboration with the team to ensure that updating and maintaining content could be performed regardless of technical experience.</p>
                             </div>
                             <div className="layered-button-frame mt-8 mb-2">
                                 <a href="https://ethansaso.github.io/cal-mens-volleyball">
@@ -72,7 +72,7 @@ const Projects = () => {
                 </Reveal>
                 <Reveal width='w-full' from='bottom'>
                     <div className="project-card rounded-2xl flex flex-col items-center flex-grow group overflow-hidden">
-                        <div className="absolute w-[170%] h-[100%] -top-1/3 md:-top-[10%] -right-0 md:-right-2/3 group-hover:scale-120 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#76c] to-transparent to-[90%] group-hover:to-[100%] opacity-30 -z-20"/>
+                        <div className="absolute w-[170%] h-[100%] -top-1/3 md:-top-[10%] -right-0 md:-right-2/3 group-hover:scale-120 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#76c] to-transparent to-[90%] opacity-30 -z-20"/>
                         <div className="h-full p-8 flex-grow flex flex-col w-full">
                             <div className="w-full mb-8">
                                 <h1 className="text-4xl font-bold mt-2">WebRecon2</h1>

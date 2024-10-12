@@ -8,14 +8,14 @@ const Hero = ({ darkMode }) => {
         <div className={"hero-appears w-full h-full lg:h-auto transition-all z-999 relative" + (darkMode ? ' hero-dark' : ' hero-light')}>
           <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-center lg:justify-between w-full h-full">
             <div className="max-w-xl text-left">
-              <div className="text-4xl md:text-5xl mb-8 font-bold">
+              <div className="text-4xl md:text-5xl font-bold">
                 <h1 className="mb-1 block">Hi! 👋</h1>
                 <h1>
                   My name is <span className="text-primary">Ethan Saso.</span>
                 </h1>
               </div>
               {darkMode ? (
-                <h1 className="text-xl mb-8 text-neutral-content">
+                <h1 className="text-xl my-8 text-neutral-content">
                   I'm a <span className="text-secondary font-semibold">full-stack developer </span>
                   from <span className="text-secondary font-semibold">Berkeley, CA</span> dedicated to crafting
                   interactive, user-friendly applications and
@@ -47,17 +47,17 @@ const Hero = ({ darkMode }) => {
               <div className="w-full hidden lg:flex justify-center align-center">
                 <ul className="gap-2.5 flex">
                   <a href="https://www.linkedin.com/in/ethansaso/">
-                    <li className={"hover:scale-110 hover:text-sky-600 hover:mx-1 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
+                    <li className={"hover:scale-110 hover:text-sky-600 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon="fa-brands fa-linkedin" fixedWidth />
                     </li>
                   </a>
                   <a href="https://github.com/ethansaso">
-                    <li className={"hover:scale-110 hover:text-cyan-900 hover:mx-1 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
+                    <li className={"hover:scale-110 hover:text-cyan-900 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon="fa-brands fa-github" fixedWidth />
                     </li>
                   </a>
                   <a href="https://www.inaturalist.org/people/ethansaso">
-                    <li className={"hover:scale-110 hover:text-lime-600 hover:mx-1 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
+                    <li className={"hover:scale-110 hover:text-lime-600 transition-all rounded-full p-3" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon="fa-solid fa-dove" fixedWidth />
                     </li>
                   </a>

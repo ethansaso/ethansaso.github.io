@@ -33,7 +33,7 @@ const Skills = () => {
     }
 
     return (
-      <div className="w-full py-32 bg-base-300 my-24 lg:mb-32 border-y-base-100 border border-x-0">
+      <div className="w-full py-24 bg-base-300 my-24 lg:mb-32 border-y-base-100 border border-x-0">
         <div id="skills" className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32">
           <div className="mb-8 w-full">
               <h1 className="text-3xl text-left font-bold mb-4">Skills</h1>

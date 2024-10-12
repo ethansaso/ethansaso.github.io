@@ -29,7 +29,6 @@ const Home = () => {
                     <>
                         <Projects />
                         <Skills />
-                        <BottomCTA />
                     </>
                 ) : (
                     <Photos />
