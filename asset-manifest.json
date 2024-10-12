@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d9da3cd.css",
-    "main.js": "/static/js/main.b9b18d0e.js",
+    "main.css": "/static/css/main.40361cb6.css",
+    "main.js": "/static/js/main.f7cd8a63.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
+    "static/media/volleygif.gif": "/static/media/volleygif.6227bf1f82019868f51c.gif",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
     "static/media/avivida1.jpg": "/static/media/avivida1.6041a87a92999ab95406.jpg",
     "static/media/pnidulans1.jpg": "/static/media/pnidulans1.d93beeddebd90bbd2d82.jpg",
@@ -20,7 +21,6 @@
     "static/media/tbotrytis1.jpg": "/static/media/tbotrytis1.cd5fa8c5a57ec3fd3280.jpg",
     "static/media/cminutum1.jpeg": "/static/media/cminutum1.5bfee738479404a6663e.jpeg",
     "static/media/ptychostomum1.jpg": "/static/media/ptychostomum1.bec8953840cf4d6066f4.jpg",
-    "static/media/volleygif.gif": "/static/media/volleygif.35159dfb94a18e995779.gif",
     "static/media/lpubescens1.jpeg": "/static/media/lpubescens1.c31331a7fe3d1de9a8c4.jpeg",
     "static/media/lamproderma2.jpg": "/static/media/lamproderma2.66cd74dacce0a8819d64.jpg",
     "static/media/tfurfuracea1.jpg": "/static/media/tfurfuracea1.5d59e8d5efd90bea0209.jpg",
@@ -31,17 +31,15 @@
     "static/media/cargillacea2.jpg": "/static/media/cargillacea2.ee66a638d9fb8fb2f37d.jpg",
     "static/media/fungi1.jpg": "/static/media/fungi1.997e5abdca90b64ccfa6.jpg",
     "static/media/avulgare1.jpg": "/static/media/avulgare1.b9c472ec44be16f67453.jpg",
-    "static/media/skills-sect.png": "/static/media/skills-sect.46bd2a8462ca4a97f871.png",
     "static/media/cnigra3.jpg": "/static/media/cnigra3.0d06dd814ae6f9bc2ead.jpg",
     "static/media/ddictyosporum1.jpg": "/static/media/ddictyosporum1.22849bf6ee660d4432a6.jpg",
-    "static/media/hero-sect.png": "/static/media/hero-sect.b7dd235328f26b0a1fd0.png",
     "static/media/physarum2.jpg": "/static/media/physarum2.ee6c14cbcd4498da4bb6.jpg",
     "static/media/cnigra1.jpg": "/static/media/cnigra1.25c1e73f08673991f869.jpg",
     "static/media/cnigra2.jpg": "/static/media/cnigra2.5651f22dba64eda1ee21.jpg",
     "static/media/cquercophila1.jpg": "/static/media/cquercophila1.1aa1f080d640db3ed712.jpg",
     "static/media/nleucopus1.jpg": "/static/media/nleucopus1.9914bbe3cda5a13ea328.jpg",
-    "static/media/wrgif.gif": "/static/media/wrgif.9da8248149560912f014.gif",
     "static/media/taxogif.gif": "/static/media/taxogif.eb0a9885829accafd82e.gif",
+    "static/media/wrgif.gif": "/static/media/wrgif.bad6ead9049b32b6ae54.gif",
     "static/media/seaborn-icon.svg": "/static/media/seaborn-icon.f7cb19147f444e71e635.svg",
     "static/media/jupyter.svg": "/static/media/jupyter.6fecc851abfe23cf932a.svg",
     "static/media/sass.svg": "/static/media/sass.8351205a93eafac2e392.svg",
@@ -64,12 +62,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.9d9da3cd.css.map": "/static/css/main.9d9da3cd.css.map",
-    "main.b9b18d0e.js.map": "/static/js/main.b9b18d0e.js.map",
+    "main.40361cb6.css.map": "/static/css/main.40361cb6.css.map",
+    "main.f7cd8a63.js.map": "/static/js/main.f7cd8a63.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d9da3cd.css",
-    "static/js/main.b9b18d0e.js"
+    "static/css/main.40361cb6.css",
+    "static/js/main.f7cd8a63.js"
   ]
 }
