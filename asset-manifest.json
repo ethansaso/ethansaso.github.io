@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.40361cb6.css",
-    "main.js": "/static/js/main.f7cd8a63.js",
+    "main.css": "/static/css/main.c63dd928.css",
+    "main.js": "/static/js/main.3dc0d3b1.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/volleygif.gif": "/static/media/volleygif.6227bf1f82019868f51c.gif",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
@@ -62,12 +62,12 @@
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
     "index.html": "/index.html",
-    "main.40361cb6.css.map": "/static/css/main.40361cb6.css.map",
-    "main.f7cd8a63.js.map": "/static/js/main.f7cd8a63.js.map",
+    "main.c63dd928.css.map": "/static/css/main.c63dd928.css.map",
+    "main.3dc0d3b1.js.map": "/static/js/main.3dc0d3b1.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40361cb6.css",
-    "static/js/main.f7cd8a63.js"
+    "static/css/main.c63dd928.css",
+    "static/js/main.3dc0d3b1.js"
   ]
 }
