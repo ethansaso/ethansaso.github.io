@@ -1,11 +1,12 @@
 import { useState } from "react";
-import Header from "../layout/Header.js";
-import Photos from '../sections/Photos.js';
-import Hero from "../sections/Hero.js";
-import Projects from "../sections/Projects.js";
-import Skills from "../sections/Skills.js";
-import Footer from "../layout/Footer.js";
-import BottomCTA from "../sections/BottomCTA.js";
+import Header from "../layout/Header";
+import Photos from '../sections/Photos';
+import Hero from "../sections/Hero";
+import Projects from "../sections/Projects";
+import Skills from "../sections/Skills";
+import Footer from "../layout/Footer";
+import About from "../sections/About";
+import BottomCTA from "../sections/BottomCTA";
 
 const Home = () => {
     const [darkMode, setDarkMode] = useState(true);
@@ -15,7 +16,7 @@ const Home = () => {
             <div id="home"></div>
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
             <main className={"overflow-hidden" + (darkMode ? " bg-base-200" : " bg-base-100")}>
-                <div className="splash-wrapper h-dvh max-h-[800px] pt-20 lg:pt-0">
+                <div className="splash-wrapper h-dvh max-h-[750px] pt-20 lg:pt-0">
                     {/*
                     <div className={darkMode ? "" : "hidden"}>
                         <div className="site-bg-gradient" />
@@ -27,8 +28,10 @@ const Home = () => {
                 </div>
                 {darkMode ? (
                     <>
+                        <About />
                         <Projects />
                         <Skills />
+                        <BottomCTA />
                     </>
                 ) : (
                     <Photos />

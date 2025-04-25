@@ -1,3 +1,5 @@
+import { faPagelines } from "@fortawesome/free-brands-svg-icons";
+import { faCamera, faCode, faFolderOpen, faUser, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -51,12 +53,25 @@ const Header = ({ darkMode, setDarkMode }) => {
               <>
                 <li>
                   <a
+                    href="#about"
+                    className="flex items-center hover:text-primary"
+                  >
+                    <FontAwesomeIcon
+                      className="responsive-fa-size"
+                      icon={faUser}
+                      fixedWidth
+                    />
+                    <h1 className="ml-0.5 hidden lg:block">About</h1>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="#projects"
                     className="flex items-center hover:text-primary"
                   >
                     <FontAwesomeIcon
                       className="responsive-fa-size"
-                      icon="fa-solid fa-folder-open"
+                      icon={faFolderOpen}
                       fixedWidth
                     />
                     <h1 className="ml-0.5 hidden lg:block">Projects</h1>
@@ -69,7 +84,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                   >
                     <FontAwesomeIcon
                       className="responsive-fa-size"
-                      icon="fa-solid fa-wrench"
+                      icon={faWrench}
                       fixedWidth
                     />
                     <h1 className="ml-0.5 hidden lg:block">Skills</h1>
@@ -85,7 +100,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                   >
                     <FontAwesomeIcon
                       className="responsive-fa-size"
-                      icon="fa-solid fa-camera"
+                      icon={faCamera}
                       fixedWidth
                     />
                     <h1 className="ml-0.5 hidden lg:block">Photos</h1>
@@ -112,13 +127,13 @@ const Header = ({ darkMode, setDarkMode }) => {
             <FontAwesomeIcon
               className="text-base-100 col-start-1 row-start-1"
               style={{ pointerEvents: "none" }}
-              icon="fa-solid fa-code"
+              icon={faCode}
               fixedWidth
             />
             <FontAwesomeIcon
               className="text-base-100 col-start-2 row-start-1 z-10"
               style={{ pointerEvents: "none" }}
-              icon="fa-brands fa-pagelines"
+              icon={faPagelines}
               fixedWidth
             />
             {!hasClickedSwitch && (

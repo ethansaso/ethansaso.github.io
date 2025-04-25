@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import Home from './components/pages/Home.js';
+import Home from './components/pages/Home';
 
 function App() {
   const navigate = useNavigate();
