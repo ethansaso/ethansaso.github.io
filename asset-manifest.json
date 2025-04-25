@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c63dd928.css",
-    "main.js": "/static/js/main.9c5d5c48.js",
+    "main.css": "/static/css/main.00e3334a.css",
+    "main.js": "/static/js/main.497973ac.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/volleygif.gif": "/static/media/volleygif.6227bf1f82019868f51c.gif",
     "static/media/cargillacea1.jpg": "/static/media/cargillacea1.e1eca028cabbc0e95ea8.jpg",
@@ -17,7 +17,6 @@
     "static/media/mtenerrima1.jpg": "/static/media/mtenerrima1.373fec8b577571c28435.jpg",
     "static/media/patropurpurascens1.jpeg": "/static/media/patropurpurascens1.b04a01d1b9a33a63ce8a.jpeg",
     "static/media/physarum1.jpg": "/static/media/physarum1.d11ac7978e7208c40369.jpg",
-    "static/media/ethanportrait.png": "/static/media/ethanportrait.a1c03b82768eaaf07b23.png",
     "static/media/tbotrytis1.jpg": "/static/media/tbotrytis1.cd5fa8c5a57ec3fd3280.jpg",
     "static/media/cminutum1.jpeg": "/static/media/cminutum1.5bfee738479404a6663e.jpeg",
     "static/media/ptychostomum1.jpg": "/static/media/ptychostomum1.bec8953840cf4d6066f4.jpg",
@@ -40,11 +39,14 @@
     "static/media/nleucopus1.jpg": "/static/media/nleucopus1.9914bbe3cda5a13ea328.jpg",
     "static/media/taxogif.gif": "/static/media/taxogif.eb0a9885829accafd82e.gif",
     "static/media/wrgif.gif": "/static/media/wrgif.bad6ead9049b32b6ae54.gif",
+    "static/media/ethansaso.jpeg": "/static/media/ethansaso.ab3e81c1df21c9297088.jpeg",
+    "static/media/berkeley.png": "/static/media/berkeley.49f6433970907b9d3244.png",
     "static/media/seaborn-icon.svg": "/static/media/seaborn-icon.f7cb19147f444e71e635.svg",
     "static/media/jupyter.svg": "/static/media/jupyter.6fecc851abfe23cf932a.svg",
     "static/media/sass.svg": "/static/media/sass.8351205a93eafac2e392.svg",
     "static/media/react.svg": "/static/media/react.e27571eaed899c642345.svg",
     "static/media/mysql-icon.svg": "/static/media/mysql-icon.e5a509a5d3ca7443ae6c.svg",
+    "static/media/taxokeysLogo.svg": "/static/media/taxokeysLogo.51bee5a9f6732ff31bc1562fcf6b90ea.svg",
     "static/media/go.svg": "/static/media/go.509123c54f7556362660.svg",
     "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.3dc364b8e9beb3561620.svg",
     "static/media/java.svg": "/static/media/java.83165dfb2f5a7657ce4c.svg",
@@ -54,6 +56,7 @@
     "static/media/bootstrap.svg": "/static/media/bootstrap.4f4c52d75ff6e4fd91fa.svg",
     "static/media/c.svg": "/static/media/c.2f52df384aba3fa14b53.svg",
     "static/media/numpy.svg": "/static/media/numpy.cf45d4df86beb5d1ec70.svg",
+    "index.html": "/index.html",
     "static/media/git-icon.svg": "/static/media/git-icon.fd381642a8b14fec88b8.svg",
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577.svg",
     "static/media/r-lang.svg": "/static/media/r-lang.54a0804197b4f0990ebd.svg",
@@ -61,13 +64,12 @@
     "static/media/tailwindcss-icon.svg": "/static/media/tailwindcss-icon.50fbcf516b9a3774e9a8.svg",
     "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.8869f2f6c8ef3b4798e6.svg",
     "static/media/pandas-icon.svg": "/static/media/pandas-icon.7363fd001dc260dbe276.svg",
-    "index.html": "/index.html",
-    "main.c63dd928.css.map": "/static/css/main.c63dd928.css.map",
-    "main.9c5d5c48.js.map": "/static/js/main.9c5d5c48.js.map",
+    "main.00e3334a.css.map": "/static/css/main.00e3334a.css.map",
+    "main.497973ac.js.map": "/static/js/main.497973ac.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c63dd928.css",
-    "static/js/main.9c5d5c48.js"
+    "static/css/main.00e3334a.css",
+    "static/js/main.497973ac.js"
   ]
 }
