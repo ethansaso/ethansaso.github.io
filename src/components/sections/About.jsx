@@ -33,7 +33,7 @@ const About = () => (
                     </div>
                     <div className="font-medium ml-5 text-xs w-full">
                         <div className="flex justify-between gap-2 sm:gap-4">
-                            <a href="https://www.aso-engineering.com/" className="rounded-full px-2 -my-0.5 -ml-2 py-0.5 hover:bg-base-100 text-sm">
+                            <a href="https://www.aso-engineering.com/" className="rounded-full px-2 -my-0.5 -ml-2 py-0.5 hover:bg-slate-600 text-sm">
                                 ASO (HUMR)
                             </a>
                             <div className="font-normal text-neutral-content flex gap-2">
@@ -53,7 +53,7 @@ const About = () => (
                     </div>
                     <div className="font-medium ml-5 text-xs w-full">
                         <div className="flex justify-between gap-2 sm:gap-4">
-                            <a href="https://www.berkeley.edu/" className="rounded-full px-2 -my-0.5 -ml-2 py-0.5 hover:bg-base-100 text-sm">
+                            <a href="https://www.berkeley.edu/" className="rounded-full px-2 -my-0.5 -ml-2 py-0.5 hover:bg-slate-600  text-sm">
                                 UC Berkeley
                             </a>
                             <div className="font-normal text-neutral-content flex gap-2">

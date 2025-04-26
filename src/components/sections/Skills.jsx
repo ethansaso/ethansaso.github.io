@@ -1,5 +1,3 @@
-import Reveal from "../util/Reveal"
-
 const Skills = () => {
     const group1Filenames = ["react", "css-3", "html-5", "sass", "tailwindcss-icon", "bootstrap"]
     const group2Filenames = ["javascript", "mongodb-icon", "nodejs-icon", "go", "digital-ocean-icon", "mysql-icon", "git-icon"]

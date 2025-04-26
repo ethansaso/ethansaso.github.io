@@ -29,7 +29,7 @@ module.exports = {
           "neutral-content": "oklch(0.68 0.01 255.3)",
           "base-100": "#171d26",
           "base-200": "#10151c",
-          "base-300": "#0a0f14",
+          "base-300": "#0c1218",
           "base-hover": "#3a4049",
           "base-content": "#f8f8f2",
         }

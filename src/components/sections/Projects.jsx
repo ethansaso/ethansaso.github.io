@@ -3,7 +3,7 @@ import WebRecon2 from "../../assets/img/projects/wrgif.gif"
 import Volleyball from "../../assets/img/projects/volleygif.gif"
 import { ReactComponent as TaxokeysLogo } from "../../assets/img/projects/taxokeysLogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight, faCode, faFolder, faNetworkWired, faVolleyball } from "@fortawesome/free-solid-svg-icons"
+import { faArrowRight, faCode, faVolleyball } from "@fortawesome/free-solid-svg-icons"
 
 const Projects = () => {
     return (
