@@ -1,18 +1,10 @@
 import SideScroller from "../util/Scroller";
-
-const images = [
-    'scroller/chiton.jpg',
-    'scroller/cedars.jpg',
-    'scroller/logholder.png',
-    'scroller/halfdome.jpg',
-    'scroller/chanterelle.jpg',
-]
-
+import { scrollerMap } from "../../util/scrollerMap";
 
 const PhotoScroller = () => {
     return (
         <section id="photo-scroller" className="mb-44">
-            <SideScroller images={images} />
+            <SideScroller images={Object.values(scrollerMap)} />
         </section>
     )
 }

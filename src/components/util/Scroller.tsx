@@ -16,7 +16,7 @@ const SideScroller = ({ images }: {images: string[]}) => {
                         {images.map((src, i) => (
                             <div key={`${loop}-${src}`} className="hscroller-img-wrapper">
                                 <div className="hscroller-img-shrink-wrapper">
-                                    <img src={"/src/assets/img/" + src} alt="" />
+                                    <img src={src} alt="" />
                                 </div>
                             </div>
                         ))}
