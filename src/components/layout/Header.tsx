@@ -1,9 +1,19 @@
 import { faPagelines } from "@fortawesome/free-brands-svg-icons";
 import { faCamera, faCode, faFolderOpen, faUser, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import React, { RefObject, useMemo, useState } from "react";
+import useScrollPosition from "../../hooks/useScrollPosition";
+import useWindowSize from "../../hooks/useWindowSize";
 
-const Header = ({ darkMode, setDarkMode }) => {
+interface HeaderProps {
+  pageRef?: RefObject<HTMLDivElement | null>;
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
+  const { height } = useWindowSize();
+  const scrollPosition = useScrollPosition(pageRef);
   const [hasClickedSwitch, setHasClickedSwitch] = useState(false)
 
   const toggleTheme = () => {
@@ -11,10 +21,14 @@ const Header = ({ darkMode, setDarkMode }) => {
     setHasClickedSwitch(true);
   };
 
+  const avatarOpacity = useMemo(() => {
+    return Math.min(1, Math.max((scrollPosition - height + 400) / 200, 0))
+  }, [scrollPosition, height]);
+
   return (
     <div className={"pointer-events-none fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
       <nav className="flex container items-center justify-center w-full gap-3 px-8 2xl:px-32 mx-auto text-sm font-semibold">
-        <a href="#home" className={"pointer-events-auto flex items-center gap-2 font-bold transition-all py-2.5 px-2.5 md:px-5 rounded-full mr-auto group " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+        <a href="#home" className={"pointer-events-auto flex items-center gap-2 font-bold py-2.5 px-2.5 md:px-5 rounded-full mr-auto group focus-within:!opacity-100 " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')} style={{opacity: avatarOpacity}}>
           <svg
             className="size-5 fill-primary group-hover:fill-secondary transition-color duration-300"
             xmlns="http://www.w3.org/2000/svg"

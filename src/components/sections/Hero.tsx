@@ -3,7 +3,11 @@ import EthanPortrait from "../../assets/img/ethansaso.jpeg";
 import { faClipboardList, faDove, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const Hero = ({ darkMode }) => {
+interface HeroProps {
+  darkMode: boolean;
+}
+
+const Hero = ({ darkMode }: HeroProps) => {
   return (
     <div className="container flex flex-col flex-grow px-8 xl:px-32 h-full">
       <div className={"w-full h-full flex items-center justify-center rounded-2xl"}>
@@ -34,12 +38,12 @@ const Hero = ({ darkMode }) => {
                 </h1>
               )}
               <div className={"flex flex-col sm:flex-row mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
-                <a href="https://www.dropbox.com/scl/fi/lradqeh7fgkijg5agwpc9/Resume-exp.pdf?rlkey=9m0oa83jx7mz91z0e45neqj4v&st=finqqpuk&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
-                  <FontAwesomeIcon size="md" icon={faClipboardList} fixedWidth />
+                <a href="https://www.dropbox.com/scl/fi/rj815jqhstdevzxiv1j4l/Resume-4-26.pdf?rlkey=apx1ppcf96li8d3a6b2399ltl&st=v05q0d63&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
+                  <FontAwesomeIcon icon={faClipboardList} fixedWidth />
                   <div className="block">Resume</div>
                 </a>
                 <a href="mailto:ethansaso@berkeley.edu" className="flex items-center transition-all py-2.5 px-4 gap-1 glass-high rounded-full justify-center shadow-black/70 shadow-md hover:scale-110">
-                  <FontAwesomeIcon size="md" icon={faEnvelope} fixedWidth />
+                  <FontAwesomeIcon icon={faEnvelope} fixedWidth />
                   <div className="block ml-1">Contact</div>
                 </a>
               </div>

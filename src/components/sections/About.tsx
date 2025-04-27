@@ -7,18 +7,18 @@ const About = () => (
             <h1 className="text-2xl font-bold mb-7">
                 About me
             </h1>
-            <div className="text-md leading-relaxed font-medium text-neutral-content">
+            <div className="text-[17px] leading-[1.5] font-medium text-neutral-content">
                 <p className="mb-4">
                     Hi! I'm Ethan, a software engineer dedicated to building beautiful products with code.
                 </p>
                 <p className="mb-4">
-                    Even since my early childhood, I've always been fascinated by how things work. I'd spend hours with Snap Circuits, snapping pieces together to light LEDs and spin tiny motors. Simultaneously, I was enamored with the complexity and diversity of the natural world, leading me to study organisms like fungi and amoebae in the field, and eventually at UC Berkeley.
+                    Even since my early childhood, I've been fascinated by complex systems and how they operate. This curiosity initially led me to study biology at UC Berkeley, where I explored everything from organismal diversity to molecular genomics. A turning point came midway through my degree, when I began to explore programming through bioinformatics. 
                 </p>
                 <p className="mb-4">
-                    Halfway through my degree, I began to explore programming through bioinformatics, and was instantly hooked. I began to explore everything from digital circuit design to large-scale web architectures, always eager to learn new concepts and tech. I ultimately settled on full-stack development, since it provided me the tools to build projects that solved real problems and brought my ideas to life.
+                    I quickly became hooked on software development, diving into topics ranging from digital circuit design to modern web architecture. I ultimately specialized in full-stack development, since it provided me the tools to build projects that solve real-world problems and bring my ideas to life.
                 </p>
                 <p className="mb-4">
-                    When I'm not engineering new features, you can find me out in the hills and/or behind a camera lens. There's a button in the upper-right corner of this site if you'd like to check out my photography portfolio, the other way I share my creative vision with the world.
+                    When I'm not engineering new features, you can find me out in the hills and/or behind a camera lens. Feel free to check out my photography portfolio using the button in the upper right corner!
                 </p>
             </div>
         </div>
@@ -37,7 +37,7 @@ const About = () => (
                                 ASO (HUMR)
                             </a>
                             <div className="font-normal text-neutral-content flex gap-2">
-                                <time datetime="2024-10">October 2024</time>
+                                <time dateTime="2024-10">October 2024</time>
                                 – 
                                 <span>Present</span>
                             </div>
@@ -57,9 +57,9 @@ const About = () => (
                                 UC Berkeley
                             </a>
                             <div className="font-normal text-neutral-content flex gap-2">
-                                <time datetime="2022-08">August 2022</time>
+                                <time dateTime="2022-08">August 2022</time>
                                 –
-                                <time datetime="2022-12">December 2022</time>
+                                <time dateTime="2022-12">December 2022</time>
                             </div>
                         </div>
                         <div className="mt-0.5 text-neutral-content">

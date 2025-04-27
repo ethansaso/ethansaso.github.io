@@ -1,16 +1,35 @@
 import { Masonry } from "masonic";
-import images from '../../images.json';
+import rawImages  from '../../data/images.json';
+import { photoMap } from "../../util/photoMap";
 
-const imageContext = require.context('../../assets/img/photography', true);
+const deviceNames = {
+  a52: 'Samsung Galaxy A52',
+  tg6: 'Olympus TG-6'
+} as const;
 
-const MasonryCard = ({ data }) => {
+type DeviceKey = keyof typeof deviceNames;
+
+interface ImageData {
+  type: string;
+  title: string;
+  date: string;
+  location: string;
+  device: DeviceKey;
+}
+
+interface MasonryData extends ImageData {
+  filename: string;
+}
+
+const images = rawImages as Record<string, ImageData>;
+
+const MasonryCard = ({ data }: {data: MasonryData}) => {
   const { filename, type, title, date, location, device } = data;
 
-  const deviceNames = {'a52': 'Samsung Galaxy A52', 'tg6': 'Olympus TG-6'}
+  const src = photoMap[filename] ?? ''
 
   return (
-    <div key={filename} className='masonry-card' style={{
-    }}>
+    <div key={filename} className='masonry-card'>
       <div className="masonry-img" style={{ position: 'relative' }}>
         <div className="masonry-caption">
           <div className="masonry-caption-type">DATE</div>
@@ -18,10 +37,10 @@ const MasonryCard = ({ data }) => {
           <div className="masonry-caption-type">LOCATION</div>
           <div className="masonry-caption-text">{location || 'Unknown'}</div>
           <div className="masonry-caption-type">DEVICE</div>
-          <div className="masonry-caption-text">{deviceNames[device] || 'hi'}</div>
+          <div className="masonry-caption-text">{deviceNames[device] ?? 'hi'}</div>
         </div>
         <img 
-          src={imageContext(`./${filename}`)} 
+          src={src} 
           alt={title}
         />
       </div>
@@ -29,21 +48,19 @@ const MasonryCard = ({ data }) => {
         className="masonry-title"
       >
         <h1 style={{ marginBottom: 0, color: '#888' }}>{type}</h1>
-        <h1 tag="h5" style={{ marginTop: '0', color: '#000' }}>{title}</h1>
+        <h5 style={{ marginTop: '0', color: '#000' }}>{title}</h5>
       </div>
     </div>
   )
 };
 
 function Photos() {
-  const items = Object.keys(images).map((filename) => ({
-    filename,
-    type: images[filename].type,
-    title: images[filename].title,
-    date: images[filename].date,
-    location: images[filename].location,
-    device: images[filename].device,
-  }));
+  const items: MasonryData[] = Object.entries(images).map(
+    ([filename, meta]) => ({
+      filename,
+      ...meta,
+    })
+  );
 
   return (
     <div id="photos" className="w-full px-8 py-12 lg:px-20 flex justify-center items-center">

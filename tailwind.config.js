@@ -1,10 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'sm': '15px',
+        'base': '17px',
+      },
+    },
   },
   plugins: [
     require('daisyui'),
@@ -25,7 +31,7 @@ module.exports = {
           "primary": "#75aef5",
           "secondary": "#f7e462",
           "accent": "oklch(0.51 0 0)",
-          "neutral": "oklch(0.3 0.03 276.05)",
+          "neutral": "oklch(0.29 0.03 276.31)",
           "neutral-content": "oklch(0.68 0.01 255.3)",
           "base-100": "#171d26",
           "base-200": "#10151c",

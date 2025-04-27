@@ -75,13 +75,11 @@
 }
 
 .glass-low {
-  @apply border border-neutral;
   background-color: #1e233733;
   backdrop-filter: blur(2px);
 }
 
 .glass-mid {
-  @apply border border-neutral;
   background: #5555;
   backdrop-filter: blur(4px);
 }
@@ -177,10 +175,10 @@
 
 .project-icon-bg {
   position: absolute;
-  width: 380px;
-  height: 380px;
-  bottom: 205px;
-  right: 0;
+  width: 370px;
+  height: 370px;
+  top: 175px;
+  right: -20px;
   color: transparent;
   stroke: theme('colors.neutral-content');
   opacity: 20%;
@@ -195,8 +193,10 @@
   }
 
   &:not(.svg-inline--fa) {
-    bottom: 245px;
-    right: 0;
+    width: 410px;
+    height: 410px;
+    top: 135px;
+    right: -40px;
     stroke-width: 4px;
   }
 }

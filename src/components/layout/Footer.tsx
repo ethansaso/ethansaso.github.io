@@ -2,14 +2,18 @@ import { faGithub, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-ic
 import { faDove } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Footer = ({darkMode}) => {
+interface FooterProps {
+    darkMode: boolean;
+}
+
+const Footer = ({darkMode}: FooterProps) => {
     return (
         <footer className={"h-auto footer w-full border-t border-neutral px-3 py-4" + (darkMode ? ' bg-base-300' : '')}>
             <div className="w-full container flex items-center justify-center transition-all px-8 2xl:px-32 mx-auto text-sm  text-neutral-content">
                 <div className="flex-1 mr-auto">
                     <div className="flex gap-2">
                         ©
-                        <time datetime="2024">2024</time>
+                        <time dateTime="2024">2024</time>
                         –
                         <span>present</span>
                         <span>Ethan Saso.</span>
@@ -32,7 +36,7 @@ const Footer = ({darkMode}) => {
                     </ul>
                 </div>
                 <div className="flex-1 ml-auto text-right">
-                    <h1 className="ml-auto">Berkeley, CA</h1>
+                    <p className="ml-auto">Berkeley, CA</p>
                 </div>
             </div>
         </footer>
