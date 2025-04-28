@@ -24,7 +24,7 @@ const Skills = () => {
     return (
       <div className="flex justify-start gap-4 flex-wrap">
         {imageGroup.map((image) => (
-        <div key={image.id} className="size-12">
+        <div key={image.id} className="size-8">
           <img className="object-contain h-full w-full" alt={image.id} id={image.id} src={image.image}/>
         </div>
         ))}
@@ -45,24 +45,24 @@ const Skills = () => {
         </div>
         <div className="skills-cards h-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex flex-col justify-between border border-neutral bg-base-200 rounded-2xl w-full p-8">
+            <div className="flex flex-col border border-neutral bg-base-200 rounded-2xl w-full p-8">
               <div>
-                <h1 className="text-4xl font-semibold mb-4">Frontend</h1>
-                <p className="h2 mb-6 text-neutral-content">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
+                <h1 className="text-2xl font-semibold mb-4">Frontend</h1>
+                <p className="h2 mb-6 text-neutral-content text-[16px]">I'm passionate about crafting interactive, user-friendly sites that leave a lasting impression.</p>
               </div>
               {renderIconGroup(group1Images)}
             </div>
-            <div className="flex flex-col justify-between border border-neutral bg-base-200 rounded-2xl w-full p-8">
+            <div className="flex flex-col border border-neutral bg-base-200 rounded-2xl w-full p-8">
               <div>
-                <h1 className="text-4xl font-semibold mb-4">Backend</h1>
-                <p className="h2 mb-6 text-neutral-content">I love designing complex systems and take pride in engineering scalable solutions.</p>
+                <h1 className="text-2xl font-semibold mb-4">Backend</h1>
+                <p className="h2 mb-6 text-neutral-content text-[16px]">I love designing complex systems and take pride in engineering scalable solutions.</p>
               </div>
               {renderIconGroup(group2Images)}
             </div>
-            <div className="flex flex-col justify-between border border-neutral bg-base-200 rounded-2xl w-full p-8">
+            <div className="flex flex-col border border-neutral bg-base-200 rounded-2xl w-full p-8">
               <div>
-                <h1 className="text-4xl font-semibold mb-4">Data/Software</h1>
-                <p className="h2 mb-6 text-neutral-content">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
+                <h1 className="text-2xl font-semibold mb-4">Data/Software</h1>
+                <p className="h2 mb-6 text-neutral-content text-[16px]">I believe in leveraging data to solve diverse problems and drive real-world impact.</p>
               </div>
               {renderIconGroup(group3Images)}
             </div>

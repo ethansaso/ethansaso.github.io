@@ -13,10 +13,10 @@ const Home = ({scrollRef}: {scrollRef: RefObject<HTMLDivElement | null>}) => {
     const [darkMode, setDarkMode] = useState(true);
 
     return (
-        <>
+        <div className={(darkMode ? "bg-base-200" : "bg-base-100")}>
             <div id="home"></div>
             <Header pageRef={scrollRef} darkMode={darkMode} setDarkMode={setDarkMode} />
-            <main className={(darkMode ? "bg-base-200" : "bg-base-100")}>
+            <main>
                 <div className="splash-wrapper h-dvh max-h-[730px] pt-20 lg:pt-10">
                     <Hero darkMode={darkMode}/>
                 </div>
@@ -33,7 +33,7 @@ const Home = ({scrollRef}: {scrollRef: RefObject<HTMLDivElement | null>}) => {
                 )}
             </main>
             <Footer darkMode={darkMode}/>
-        </>
+        </div>
     );
 }
 

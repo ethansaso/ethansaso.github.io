@@ -27,7 +27,7 @@ const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
 
   return (
     <div className={"pointer-events-none fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
-      <nav className="flex container items-center justify-center w-full gap-3 px-8 2xl:px-32 mx-auto text-sm font-semibold">
+      <nav className="flex container items-center justify-center w-full gap-4 px-8 2xl:px-32 mx-auto text-sm font-semibold">
         <a href="#home" className={"pointer-events-auto flex items-center gap-2 font-bold py-2.5 px-2.5 md:px-5 rounded-full mr-auto group focus-within:!opacity-100 " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')} style={{opacity: avatarOpacity}}>
           <svg
             className="size-5 fill-primary group-hover:fill-secondary transition-color duration-300"
@@ -62,65 +62,51 @@ const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
           <h1 className="hidden sm:block">Ethan Saso</h1>
         </a>
         <div className={"rounded-full py-2.5 px-5 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
-          <ul className="gap-5 flex px-1 transition-all pointer-events-auto">
+          <ul className="gap-6 flex px-1 pointer-events-auto">
             {darkMode ? (
               <>
                 <li>
                   <a
                     href="#about"
-                    className="flex items-center hover:text-primary"
+                    className="flex items-center hover:text-primary transition-none hover:transition-colors duration-200"
                   >
-                    <FontAwesomeIcon
-                      className="responsive-fa-size"
-                      icon={faUser}
-                      fixedWidth
-                    />
                     <h1 className="ml-0.5 hidden lg:block">About</h1>
                   </a>
                 </li>
                 <li>
                   <a
                     href="#projects"
-                    className="flex items-center hover:text-primary"
+                    className="flex items-center hover:text-primary transition-colors duration-200"
                   >
-                    <FontAwesomeIcon
-                      className="responsive-fa-size"
-                      icon={faFolderOpen}
-                      fixedWidth
-                    />
                     <h1 className="ml-0.5 hidden lg:block">Projects</h1>
                   </a>
                 </li>
                 <li>
                   <a
                     href="#skills"
-                    className="flex items-center hover:text-primary"
+                    className="flex items-center hover:text-primary transition-colors duration-200"
                   >
-                    <FontAwesomeIcon
-                      className="responsive-fa-size"
-                      icon={faWrench}
-                      fixedWidth
-                    />
                     <h1 className="ml-0.5 hidden lg:block">Skills</h1>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#cta"
+                    className="flex items-center hover:text-primary transition-colors duration-200"
+                  >
+                    <h1 className="ml-0.5 hidden lg:block">Contact</h1>
                   </a>
                 </li>
               </>
             ) : (
-              <>
-                <li>
-                  <a
-                    href="#photos"
-                    className="flex items-center hover:text-primary"
-                  >
-                    <FontAwesomeIcon
-                      className="responsive-fa-size"
-                      icon={faCamera}
-                      fixedWidth
-                    />
-                    <h1 className="ml-0.5 hidden lg:block">Photos</h1>
-                  </a>
-                </li>
-              </>
+              <li>
+                <a
+                  href="#photos"
+                  className="flex items-center hover:text-primary transition-colors duration-200"
+                >
+                  <h1 className="ml-0.5 hidden lg:block">Photos</h1>
+                </a>
+              </li>
             )}
           </ul>
         </div>

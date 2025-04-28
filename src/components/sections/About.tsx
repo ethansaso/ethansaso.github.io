@@ -2,7 +2,7 @@ import companiesHUMR from "../../assets/img/companies/humr.png"
 import companiesBerkeley from "../../assets/img/companies/berkeley.png"
 
 const About = () => (
-    <section id="about" className="container flex lg:flex-row gap-8 mx-auto items-stretch justify-center px-8 2xl:px-32 mb-32">
+    <section id="about" className="container flex flex-col lg:flex-row gap-8 mx-auto items-stretch justify-center px-8 2xl:px-32 mb-32">
         <div className="flex flex-col border border-neutral bg-base-100 rounded-2xl flex-1 p-8">
             <h1 className="text-2xl font-bold mb-7">
                 About me
