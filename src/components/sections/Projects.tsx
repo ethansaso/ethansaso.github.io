@@ -10,9 +10,9 @@ const Projects = () => {
         <section id="projects" className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32 mt-32 md:mt-0">
             <div className="mb-12 w-full">
                 <h1 className="text-3xl text-left font-bold mb-6">Projects</h1>
-                <div className="text-md flex font-medium items-start md:items-end flex-col md:flex-row gap-3 leading-relaxed">
+                <div className="text-md flex font-medium items-start md:items-end flex-col md:flex-row gap-4 leading-relaxed justify-between">
                     <p className="text-neutral-content max-w-2xl">I'm passionate about building tools that address real-world challenges. I focus on users' needs and delivering experiences that exceed expectations.</p>
-                    <a href="https://github.com/ethansaso" className="text-right text-primary hover:underline hover:text-secondary font-semibold text-nowrap ml-auto">Visit my GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/></a>
+                    <a href="https://github.com/ethansaso" className="text-right text-primary hover:underline hover:text-secondary font-semibold text-nowrap">Visit my GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/></a>
                 </div>
             </div>
             <div className="project-section grid lg:grid-cols-2 gap-8 max-w-6xl">
@@ -23,7 +23,7 @@ const Projects = () => {
                         className="project-icon-bg"
                     />
                     <div className="absolute h-[100%] aspect-square -z-20 bottom-20 -right-1/2 group-hover:scale-150 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#12748a] to-transparent to-[70%] opacity-30"/>
-                    <div className="h-full px-8 py-12 flex-grow flex flex-col w-full">
+                    <div className="h-full p-8 sm:py-12 flex-grow flex flex-col w-full">
                         <div className="w-full">
                             <h1 className="text-4xl font-bold">TaxoKeys</h1>
                             <h2 className="text-md text-accent">MERN stack, Python, Digital Ocean</h2>
@@ -33,7 +33,7 @@ const Projects = () => {
                             <p>I created TaxoKeys to address the scarcity of freely available educational resources in organismal biology. I believe this knowledge should be accessible to all audiences, from researchers to citizen scientists.</p>
                         </div>
                         <div className="layered-button-frame mb-2">
-                            <a href="https://taxokeys.org" className="font-medium flex items-center bg-base-content text-primary-content py-2 px-4 rounded-full ring ring-neutral text-sm hover:scale-110 hover:bg-neutral-content transition duration-300">
+                            <a href="https://taxokeys.org" className="font-medium flex items-center bg-base-content text-primary-content py-2 px-4 rounded-full ring ring-neutral text-sm hover:scale-105 hover:bg-neutral-content transition duration-300">
                                 Visit Site<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
                             </a>
                         </div>
@@ -45,7 +45,7 @@ const Projects = () => {
                 <div className="project-card rounded-2xl flex flex-col lg:flex-col items-center flex-grow h-full group overflow-hidden">
                     <FontAwesomeIcon width={400} height={400} className="project-icon-bg" icon={faVolleyball}/>
                     <div className="absolute h-[100%] aspect-square -z-20 bottom-20 -right-1/2 group-hover:scale-150 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#b70] to-transparent to-[70%] opacity-30"/>
-                    <div className="h-full px-8 py-12 flex-grow flex flex-col w-full">
+                    <div className="h-full p-8 sm:py-12 flex-grow flex flex-col w-full">
                         <div className="w-full">
                             <h1 className="text-4xl font-bold">Cal Men's Volleyball</h1>
                             <h2 className="text-md text-accent">React.js, Github Pages</h2>
@@ -55,10 +55,10 @@ const Projects = () => {
                             <p>This site was the product of close collaboration with the team to ensure that updating and maintaining content could be performed regardless of technical experience.</p>
                         </div>
                         <div className="layered-button-frame mb-2">
-                            <a href="https://ethansaso.github.io/cal-mens-volleyball" className="font-medium flex items-center bg-base-content text-primary-content py-2 px-4 rounded-full ring ring-neutral text-sm hover:scale-110 hover:bg-neutral-content transition duration-300">
+                            <a href="https://ethansaso.github.io/cal-mens-volleyball" className="font-medium flex items-center bg-base-content text-primary-content py-2 px-4 rounded-full ring ring-neutral text-sm hover:scale-105 hover:bg-neutral-content transition duration-300">
                                 Visit Site<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
                             </a>
-                            <a href="https://github.com/ethansaso/cal-mens-volleyball" className="font-medium flex items-center glass-mid py-2 px-4 rounded-full text-sm hover:scale-110 transition duration-300 shadow-black/20 shadow-lg">
+                            <a href="https://github.com/ethansaso/cal-mens-volleyball" className="font-medium flex items-center glass-mid py-2 px-4 rounded-full text-sm hover:scale-105 transition duration-300 shadow-black/20 shadow-lg">
                                 GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
                             </a>
                         </div>
@@ -70,7 +70,7 @@ const Projects = () => {
                 <div className="project-card rounded-2xl flex flex-col items-center flex-grow group overflow-hidden">
                     <FontAwesomeIcon width={400} height={400} className="project-icon-bg" icon={faCode}/>
                     <div className="absolute h-[100%] aspect-square -z-20 bottom-20 -right-1/2 group-hover:scale-150 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#76c] to-transparent to-[70%] opacity-30"/>
-                    <div className="h-full px-8 py-12 flex-grow flex flex-col w-full">
+                    <div className="h-full p-8 sm:py-12 flex-grow flex flex-col w-full">
                         <div className="w-full">
                             <h1 className="text-4xl font-bold mt-2">WebRecon2</h1>
                             <h2 className="text-md text-accent">Golang, Bash</h2>
@@ -81,7 +81,7 @@ const Projects = () => {
                         </div>
                         <div className="layered-button-frame mb-2">
                             <div />
-                            <a href="https://github.com/sammooredev/WebRecon2" className="font-medium flex items-center glass-mid py-2 px-4 rounded-full text-sm hover:scale-110 transition duration-300 shadow-black/20 shadow-lg">
+                            <a href="https://github.com/sammooredev/WebRecon2" className="font-medium flex items-center glass-mid py-2 px-4 rounded-full text-sm hover:scale-105 transition duration-300 shadow-black/20 shadow-lg">
                                 GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
                             </a>
                         </div>

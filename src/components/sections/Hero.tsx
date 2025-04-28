@@ -38,10 +38,10 @@ const Hero = ({ darkMode }: HeroProps) => {
                 </h1>
               )}
               <div className={"flex flex-col sm:flex-row mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
-                <a href="https://www.dropbox.com/scl/fi/rj815jqhstdevzxiv1j4l/Resume-4-26.pdf?rlkey=apx1ppcf96li8d3a6b2399ltl&st=v05q0d63&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:scale-110">
+                <a href="https://www.dropbox.com/scl/fi/rj815jqhstdevzxiv1j4l/Resume-4-26.pdf?rlkey=apx1ppcf96li8d3a6b2399ltl&st=v05q0d63&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:scale-105">
                   <div className="block">Resume</div>
                 </a>
-                <a href="mailto:ethansaso@berkeley.edu" className="flex items-center transition-all py-2.5 px-4 gap-1 glass-high rounded-full justify-center shadow-black/70 shadow-md hover:scale-110">
+                <a href="mailto:ethansaso@berkeley.edu" className="flex items-center transition-all py-2.5 px-4 gap-1 glass-high hover:bg-slate-700 rounded-full justify-center shadow-black/70 shadow-md hover:scale-105">
                   <div className="block ml-1">Contact me</div>
                 </a>
               </div>
@@ -51,17 +51,17 @@ const Hero = ({ darkMode }: HeroProps) => {
               <div className="w-full hidden lg:flex justify-center align-center">
                 <ul className="gap-2.5 flex">
                   <a href="https://www.linkedin.com/in/ethansaso/">
-                    <li className={"hover:scale-110 hover:text-sky-600 transition-transform duration-200 rounded-full p-2.5" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
+                    <li className={"hover:scale-105 hover:text-sky-600 transition-transform duration-200 rounded-full p-2.5" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon={faLinkedin} fixedWidth className="relative top-px" />
                     </li>
                   </a>
                   <a href="https://github.com/ethansaso">
-                    <li className={"hover:scale-110 hover:text-cyan-900 transition-transform duration-200 rounded-full p-2.5" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
+                    <li className={"hover:scale-105 hover:text-cyan-900 transition-transform duration-200 rounded-full p-2.5" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon={faGithub} fixedWidth />
                     </li>
                   </a>
                   <a href="https://www.inaturalist.org/people/ethansaso">
-                    <li className={"hover:scale-110 hover:text-lime-600 transition-transform duration-200 rounded-full p-2.5" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
+                    <li className={"hover:scale-105 hover:text-lime-600 transition-transform duration-200 rounded-full p-2.5" + (darkMode ? ' glass-high' : ' bg-base-100 border-neutral border')}>
                       <FontAwesomeIcon size="lg" icon={faDove} fixedWidth />
                     </li>
                   </a>
