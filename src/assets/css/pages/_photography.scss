@@ -1,81 +1,93 @@
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes flowUp {
-    from { margin-bottom: 100px; }
-    to { margin-bottom: 40px; }
+  from {
+    margin-bottom: 100px;
+  }
+  to {
+    margin-bottom: 40px;
+  }
 }
 
 .masonry {
-    .masonry-card {
-        overflow: hidden;
-    }
+  .masonry-card {
+    overflow: hidden;
+  }
 
-    .masonry-img {
-        width: 100%;
-        height: auto;
-        position: relative;
-        animation: fadeIn 1s;
-    }
+  .masonry-img {
+    width: 100%;
+    position: relative;
+    animation: fadeIn 1s;
+  }
 
-    .masonry-title {
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        margin-top: 5px;
-        box-sizing: border-box;
-    }
+  .masonry-title {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
 
-    .masonry-caption {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        padding: 15px;
-        opacity: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
-        border-radius: 5px;
-        transition: opacity 0.2s ease-in-out;
-        overflow: hidden;
+  .masonry-caption {
+    position: absolute;
+    inset: 0;
+    padding: 15px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 5px;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none; // doesn’t block scroll when hidden
 
-        ::after {
-            background-image: linear-gradient(
-                transparent 0%,
-                rgba(0, 0, 0, 0.2) 60%, 
-                rgba(0, 0, 0, 0.4) 90%               /* Fully black at the bottom */
-            );
-            border-radius: 6px;
-            height: 54px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            content: ''
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 54px;
+      border-radius: 6px;
+      background-image: linear-gradient(
+        transparent 0%,
+        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0.4) 90%
+      );
     }
+  }
 
-    .masonry-card .masonry-caption {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+  .masonry-card .masonry-caption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
-    @media (hover: hover) {
-        /* Only apply hover effect on devices that support hover */
-        .masonry-card:hover .masonry-caption {
-            opacity: 1;
-        }
+  @media (hover: hover) and (pointer: fine) {
+    .masonry-card:hover .masonry-caption {
+      opacity: 1;
+      pointer-events: auto;
     }
+  }
 
-    .masonry-caption-type {
-        color: #aaa;
-        font-size: .75rem;
+  // Touch: shown only when JS adds the class
+  @media (hover: none), (pointer: coarse) {
+    .masonry-img.show-caption .masonry-caption {
+      opacity: 1;
+      pointer-events: auto;
     }
-    
-    .masonry-caption-text {
-        margin-bottom: 10px;
-    }
-    
+  }
+
+  .masonry-caption-type {
+    color: #aaa;
+    font-size: 0.75rem;
+  }
+
+  .masonry-caption-text {
+    margin-bottom: 10px;
+  }
 }
-

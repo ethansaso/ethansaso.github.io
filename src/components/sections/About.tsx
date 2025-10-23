@@ -1,14 +1,12 @@
 import companiesHUMR from "../../assets/img/companies/humr.png"
 import companiesBerkeley from "../../assets/img/companies/berkeley.png"
 import useWindowSize from "../../hooks/useWindowSize";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import classNames from "classnames";
 
 const About = () => {
     const {width} = useWindowSize();
     const [readMoreClicked, setReadMoreClicked] = useState(false);
-
-    console.log(width)
 
     const showReadMore = width < 640 && !readMoreClicked;
 
@@ -48,12 +46,12 @@ const About = () => {
                 <ol className="flex flex-col gap-7">
                     <li className="flex">
                         <div className="rounded-full overflow-hidden w-9 h-9 md:w-10 md:h-10 bg-white p-2 shrink-0">
-                            <img alt="ASO Engineering Logo" src={companiesHUMR} />
+                            <img alt="Apteron Logo" src={companiesHUMR} />
                         </div>
                         <div className="font-medium ml-5 text-xs w-full">
                             <div className="flex justify-between gap-2 sm:gap-4">
-                                <a href="https://www.aso-engineering.com/" className="rounded-full px-2 -my-0.5 -ml-2 py-0.5 hover:bg-slate-700 transition-color duration-200 text-sm">
-                                    ASO (HUMR)
+                                <a href="https://www.apteron.org/" className="rounded-full px-2 -my-0.5 -ml-2 py-0.5 hover:bg-slate-700 transition-color duration-200 text-sm">
+                                    Apteron (HUMR)
                                 </a>
                                 <div className="font-normal text-neutral-content flex gap-2">
                                     <time dateTime="2024-10">October 2024</time>

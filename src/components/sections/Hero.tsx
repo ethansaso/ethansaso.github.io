@@ -38,7 +38,7 @@ const Hero = ({ darkMode }: HeroProps) => {
                 </h1>
               )}
               <div className={"flex flex-col sm:flex-row mt-4 gap-3" + (darkMode ? '' : ' hidden')}>
-                <a href="https://www.dropbox.com/scl/fi/rj815jqhstdevzxiv1j4l/Resume-4-26.pdf?rlkey=apx1ppcf96li8d3a6b2399ltl&st=v05q0d63&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:scale-105">
+                <a href="https://www.dropbox.com/scl/fi/xpuhhda0vd0jgqo8vbj0y/Resume.pdf?rlkey=mworl9bjt0c9b5p539mlykk7r&st=qgu653s4&dl=1" className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:scale-105">
                   <div className="block">Resume</div>
                 </a>
                 <a href="mailto:ethansaso@berkeley.edu" className="flex items-center transition-all py-2.5 px-4 gap-1 glass-high hover:bg-slate-700 rounded-full justify-center shadow-black/70 shadow-md hover:scale-105">
