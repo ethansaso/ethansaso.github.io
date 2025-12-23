@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "./assets/css/site.scss";
 import "./main.css";
+import "./assets/css/site.scss";
 
 const container = document.getElementById("root");
 if (!container) {
