@@ -1,98 +1,212 @@
-import TaxoKeys from "../../assets/img/projects/taxogif.gif"
-import WebRecon2 from "../../assets/img/projects/wrgif.gif"
-import Volleyball from "../../assets/img/projects/volleygif.gif"
-import TaxoKeysLogo from "../../assets/img/projects/taxokeysLogo.svg?react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight, faCode, faVolleyball } from "@fortawesome/free-solid-svg-icons"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
-    return (
-        <section id="projects" className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32 mt-32 md:mt-0">
-            <div className="mb-12 w-full">
-                <h1 className="text-3xl text-left font-bold mb-6">Projects</h1>
-                <div className="text-md flex font-medium items-start md:items-end flex-col md:flex-row gap-4 leading-relaxed justify-between">
-                    <p className="text-neutral-content max-w-2xl">I'm passionate about building tools that address real-world challenges. I focus on users' needs and delivering experiences that exceed expectations.</p>
-                    <a href="https://github.com/ethansaso" className="text-right text-primary hover:underline hover:text-secondary font-semibold text-nowrap">Visit my GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/></a>
-                </div>
+  return (
+    <section
+      id="projects"
+      className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32 mt-32 md:mt-0 mb-36"
+    >
+      <div className="mb-12 w-full">
+        <h1 className="text-3xl text-left font-bold mb-6">Featured Projects</h1>
+        <div className="text-md flex font-medium items-start md:items-end flex-col md:flex-row gap-4 leading-relaxed justify-between">
+          <p className="text-neutral-content max-w-2xl">
+            I'm motivated by projects where software helps people understand,
+            classify, and care for the world around them. I focus on designing
+            systems that feel intuitive and accessible to users from all
+            backgrounds.
+          </p>
+          <a
+            href="https://github.com/ethansaso"
+            className="text-right text-primary hover:underline hover:text-accent font-semibold text-nowrap"
+          >
+            Visit my GitHub
+            <FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2" />
+          </a>
+        </div>
+      </div>
+      <div className="project-section grid lg:grid-cols-3 gap-8 max-w-6xl">
+        {/* Klados */}
+        <a
+          href="https://klados.bio"
+          className="project-card rounded-2xl flex flex-col items-center grow group overflow-hidden transition"
+        >
+          <div className="w-full flex aspect-video h-full items-center overflow-hidden">
+            <img
+              className="h-full w-full object-cover rounded-t-2xl opacity-100 transition group-hover:scale-110 duration-500"
+              src={"/projects/kladosguide.png"}
+              alt="Klados"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="h-full p-6 grow flex flex-col w-full">
+            <div className="w-full mb-2">
+              <h1 className="text-2xl font-bold transition">Klados</h1>
             </div>
-            <div className="project-section grid lg:grid-cols-2 gap-8 max-w-6xl">
-                <div className="project-card rounded-2xl flex flex-col lg:flex-col items-center flex-grow group overflow-hidden">
-                    <TaxoKeysLogo
-                        width={400}
-                        height={400}
-                        className="project-icon-bg"
-                    />
-                    <div className="absolute h-[100%] aspect-square -z-20 bottom-20 -right-1/2 group-hover:scale-150 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#12748a] to-transparent to-[70%] opacity-30"/>
-                    <div className="h-full p-8 sm:py-12 flex-grow flex flex-col w-full">
-                        <div className="w-full">
-                            <h1 className="text-4xl font-bold">TaxoKeys</h1>
-                            <h2 className="text-md text-accent">MERN stack, Python, Digital Ocean</h2>
-                        </div>
-                        <div className="text-sm flex-grow text-neutral-content my-8 leading-[1.8] font-semibold relative">
-                            <p className="mb-6">TaxoKeys is a dynamic web application that streamlines the identification of wild organisms. Powered by classification algorithms, it generates interactive, flowchart-style guides to help users identify species on demand.</p>
-                            <p>I created TaxoKeys to address the scarcity of freely available educational resources in organismal biology. I believe this knowledge should be accessible to all audiences, from researchers to citizen scientists.</p>
-                        </div>
-                        <div className="layered-button-frame mb-2">
-                            <a href="https://taxokeys.org" className="font-medium flex items-center bg-base-content text-primary-content py-2 px-4 rounded-full ring ring-neutral text-sm hover:scale-105 hover:bg-neutral-content transition duration-300">
-                                Visit Site<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="w-full flex items-center">
-                        <img className="img-fade-top w-full aspect-video h-full object-cover rounded-b-2xl opacity-100 saturate-0 group-hover:scale-110 group-hover:saturate-100 transition duration-700" src={TaxoKeys} alt="TaxoKeys" loading="lazy"/>
-                    </div>
-                </div>
-                <div className="project-card rounded-2xl flex flex-col lg:flex-col items-center flex-grow h-full group overflow-hidden">
-                    <FontAwesomeIcon width={400} height={400} className="project-icon-bg" icon={faVolleyball}/>
-                    <div className="absolute h-[100%] aspect-square -z-20 bottom-20 -right-1/2 group-hover:scale-150 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#b70] to-transparent to-[70%] opacity-30"/>
-                    <div className="h-full p-8 sm:py-12 flex-grow flex flex-col w-full">
-                        <div className="w-full">
-                            <h1 className="text-4xl font-bold">Cal Men's Volleyball</h1>
-                            <h2 className="text-md text-accent">React.js, Github Pages</h2>
-                        </div>
-                        <div className="text-sm flex-grow text-neutral-content my-8 leading-[1.8] font-semibold">
-                            <p className="mb-4">Official website for UC Berkeley's Men's Club Volleyball Team, Division I competitors and six-time national club champions.</p>
-                            <p>This site was the product of close collaboration with the team to ensure that updating and maintaining content could be performed regardless of technical experience.</p>
-                        </div>
-                        <div className="layered-button-frame mb-2">
-                            <a href="https://ethansaso.github.io/cal-mens-volleyball" className="font-medium flex items-center bg-base-content text-primary-content py-2 px-4 rounded-full ring ring-neutral text-sm hover:scale-105 hover:bg-neutral-content transition duration-300">
-                                Visit Site<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
-                            </a>
-                            <a href="https://github.com/ethansaso/cal-mens-volleyball" className="font-medium flex items-center glass-mid py-2 px-4 rounded-full text-sm hover:scale-105 transition duration-300 shadow-black/20 shadow-lg">
-                                GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="w-full flex items-center">
-                        <img className="img-fade-top w-full aspect-video h-full object-cover rounded-b-2xl opacity-100 saturate-0 group-hover:scale-110 group-hover:saturate-100 transition duration-700" src={Volleyball} alt="Cal Men's Volleyball"/>
-                    </div>
-                </div>
-                <div className="project-card rounded-2xl flex flex-col items-center flex-grow group overflow-hidden">
-                    <FontAwesomeIcon width={400} height={400} className="project-icon-bg" icon={faCode}/>
-                    <div className="absolute h-[100%] aspect-square -z-20 bottom-20 -right-1/2 group-hover:scale-150 group-hover:opacity-50 transition duration-300 bg-gradient-c from-[#76c] to-transparent to-[70%] opacity-30"/>
-                    <div className="h-full p-8 sm:py-12 flex-grow flex flex-col w-full">
-                        <div className="w-full">
-                            <h1 className="text-4xl font-bold mt-2">WebRecon2</h1>
-                            <h2 className="text-md text-accent">Golang, Bash</h2>
-                        </div>
-                        <div className="text-sm flex-grow text-neutral-content my-8 leading-[1.8] font-semibold">
-                            <p className="flex-grow mb-6">WebRecon2 is a modular command-line reconnaissance tool that leverages a variety of best-in-class cybersecurity tools (Amass, Subfinder, dnsgen, PureDNS) to automate a workflow for efficiently enumerating subdomains.</p>
-                            <p className="flex-grow">I co-developed WebRecon2 to augment my own suite of closed-source bug bounty tools which perform vulnerability scans for subdomain takeover attacks.</p>
-                        </div>
-                        <div className="layered-button-frame mb-2">
-                            <div />
-                            <a href="https://github.com/sammooredev/WebRecon2" className="font-medium flex items-center glass-mid py-2 px-4 rounded-full text-sm hover:scale-105 transition duration-300 shadow-black/20 shadow-lg">
-                                GitHub<FontAwesomeIcon size="xs" icon={faArrowRight} className="ml-2"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="w-full flex items-center"> 
-                        <img className="img-fade-top w-full aspect-video h-full object-cover rounded-b-2xl opacity-100 saturate-0 group-hover:scale-110 group-hover:saturate-100 transition duration-700" src={WebRecon2} alt="Web Recon 2"/>
-                    </div>
-                </div>
+
+            <div className="text-sm grow text-neutral-content mb-5 leading-relaxed font-semibold relative">
+              <p>
+                Klados is a web-based platform for learning to identify
+                organisms through collaborative visual guides that model
+                relationships between branches of life.
+              </p>
             </div>
-        </section>
-    )
-}
+
+            <div className="flex gap-2 mb-4 flex-wrap">
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                React
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                TypeScript
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                Start
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                PostgreSQL
+              </div>
+            </div>
+
+            <div className="layered-button-frame">
+              <span
+                className="
+      btn btn-sm w-full bg-white text-black
+    "
+              >
+                Visit Site
+                <FontAwesomeIcon
+                  size="xs"
+                  icon={faArrowRight}
+                  className="ml-0"
+                />
+              </span>
+            </div>
+          </div>
+        </a>
+
+        {/* TaxoKeys */}
+        <a
+          href="https://taxokeys.org"
+          className="project-card rounded-2xl flex flex-col items-center grow group overflow-hidden hover:border-primary transition"
+        >
+          <div className="w-full flex aspect-video h-full items-center overflow-hidden">
+            <img
+              className="h-full w-full object-cover rounded-t-2xl opacity-100 transition group-hover:scale-110 duration-500"
+              src={"/projects/taxokeys-mosaic.png"}
+              alt="TaxoKeys"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="h-full p-6 grow flex flex-col w-full">
+            <div className="w-full mb-2">
+              <h1 className="text-2xl font-bold transition">TaxoKeys</h1>
+            </div>
+
+            <div className="text-sm grow text-neutral-content mb-5 leading-relaxed font-semibold relative">
+              <p>
+                TaxoKeys was an earlier iteration of Klados, and my first
+                exploration into algorithmically generating taxonomic keys and
+                visual flowcharts for biological classification.
+              </p>
+            </div>
+
+            <div className="flex gap-2 mb-4 flex-wrap">
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                MongoDB
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                Express
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                React
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                Python
+              </div>
+            </div>
+
+            <div className="layered-button-frame">
+              <span
+                className="
+      btn btn-sm w-full bg-white text-black
+    "
+              >
+                Visit Site
+                <FontAwesomeIcon
+                  size="xs"
+                  icon={faArrowRight}
+                  className="ml-0"
+                />
+              </span>
+            </div>
+          </div>
+        </a>
+
+        {/* Cal Men's Volleyball */}
+        <a
+          href="https://ethansaso.github.io/cal-mens-volleyball"
+          className="project-card rounded-2xl flex flex-col items-center grow group overflow-hidden hover:border-primary transition"
+        >
+          <div className="w-full flex aspect-video h-full items-center overflow-hidden">
+            <img
+              className="h-full w-full object-cover rounded-t-2xl opacity-100 transition group-hover:scale-110 duration-500"
+              src={"/projects/volleygif.gif"}
+              alt="Cal Men's Volleyball"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="h-full p-6 grow flex flex-col w-full">
+            <div className="w-full mb-2">
+              <h1 className="text-2xl font-bold transition">
+                Cal Men's Volleyball
+              </h1>
+            </div>
+
+            <div className="text-sm grow text-neutral-content mb-5 leading-relaxed font-semibold relative">
+              <p>
+                Official website for UC Berkeley&apos;s Men&apos;s Club
+                Volleyball Team. Built for easy updates and maintenance by team
+                members with limited technical experience.
+              </p>
+            </div>
+
+            <div className="flex gap-2 mb-4 flex-wrap">
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                React
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                Bootstrap
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                Vite
+              </div>
+              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
+                Node
+              </div>
+            </div>
+
+            <div className="layered-button-frame flex flex-col gap-2">
+              <span
+                className="
+      btn btn-sm w-full bg-white text-black
+    "
+              >
+                Visit Site
+                <FontAwesomeIcon
+                  size="xs"
+                  icon={faArrowRight}
+                  className="ml-0"
+                />
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  );
+};
 
 export default Projects;

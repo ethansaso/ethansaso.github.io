@@ -1,5 +1,5 @@
 import { faPagelines } from "@fortawesome/free-brands-svg-icons";
-import { faCamera, faCode, faFolderOpen, faUser, faWrench } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { RefObject, useMemo, useState } from "react";
 import useScrollPosition from "../../hooks/useScrollPosition";
@@ -7,30 +7,47 @@ import useWindowSize from "../../hooks/useWindowSize";
 
 interface HeaderProps {
   pageRef?: RefObject<HTMLDivElement | null>;
-  darkMode: boolean;
-  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>
+  devMode: boolean;
+  setDevMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
+const Header = ({ pageRef, devMode, setDevMode }: HeaderProps) => {
   const { height } = useWindowSize();
   const scrollPosition = useScrollPosition(pageRef);
-  const [hasClickedSwitch, setHasClickedSwitch] = useState(false)
+  const [hasClickedSwitch, setHasClickedSwitch] = useState(false);
 
   const toggleTheme = () => {
-    setDarkMode(!darkMode);
+    setDevMode(!devMode);
     setHasClickedSwitch(true);
   };
 
   const avatarOpacity = useMemo(() => {
-    return Math.min(1, Math.max((scrollPosition - height + 400) / 200, 0))
+    return Math.min(1, Math.max((scrollPosition - height + 400) / 200, 0));
+  }, [scrollPosition, height]);
+
+  const avatarInteractive = useMemo(() => {
+    return scrollPosition > height - 200;
   }, [scrollPosition, height]);
 
   return (
-    <div className={"pointer-events-none fixed overflow-hidden top-0 z-10 mt-8 w-full flex justify-center"}>
+    <div
+      className={
+        "pointer-events-none fixed top-0 z-10 mt-8 w-full flex justify-center"
+      }
+    >
       <nav className="flex container items-center justify-center w-full gap-4 px-8 2xl:px-32 mx-auto text-sm font-semibold">
-        <a href="#home" className={"pointer-events-auto flex items-center gap-2 font-bold py-2.5 px-2.5 md:px-5 rounded-full mr-auto group focus-within:!opacity-100 " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')} style={{opacity: avatarOpacity}}>
+        <a
+          href="#home"
+          className={
+            "flex items-center gap-2 font-bold py-2.5 px-2.5 md:px-5 rounded-full mr-auto group focus-within:opacity-100! glass-high shadow-xl shadow-black/20"
+          }
+          style={{
+            opacity: avatarOpacity,
+            pointerEvents: avatarInteractive ? "auto" : "none",
+          }}
+        >
           <svg
-            className="size-5 fill-primary group-hover:fill-secondary transition-color duration-300"
+            className="size-5 fill-primary group-hover:fill-accent transition-color duration-300"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 735.000000 735.000000"
             preserveAspectRatio="xMidYMid meet"
@@ -61,9 +78,16 @@ const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
           </svg>
           <h1 className="hidden sm:block">Ethan Saso</h1>
         </a>
-        <div className={"rounded-full py-2.5 px-5 hidden md:block " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+        <div
+          className={
+            "rounded-full py-2.5 px-5 hidden md:block " +
+            (devMode
+              ? "glass-high shadow-xl shadow-black/20"
+              : "bg-base-100 border-neutral border")
+          }
+        >
           <ul className="gap-6 flex px-1 pointer-events-auto">
-            {darkMode ? (
+            {devMode ? (
               <>
                 <li>
                   <a
@@ -81,14 +105,14 @@ const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
                     <h1 className="ml-0.5 hidden lg:block">Projects</h1>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#skills"
                     className="flex items-center hover:text-primary transition-colors duration-200"
                   >
                     <h1 className="ml-0.5 hidden lg:block">Skills</h1>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="#cta"
@@ -110,42 +134,50 @@ const Header = ({ pageRef, darkMode, setDarkMode }: HeaderProps) => {
             )}
           </ul>
         </div>
-        <div className={"flex gap-3 items-center py-2 px-5 rounded-full " + (darkMode ? 'glass-high' : 'bg-base-100 border-neutral border')}>
+        <div
+          className={
+            "flex gap-3 items-center py-2 px-5 rounded-full " +
+            (devMode
+              ? "glass-high shadow-xl shadow-black/20"
+              : "bg-base-100 border-neutral border")
+          }
+        >
           <h1>
-            <span className="inline lg:hidden">{darkMode ? "Dev Portfolio" : "Photography"}</span>
-            <span className="hidden lg:inline">
-              {darkMode ? "Development Portfolio" : "Photography Portfolio"}
+            <span className="inline lg:hidden">
+              {devMode ? "Dev Portfolio" : "Photography"}
+            </span>
+            <span className={"hidden lg:inline"}>
+              {devMode ? "Development Portfolio" : "Photography Portfolio"}
             </span>
           </h1>
-          <label className="grid cursor-pointer place-items-center relative">
-            <input
-              type="checkbox"
-              value="lemonade"
-              onChange={toggleTheme}
-              className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1 pointer-events-auto"
-            />
-            <FontAwesomeIcon
-              className="text-base-100 col-start-1 row-start-1"
-              style={{ pointerEvents: "none" }}
-              icon={faCode}
-              fixedWidth
-            />
-            <FontAwesomeIcon
-              className="text-base-100 col-start-2 row-start-1 z-10"
-              style={{ pointerEvents: "none" }}
-              icon={faPagelines}
-              fixedWidth
-            />
+          <div className="relative inline-block">
+            <label className="toggle text-base-content border-base-content pointer-events-auto">
+              <input
+                className="theme-controller"
+                type="checkbox"
+                value="lemonade"
+                onChange={toggleTheme}
+              />
+              <FontAwesomeIcon
+                aria-label="enabled"
+                className="text-base-100 w-3! h-3!"
+                icon={faCode}
+              />
+              <FontAwesomeIcon
+                aria-label="disabled"
+                className="text-base-100 w-3! h-3!"
+                icon={faPagelines}
+              />
+            </label>
             {!hasClickedSwitch && (
               <span className="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 flex size-3 z-10">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
               </span>
             )}
-          </label>
+          </div>
         </div>
       </nav>
-        
     </div>
   );
 };
