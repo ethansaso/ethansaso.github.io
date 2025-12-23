@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import './main.css';
-import './assets/css/site.scss';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./assets/css/site.scss";
+import "./main.css";
 
-const container = document.getElementById('root');
+const container = document.getElementById("root");
 if (!container) {
-  throw new Error('Root container missing in index.html');
+  throw new Error("Root container missing in index.html");
 }
 
 const root = ReactDOM.createRoot(container);
@@ -19,6 +18,3 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-// you can still measure performance if you like
-reportWebVitals();
