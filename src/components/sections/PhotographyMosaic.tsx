@@ -110,7 +110,7 @@ function Photos() {
   return (
     <div
       id="photos"
-      className="w-full px-8 py-12 lg:px-20 flex justify-center items-center"
+      className="w-full px-7.5 py-12 lg:px-20 flex justify-center items-center"
     >
       <div className="w-full max-w-7xl">
         <Masonry

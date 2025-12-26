@@ -19,7 +19,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="container flex flex-col gap-8 mx-auto px-8 2xl:px-32 mb-48"
+      className="container flex flex-col gap-8 mx-auto px-7.5 2xl:px-32 mb-48"
     >
       <div className="flex flex-col lg:flex-row gap-8 items-stretch justify-center">
         <div className="flex flex-col card card-lg border border-neutral bg-base-100 flex-1 relative">

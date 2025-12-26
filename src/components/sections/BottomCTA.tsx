@@ -2,9 +2,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BottomCTA = () => (
-  <section id="cta" className="container mx-auto my-32 px-8 2xl:px-32">
-    {/* <div className="flex flex-col md:flex-row mx-auto items-center justify-between px-8 lg:px-16 py-12 lg:pt-12 rounded-2xl"> */}
-    <div className="flex flex-col md:flex-row mx-auto items-center justify-between px-8 lg:px-16 py-16 lg:py-22 border bg-base-100 border-neutral rounded-2xl">
+  <section id="cta" className="container mx-auto my-32 px-7.5 2xl:px-32">
+    {/* <div className="flex flex-col md:flex-row mx-auto items-center justify-between px-7.5 lg:px-16 py-12 lg:pt-12 rounded-2xl"> */}
+    <div className="flex flex-col md:flex-row mx-auto items-center justify-between px-7.5 lg:px-16 py-16 lg:py-22 border bg-base-100 border-neutral rounded-2xl">
       <div>
         <h1 className="text-4xl font-bold mb-6">
           Let's get <span className="text-gradient">in touch</span>

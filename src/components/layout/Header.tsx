@@ -35,7 +35,7 @@ const Header = ({ pageRef, devMode, setDevMode }: HeaderProps) => {
         "pointer-events-none fixed top-0 z-10 mt-8 w-full flex justify-center"
       }
     >
-      <nav className="flex container items-center justify-center w-full gap-4 px-8 2xl:px-32 mx-auto text-sm font-semibold">
+      <nav className="flex container items-center justify-center w-full gap-4 px-7.5 2xl:px-32 mx-auto text-sm font-semibold">
         <a
           href="#home"
           className={

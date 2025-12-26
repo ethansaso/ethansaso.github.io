@@ -21,7 +21,7 @@ const Footer = ({ devPortfolio }: FooterProps) => {
     >
       <div
         className={classNames(
-          "w-full container flex items-center justify-between px-8 2xl:px-32 mx-auto text-sm flex-wrap-reverse md:flex-nowrap"
+          "w-full container flex items-center justify-between px-7.5 2xl:px-32 mx-auto text-sm flex-wrap-reverse md:flex-nowrap"
         )}
       >
         <div className="md:flex-1 md:mr-auto">

@@ -20,7 +20,7 @@ const Home = ({
       <div id="home"></div>
       <Header pageRef={scrollRef} devMode={devMode} setDevMode={setDevMode} />
       <main>
-        <div className="splash-wrapper h-dvh max-h-182.5 pt-20 lg:pt-10">
+        <div className="splash-wrapper h-dvh max-h-175 lg:max-h-182.5 pt-28 lg:pt-10">
           <Hero devPortfolio={devMode} />
         </div>
         {devMode ? (

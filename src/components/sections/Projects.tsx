@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32 mt-32 md:mt-0 mb-36"
+      className="container flex flex-col mx-auto items-center justify-center px-7.5 2xl:px-32 mt-32 md:mt-0 mb-36"
     >
       <div className="mb-12 w-full">
         <h1 className="text-3xl text-left font-bold mb-6">Featured Projects</h1>
@@ -40,7 +40,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="p-6 grow flex flex-col w-full">
+          <div className="p-7.5 grow flex flex-col w-full">
             <div className="w-full mb-2">
               <h1 className="text-2xl font-bold transition">Klados</h1>
             </div>
@@ -99,7 +99,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="p-6 grow flex flex-col w-full">
+          <div className="p-7.5 grow flex flex-col w-full">
             <div className="w-full mb-2">
               <h1 className="text-2xl font-bold transition">TaxoKeys</h1>
             </div>
@@ -158,7 +158,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="p-6 grow flex flex-col w-full">
+          <div className="p-7.5 grow flex flex-col w-full">
             <div className="w-full mb-2">
               <h1 className="text-2xl font-bold transition">
                 Cal Men's Volleyball

@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero = ({ devPortfolio }: HeroProps) => {
   return (
-    <div className="container flex flex-col grow px-8 xl:px-32 h-full">
+    <div className="container flex flex-col grow px-7.5 xl:px-32 h-full">
       <div
         className={"w-full h-full flex items-center justify-center rounded-2xl"}
       >
@@ -19,7 +19,7 @@ const Hero = ({ devPortfolio }: HeroProps) => {
             (devPortfolio ? " hero-dark" : " hero-light")
           }
         >
-          <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-center lg:justify-between w-full h-full">
+          <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-end lg:justify-between w-full h-full">
             <div className="max-w-xl font-medium text-left">
               <div className="text-4xl md:text-5xl font-bold">
                 <h1 className="mb-1 block">Hi! 👋</h1>

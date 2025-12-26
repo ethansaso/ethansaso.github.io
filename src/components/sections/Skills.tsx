@@ -65,7 +65,7 @@ const Skills = () => {
       <div className="absolute bottom-0 h-px inset-x-7 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
       <div
         id="skills"
-        className="container flex flex-col mx-auto items-center justify-center px-8 2xl:px-32 font-medium"
+        className="container flex flex-col mx-auto items-center justify-center px-7.5 2xl:px-32 font-medium"
       >
         <div className="mb-8 w-full">
           <h1 className="text-3xl text-left font-bold mb-6">Skills</h1>
