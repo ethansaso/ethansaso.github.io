@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@utility container {
-  @apply xl:max-w-368;
-}
 
 @plugin "daisyui" {
   themes: all;
@@ -81,6 +78,10 @@
   --color-base-content: oklch(0.9775 0.0079 106.55);
 }
 
+@utility container {
+  @apply xl:max-w-350;
+}
+
 @font-face {
   font-family: "Cabin";
   font-style: normal;
@@ -107,8 +108,4 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  scrollbar-color: unset !important;
 }

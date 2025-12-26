@@ -72,7 +72,9 @@ const About = () => {
         </div>
         <div className="xl:w-4/12 flex flex-col card card-lg border border-neutral bg-base-100">
           <div className="card-body">
-            <h1 className="card-title text-2xl font-bold mb-6">Experience</h1>
+            <h1 className="card-title text-2xl font-bold mb-6">
+              Education & Experience
+            </h1>
             <ol className="flex flex-col gap-7">
               <li className="flex items-end">
                 <div className="rounded-full overflow-hidden w-9 h-9 md:w-10 md:h-10 bg-white p-2 shrink-0">

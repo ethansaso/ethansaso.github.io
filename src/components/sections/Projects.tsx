@@ -25,13 +25,13 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div className="project-section grid lg:grid-cols-3 gap-8 max-w-6xl">
+      <div className="project-section grid lg:grid-cols-3 gap-8">
         {/* Klados */}
         <a
           href="https://klados.bio"
-          className="project-card rounded-2xl flex flex-col items-center grow group overflow-hidden transition"
+          className="project-card rounded-2xl flex flex-col items-center group overflow-hidden transition"
         >
-          <div className="w-full flex aspect-video h-full items-center overflow-hidden">
+          <div className="flex aspect-video w-full items-center overflow-hidden">
             <img
               className="h-full w-full object-cover rounded-t-2xl opacity-100 transition group-hover:scale-110 duration-500"
               src={"/projects/kladosguide.png"}
@@ -40,7 +40,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="h-full p-6 grow flex flex-col w-full">
+          <div className="p-6 grow flex flex-col w-full">
             <div className="w-full mb-2">
               <h1 className="text-2xl font-bold transition">Klados</h1>
             </div>
@@ -88,9 +88,9 @@ const Projects = () => {
         {/* TaxoKeys */}
         <a
           href="https://taxokeys.org"
-          className="project-card rounded-2xl flex flex-col items-center grow group overflow-hidden hover:border-primary transition"
+          className="project-card rounded-2xl flex flex-col items-center group overflow-hidden hover:border-primary transition"
         >
-          <div className="w-full flex aspect-video h-full items-center overflow-hidden">
+          <div className="flex aspect-video w-full items-center overflow-hidden">
             <img
               className="h-full w-full object-cover rounded-t-2xl opacity-100 transition group-hover:scale-110 duration-500"
               src={"/projects/taxokeys-mosaic.png"}
@@ -99,7 +99,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="h-full p-6 grow flex flex-col w-full">
+          <div className="p-6 grow flex flex-col w-full">
             <div className="w-full mb-2">
               <h1 className="text-2xl font-bold transition">TaxoKeys</h1>
             </div>
@@ -147,9 +147,9 @@ const Projects = () => {
         {/* Cal Men's Volleyball */}
         <a
           href="https://ethansaso.github.io/cal-mens-volleyball"
-          className="project-card rounded-2xl flex flex-col items-center grow group overflow-hidden hover:border-primary transition"
+          className="project-card rounded-2xl flex flex-col items-center group overflow-hidden hover:border-primary transition"
         >
-          <div className="w-full flex aspect-video h-full items-center overflow-hidden">
+          <div className="flex aspect-video w-full items-center overflow-hidden">
             <img
               className="h-full w-full object-cover rounded-t-2xl opacity-100 transition group-hover:scale-110 duration-500"
               src={"/projects/volleygif.gif"}
@@ -158,7 +158,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="h-full p-6 grow flex flex-col w-full">
+          <div className="p-6 grow flex flex-col w-full">
             <div className="w-full mb-2">
               <h1 className="text-2xl font-bold transition">
                 Cal Men's Volleyball

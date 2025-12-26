@@ -37,11 +37,11 @@ const Hero = ({ devPortfolio }: HeroProps) => {
               {devPortfolio ? (
                 <h1 className="text-lg my-8 text-neutral-content">
                   I'm a{" "}
-                  <span className="text-accent font-semibold">
-                    full-stack developer{" "}
-                  </span>
+                  <span className="font-semibold text-accent">
+                    full-stack developer
+                  </span>{" "}
                   from{" "}
-                  <span className="text-accent font-semibold">
+                  <span className="font-semibold text-accent">
                     Berkeley, CA
                   </span>{" "}
                   dedicated to crafting interactive, user-friendly applications
@@ -76,13 +76,13 @@ const Hero = ({ devPortfolio }: HeroProps) => {
               >
                 <a
                   href="https://www.dropbox.com/scl/fi/xpuhhda0vd0jgqo8vbj0y/Resume.pdf?rlkey=mworl9bjt0c9b5p539mlykk7r&st=qgu653s4&dl=1"
-                  className="transition-all flex items-center justify-center py-2.5 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:bg-neutral-content hover:scale-105 shadow-xl shadow-black/20"
+                  className="transition-all flex items-center justify-center py-2 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:bg-neutral-content hover:scale-105 shadow-xl shadow-black/20"
                 >
                   <div className="block">Resume</div>
                 </a>
                 <a
                   href="mailto:ethansaso@berkeley.edu"
-                  className="flex items-center transition-all py-2.5 px-4 gap-1 bg-base-100 border border-neutral rounded-full justify-center hover:scale-105 shadow-xl shadow-black/20"
+                  className="flex items-center transition-all py-2 px-4 gap-1 glass-high border border-neutral rounded-full justify-center hover:scale-105 hover:bg-neutral! shadow-xl shadow-black/20"
                 >
                   Contact me
                 </a>
@@ -99,7 +99,7 @@ const Hero = ({ devPortfolio }: HeroProps) => {
                   <a href="https://www.linkedin.com/in/ethansaso/">
                     <li
                       className={
-                        "hover:scale-105 hover:text-sky-600 transition-transform duration-200 rounded-full p-2.5 bg-base-100 border-neutral border shadow-xl shadow-black/20"
+                        "hover:scale-105 hover:text-sky-600 transition-transform duration-200 rounded-full p-2.5 glass-high shadow-xl shadow-black/20"
                       }
                     >
                       <FontAwesomeIcon
@@ -112,19 +112,19 @@ const Hero = ({ devPortfolio }: HeroProps) => {
                   <a href="https://github.com/ethansaso">
                     <li
                       className={
-                        "hover:scale-105 hover:text-cyan-900 transition-transform duration-200 rounded-full p-2.5 bg-base-100 border-neutral border shadow-xl shadow-black/20"
+                        "hover:scale-105 hover:text-cyan-900 transition-transform duration-200 rounded-full p-2.5 glass-high shadow-xl shadow-black/20"
                       }
                     >
-                      <FontAwesomeIcon size="lg" icon={faGithub} fixedWidth />
+                      <FontAwesomeIcon size="lg" icon={faGithub} />
                     </li>
                   </a>
                   <a href="https://www.inaturalist.org/people/ethansaso">
                     <li
                       className={
-                        "hover:scale-105 hover:text-lime-600 transition-transform duration-200 rounded-full p-2.5 bg-base-100 border-neutral border shadow-xl shadow-black/20"
+                        "hover:scale-105 hover:text-lime-600 transition-transform duration-200 rounded-full p-2.5 glass-high shadow-xl shadow-black/20"
                       }
                     >
-                      <FontAwesomeIcon size="lg" icon={faDove} fixedWidth />
+                      <FontAwesomeIcon size="lg" icon={faDove} />
                     </li>
                   </a>
                 </ul>

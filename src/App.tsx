@@ -17,7 +17,9 @@ function App() {
   return (
     <div
       ref={scrollRef}
-      className="w-full text-base-content h-dvh overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-neutral scrollbar-track-transparent scroll-pt-30"
+      className="
+        w-full h-dvh overflow-y-scroll text-base-content
+      "
     >
       <Routes>
         <Route path="/" element={<Home scrollRef={scrollRef} />} />
