@@ -99,7 +99,10 @@ const Hero = ({ devPortfolio }: HeroProps) => {
                   <a href="https://www.linkedin.com/in/ethansaso/">
                     <li
                       className={
-                        "hover:scale-105 hover:text-sky-600 transition-transform duration-200 rounded-full p-2.5 glass-high shadow-xl shadow-black/20"
+                        "hover:scale-105 hover:text-sky-600 transition-transform duration-200 rounded-full p-2.5 " +
+                        (devPortfolio
+                          ? "glass-high shadow-xl shadow-black/20"
+                          : "bg-base-100 border-neutral border")
                       }
                     >
                       <FontAwesomeIcon
@@ -112,7 +115,10 @@ const Hero = ({ devPortfolio }: HeroProps) => {
                   <a href="https://github.com/ethansaso">
                     <li
                       className={
-                        "hover:scale-105 hover:text-cyan-900 transition-transform duration-200 rounded-full p-2.5 glass-high shadow-xl shadow-black/20"
+                        "hover:scale-105 hover:text-cyan-900 transition-transform duration-200 rounded-full p-2.5 " +
+                        (devPortfolio
+                          ? "glass-high shadow-xl shadow-black/20"
+                          : "bg-base-100 border-neutral border")
                       }
                     >
                       <FontAwesomeIcon size="lg" icon={faGithub} />
@@ -121,7 +127,10 @@ const Hero = ({ devPortfolio }: HeroProps) => {
                   <a href="https://www.inaturalist.org/people/ethansaso">
                     <li
                       className={
-                        "hover:scale-105 hover:text-lime-600 transition-transform duration-200 rounded-full p-2.5 glass-high shadow-xl shadow-black/20"
+                        "hover:scale-105 hover:text-lime-600 transition-transform duration-200 rounded-full p-2.5 " +
+                        (devPortfolio
+                          ? "glass-high shadow-xl shadow-black/20"
+                          : "bg-base-100 border-neutral border")
                       }
                     >
                       <FontAwesomeIcon size="lg" icon={faDove} />

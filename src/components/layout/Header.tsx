@@ -39,7 +39,8 @@ const Header = ({ pageRef, devMode, setDevMode }: HeaderProps) => {
         <a
           href="#home"
           className={
-            "flex items-center gap-2 font-bold py-2.5 px-2.5 md:px-5 rounded-full mr-auto group focus-within:opacity-100! glass-high shadow-xl shadow-black/20"
+            "flex items-center gap-2 font-bold py-2.5 px-2.5 md:px-5 rounded-full mr-auto group focus-within:opacity-100! shadow-xl shadow-black/20 " +
+            (devMode ? "glass-high" : "bg-base-100 border-neutral border")
           }
           style={{
             opacity: avatarOpacity,
