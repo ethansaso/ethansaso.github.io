@@ -18,7 +18,7 @@ function App() {
     <div
       ref={scrollRef}
       className="
-        w-full h-dvh overflow-y-scroll text-base-content
+        w-full h-dvh overflow-y-scroll text-base-content scroll-pt-30
       "
     >
       <Routes>

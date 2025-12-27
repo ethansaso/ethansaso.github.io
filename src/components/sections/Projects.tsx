@@ -184,7 +184,7 @@ const Projects = () => {
                 Vite
               </div>
               <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Node
+                Node.js
               </div>
             </div>
 

@@ -58,6 +58,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.23",
     "daisyui": "^5.5.14",
     "sass": "^1.97.1",
     "tailwindcss": "^4.1.18",

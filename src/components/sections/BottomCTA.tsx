@@ -10,8 +10,8 @@ const BottomCTA = () => (
           Let's get <span className="text-gradient">in touch</span>
         </h1>
         <p className="md:text-lg font-medium max-w-xl text-neutral-content">
-          If you're working on a project related to science, the environment, or
-          public-interest software, I'd love to hear what you're building.
+          Want to talk about a project, discuss an opportunity, or just say hi?
+          Feel free to reach out!
         </p>
       </div>
       <div className="w-full md:w-auto shrink-0 flex justify-end mt-8 md:mt-0">

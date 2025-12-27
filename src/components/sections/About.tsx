@@ -32,28 +32,27 @@ const About = () => {
               )}
             >
               <p className="mb-4">
-                Hi! I'm Ethan, a software engineer dedicated to building
-                beautiful products with code.
+                Hi! I'm Ethan, a software engineer passionate about building
+                accessible, impactful tools with code.
               </p>
               <p className="mb-4">
-                Even since my early childhood, I've been fascinated by complex
-                systems and how they operate. This curiosity initially led me to
-                study biology at UC Berkeley, where I explored everything from
-                organismal diversity to molecular genomics. A turning point came
-                midway through my degree, when I began to explore programming
-                through bioinformatics.
+                Growing up mushroom hunting in California's diverse landscapes,
+                I developed an early appreciation for interconnected systems. I
+                initially carried that fascination into biology at UC Berkeley.
+                However, once I was introduced to programming through
+                bioinformatics coursework, I found myself increasingly drawn to
+                software as a way to design and model ideas.
               </p>
               <p className="mb-4">
-                I quickly became hooked on software development, diving into
-                topics ranging from digital circuit design to modern web
-                architecture. I ultimately specialized in full-stack
-                development, since it provided me the tools to build projects
-                that solve real-world problems and bring my ideas to life.
+                I went on to explore topics ranging from digital circuit design
+                to database architecture, ultimately settling on full-stack
+                development as a way to build universally accessible
+                applications that address real-world problems.
               </p>
               <p className="">
-                When I'm not engineering new features, you can find me out in
-                the hills and/or behind a camera lens. Feel free to check out my
-                photography portfolio using the button in the upper right
+                When I'm not programming, you can find me out in the hills
+                and/or behind a camera lens. Feel free to check out my
+                photography portfolio using the switch in the upper right
                 corner!
               </p>
             </div>
