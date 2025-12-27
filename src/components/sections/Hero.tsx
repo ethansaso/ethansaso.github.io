@@ -75,7 +75,7 @@ const Hero = ({ devPortfolio }: HeroProps) => {
                 }
               >
                 <a
-                  href="https://www.dropbox.com/scl/fi/xpuhhda0vd0jgqo8vbj0y/Resume.pdf?rlkey=mworl9bjt0c9b5p539mlykk7r&st=qgu653s4&dl=1"
+                  href="https://www.dropbox.com/scl/fi/rotw4plvxf0f1pm052wa0/Resume-fs.pdf?rlkey=72zw043isf932qf6917cyz1y2&st=sjs48b95&dl=1"
                   className="transition-all flex items-center justify-center py-2 px-4 gap-1 border rounded-full border-bline border-neutral bg-white text-black hover:bg-neutral-content hover:scale-105 shadow-xl shadow-black/20"
                 >
                   <div className="block">Resume</div>
