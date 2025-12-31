@@ -1,11 +1,26 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const BadgeList = ({ badges }: { badges: string[] }) => {
+  return (
+    <div className="flex gap-2 mb-4 flex-wrap">
+      {badges.map((badge) => (
+        <span
+          key={badge}
+          className="badge badge-neutral text-base-content badge-sm shrink-0"
+        >
+          {badge}
+        </span>
+      ))}
+    </div>
+  );
+};
+
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="container flex flex-col mx-auto items-center justify-center px-7.5 2xl:px-32 mt-32 md:mt-0 mb-36"
+      className="container flex flex-col mx-auto items-center justify-center px-7.5 2xl:px-32 mt-32 md:mt-0 mb-48"
     >
       <div className="mb-12 w-full">
         <h1 className="text-3xl text-left font-bold mb-6">Featured Projects</h1>
@@ -53,20 +68,17 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex gap-2 mb-4 flex-wrap">
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                React
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                TypeScript
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Start
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                PostgreSQL
-              </div>
-            </div>
+            <BadgeList
+              badges={[
+                "React",
+                "TanStack Start",
+                "TypeScript",
+                "Node.js",
+                "PostgreSQL",
+                "Drizzle ORM",
+                "Vite",
+              ]}
+            />
 
             <div className="layered-button-frame">
               <span
@@ -112,20 +124,17 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex gap-2 mb-4 flex-wrap">
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                MongoDB
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Express
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                React
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Python
-              </div>
-            </div>
+            <BadgeList
+              badges={[
+                "React",
+                "React Native",
+                "Python",
+                "Express",
+                "MongoDB",
+                "Node.js",
+                "DigitalOcean",
+              ]}
+            />
 
             <div className="layered-button-frame">
               <span
@@ -173,20 +182,15 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex gap-2 mb-4 flex-wrap">
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                React
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Bootstrap
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Vite
-              </div>
-              <div className="badge badge-neutral text-base-content badge-sm shrink-0">
-                Node.js
-              </div>
-            </div>
+            <BadgeList
+              badges={[
+                "React",
+                "JavaScript",
+                "SCSS",
+                "Bootstrap",
+                "GitHub Pages",
+              ]}
+            />
 
             <div className="layered-button-frame flex flex-col gap-2">
               <span
